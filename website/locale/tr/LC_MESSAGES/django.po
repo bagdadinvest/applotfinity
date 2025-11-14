@@ -1,0 +1,1282 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-17 14:17+0000\n"
+"PO-Revision-Date: 2025-03-03 10:10+0300\n"
+"Last-Translator:   <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Translated-Using: django-rosetta 0.10.1\n"
+
+#: base.html:28
+msgid "lotfinity I> Crafting Digital artister"
+msgstr "lotfinity I> Dijital sanat eseri işçiliği"
+
+#: base.html:29 templates/wagtailcore/page.html:28
+msgid "lotfinity I> Creative Web Studio"
+msgstr "lotfinity I> Yaratıcı Web Stüdyosu"
+
+#: base.html:213 templates/pengaa/pengaa.html:314
+#: templates/pengaa/pengaa.html:336 templates/pengaa/pengaa.html:394
+#: templates/pengaa/pengaa.html:416 templates/pengaa/pengaa.html:499
+#: templates/pengaa/pengaa.html:521 templates/wagtailcore/page.html:291
+msgid "Work"
+msgstr "İş"
+
+#: base.html:215 base.html:446 templates/wagtailcore/page.html:293
+#: templates/wagtailcore/page.html:624
+msgid "Studio"
+msgstr "Stüdyo"
+
+#: base.html:230
+msgid "Crafting"
+msgstr "Işçi -liği"
+
+#: base.html:231
+msgid "Digital artistery"
+msgstr "Dijital sanat"
+
+#: base.html:248 templates/wagtailcore/page.html:321
+msgid "← Scroll"
+msgstr "← Kaydırma"
+
+#: base.html:276 templates/wagtailcore/page.html:350
+msgid "Fullstack Development"
+msgstr "Fullstack Geliştirme"
+
+#: base.html:281 templates/wagtailcore/page.html:378
+msgid "Web-apps"
+msgstr "İnternet uygulamaları"
+
+#: base.html:282
+msgid "smart & Fast"
+msgstr "Akıllı ve Hızlı"
+
+#: base.html:289
+msgid ""
+"Now Live → Website Relaunch | Concept & Development<br class='hide-mobile'> "
+"| Design Editions Publisher"
+msgstr ""
+"Şimdi Canlı → Web Sitesi Yeniden Başlatma | Konsept ve Geliştirme<br "
+"class='hide-mobile'> | Tasarım Sürümleri Yayıncısı"
+
+#: base.html:294
+msgid "Custom Web Projects with Modern Technology and Distinctive Design"
+msgstr "Modern Teknoloji ve Özgün Tasarım ile Özel Web Projeleri"
+
+#: base.html:296
+#, fuzzy
+msgid ""
+"merges technology with aesthetics, transforming client needs into "
+"extraordinary digital experiences. Each website is unique and can be "
+"extended into a Progressive Web App or equipped with administration modules "
+"if needed."
+msgstr ""
+"Teknolojiyi estetikle birleştirerek müşteri ihtiyaçlarını olağanüstü dijital"
+" deneyimlere dönüştürüyor. Her web sitesi benzersizdir ve bir Aşamalı Web "
+"Uygulamasına genişletilebilir veya gerekirse yönetim modülleri ile "
+"donatılabilir."
+
+#: base.html:309 templates/wagtailcore/page.html:509
+msgid "In-Depth Research & Insightful Strategy"
+msgstr "Derinlemesine Araştırma ve Anlayışlı Strateji"
+
+#: base.html:319 templates/wagtailcore/page.html:519
+msgid "Tailored Digital Concepts & Strategic Vision"
+msgstr "İhtiyaca Özel Dijital Konseptler ve Stratejik Vizyon"
+
+#: base.html:329 templates/wagtailcore/page.html:529
+msgid "User-Centric UI & UX Design"
+msgstr "Kullanıcı Merkezli UI ve UX Tasarımı"
+
+#: base.html:359 templates/wagtailcore/page.html:559
+msgid "Frontend Development"
+msgstr "Frontend Geliştirme"
+
+#: base.html:369 templates/wagtailcore/page.html:569
+msgid "Animations & Interactions"
+msgstr "Animasyonlar ve Etkileşimler"
+
+#: base.html:379 templates/wagtailcore/page.html:579
+msgid "Admin System & Backend"
+msgstr "Yönetici Sistemi ve Arka Uç"
+
+#: base.html:389 templates/wagtailcore/page.html:589
+msgid "Support & Maintaining"
+msgstr "Destek ve Bakım"
+
+#: base.html:399
+msgid "start project"
+msgstr "Projeyi başlat"
+
+#: base.html:400
+msgid "Los!"
+msgstr "Los!"
+
+#: base.html:438 templates/wagtailcore/page.html:616
+msgid "That's"
+msgstr "Yani"
+
+#: base.html:451 templates/wagtailcore/page.html:628
+msgid "passion & profession"
+msgstr "Tutku ve Meslek"
+
+#: base.html:462
+msgid "LOTFI KANOUNI, <br>FSDev & Designer, SEO & Marketing"
+msgstr "LOTFI KANOUNI, <br>FSDev ve Tasarımcı, SEO ve Pazarlama"
+
+#: base.html:480 templates/wagtailcore/page.html:788
+msgid "Fullstack Developer"
+msgstr "Fullstack Geliştirici"
+
+#: base.html:553 templates/wagtailcore/page.html:844
+msgid "Expertise in:"
+msgstr "Uzmanlık alanları:"
+
+#: base.html:556 base.html:557 base.html:558
+#: templates/wagtailcore/page.html:847
+msgid ""
+"Django, Flask, PaaS APIs, LLM Models, Hosting Solutions, Server Development,"
+" and more – Providing high-performance, scalable solutions for top-tier "
+"clients – Thanks!"
+msgstr ""
+"Django, Flask, PaaS API'leri, LLM Modelleri, Barındırma Çözümleri, Sunucu "
+"Geliştirme ve daha fazlası - Üst düzey müşteriler için yüksek performanslı, "
+"ölçeklenebilir çözümler sunmak - Teşekkürler!"
+
+#: base.html:586
+msgid "NewGen Web Design"
+msgstr "Yeni Nesil Web Tasarım"
+
+#: templates/basedoc.html:260
+msgid "Related"
+msgstr "İlgili"
+
+#: templates/instagram_post_page.html:10 templates/pengaa/pengaa.html:1789
+msgid "Instagram"
+msgstr "Instagram'da Paylaş"
+
+#: templates/instagram_post_page.html:81 templates/instagram_post_page.html:82
+msgid "logo"
+msgstr "logo"
+
+#: templates/instagram_post_page.html:90 templates/pengaa/pengaa.html:304
+#: templates/pengaa/pengaa.html:326 templates/pengaa/pengaa.html:384
+#: templates/pengaa/pengaa.html:406 templates/pengaa/pengaa.html:489
+#: templates/pengaa/pengaa.html:511
+msgid "Home"
+msgstr "Ev"
+
+#: templates/instagram_post_page.html:96
+#: templates/instagram_post_page.html:204
+#: templates/instagram_post_page.html:257
+#: templates/instagram_post_page.html:259 templates/pengaa/pengaa.html:1868
+msgid "Search"
+msgstr "Aramak"
+
+#: templates/instagram_post_page.html:102
+msgid "Explore"
+msgstr "Keşfetmek"
+
+#: templates/instagram_post_page.html:108
+msgid "Reels"
+msgstr "Makara"
+
+#: templates/instagram_post_page.html:114
+msgid "Messages"
+msgstr "Ileti"
+
+#: templates/instagram_post_page.html:120
+#: templates/instagram_post_page.html:295
+msgid "Notifications"
+msgstr "Bildirim"
+
+#: templates/instagram_post_page.html:126
+msgid "Create"
+msgstr "Yaratmak"
+
+#: templates/instagram_post_page.html:133
+msgid "Profile"
+msgstr "Profil"
+
+#: templates/instagram_post_page.html:143
+msgid "More"
+msgstr "Daha"
+
+#: templates/instagram_post_page.html:147
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: templates/instagram_post_page.html:151
+msgid "Your activity"
+msgstr "Etkinliğiniz"
+
+#: templates/instagram_post_page.html:155
+msgid "Saved"
+msgstr "Kaydedilmiş"
+
+#: templates/instagram_post_page.html:159
+msgid "Switch appearance"
+msgstr "Görünümü değiştir"
+
+#: templates/instagram_post_page.html:163
+msgid "Report a problem"
+msgstr "Sorun bildirme"
+
+#: templates/instagram_post_page.html:167
+msgid "Switch accounts"
+msgstr "Hesap değiştirme"
+
+#: templates/instagram_post_page.html:170
+msgid "Log out"
+msgstr "Oturumu kapat"
+
+#: templates/instagram_post_page.html:188
+#: templates/instagram_post_page.html:227
+msgid "Following"
+msgstr "Ertesi"
+
+#: templates/instagram_post_page.html:192
+#: templates/instagram_post_page.html:231
+msgid "Favorites"
+msgstr "Sık kullanılanlar"
+
+#: templates/instagram_post_page.html:202
+msgid "search"
+msgstr "aramak"
+
+#: templates/instagram_post_page.html:263
+msgid "Recent"
+msgstr "Yeni"
+
+#: templates/instagram_post_page.html:264
+msgid "Clear all"
+msgstr "Tümünü temizle"
+
+#: templates/instagram_post_page.html:274
+#: templates/instagram_post_page.html:443
+msgid "Dent-i Delil Health Group"
+msgstr "Dent-i Delil Sağlık Grubu"
+
+#: templates/instagram_post_page.html:275
+#: templates/instagram_post_page.html:444
+msgid "Médecine et santé"
+msgstr "Médecine et santé"
+
+#: templates/instagram_post_page.html:281
+msgid "plus"
+msgstr "artı"
+
+#: templates/instagram_post_page.html:306
+#: templates/instagram_post_page.html:326
+#: templates/instagram_post_page.html:368
+#: templates/instagram_post_page.html:410
+msgid "started following you."
+msgstr "seni takip etmeye başladı."
+
+#: templates/instagram_post_page.html:313
+#: templates/instagram_post_page.html:333
+#: templates/instagram_post_page.html:375
+#: templates/instagram_post_page.html:417
+msgid "Follow"
+msgstr "Takip etmek"
+
+#: templates/instagram_post_page.html:347
+#: templates/instagram_post_page.html:389
+msgid "liked your story."
+msgstr "hikayeni beğendim."
+
+#: templates/instagram_post_page.html:435
+msgid "Let's Chat!"
+msgstr "Hadi Sohbet Edelim!"
+
+#: templates/instagram_post_page.html:439
+msgid "post"
+msgstr "Yayınla"
+
+#: templates/instagram_post_page.html:440
+msgid "followers"
+msgstr "Takipçi -leri"
+
+#: templates/instagram_post_page.html:441
+msgid "following"
+msgstr "ertesi"
+
+#: templates/instagram_post_page.html:465
+msgid "Our Clinic"
+msgstr "Kliniğimiz"
+
+#: templates/instagram_post_page.html:471
+msgid "Our Patients"
+msgstr "Hastalarımız"
+
+#: templates/instagram_post_page.html:477
+msgid "Zirconium"
+msgstr "Zirkonyum"
+
+#: templates/instagram_post_page.html:483
+msgid "Emax"
+msgstr "Emax (Elma)"
+
+#: templates/instagram_post_page.html:489
+msgid "Our Dentists"
+msgstr "Diş Hekimlerimiz"
+
+#: templates/instagram_post_page.html:495
+msgid "Esenler"
+msgstr "Esenler"
+
+#: templates/instagram_post_page.html:501
+msgid "Beylikdizü"
+msgstr "Beylikdizü"
+
+#: templates/instagram_post_page.html:513
+msgid "New"
+msgstr "Yeni"
+
+#: templates/instagram_post_page.html:526
+msgid "POSTS"
+msgstr "MESAJ"
+
+#: templates/instagram_post_page.html:532
+msgid "SAVED"
+msgstr "KAYDEDİLMİŞ"
+
+#: templates/instagram_post_page.html:538
+msgid "TAGGED"
+msgstr "TAGGED"
+
+#: templates/instagram_post_page.html:591
+msgid "Post Details"
+msgstr "Gönderi Detayları"
+
+#: templates/instagram_post_page.html:610
+msgid "Create new post"
+msgstr "Yeni gönderi oluştur"
+
+#: templates/instagram_post_page.html:616
+msgid "upload"
+msgstr "karşıya yükleme"
+
+#: templates/instagram_post_page.html:617
+msgid "Drag photos and videos here"
+msgstr "Fotoğrafları ve videoları buraya sürükleyin"
+
+#: templates/instagram_post_page.html:619
+msgid "select from your computer"
+msgstr "Bilgisayarınızdan seçin"
+
+#: templates/instagram_post_page.html:640
+msgid "write your email"
+msgstr "E-postanızı yazın"
+
+#: templates/pengaa/pengaa.html:186 templates/pengaa/template_file.html:185
+msgid "Leading Digital Marketing Agency - Boost Your Online Presence"
+msgstr "Lider Dijital Pazarlama Ajansı - Çevrimiçi Varlığınızı Artırın"
+
+#: templates/pengaa/pengaa.html:187 templates/pengaa/template_file.html:186
+msgid ""
+"Empower your brand with your Leading Digital Marketing Agency. From "
+"strategic planning to execution, Pengaa delivers tailored strategies"
+msgstr ""
+"Lider Dijital Pazarlama Ajansınız ile markanızı güçlendirin. Stratejik "
+"planlamadan uygulamaya kadar, Pengaa özel stratejiler sunar"
+
+#: templates/pengaa/pengaa.html:305 templates/pengaa/pengaa.html:327
+#: templates/pengaa/pengaa.html:385 templates/pengaa/pengaa.html:407
+#: templates/pengaa/pengaa.html:490 templates/pengaa/pengaa.html:512
+msgid "Marketing Solutions"
+msgstr "Pazarlama Çözümleri"
+
+#: templates/pengaa/pengaa.html:306 templates/pengaa/pengaa.html:328
+#: templates/pengaa/pengaa.html:386 templates/pengaa/pengaa.html:408
+#: templates/pengaa/pengaa.html:491 templates/pengaa/pengaa.html:513
+msgid "Who We Are"
+msgstr "Biz Kimiz"
+
+#: templates/pengaa/pengaa.html:308 templates/pengaa/pengaa.html:330
+#: templates/pengaa/pengaa.html:388 templates/pengaa/pengaa.html:410
+#: templates/pengaa/pengaa.html:493 templates/pengaa/pengaa.html:515
+msgid "About Us"
+msgstr "Hakkımızda"
+
+#: templates/pengaa/pengaa.html:309 templates/pengaa/pengaa.html:331
+#: templates/pengaa/pengaa.html:389 templates/pengaa/pengaa.html:411
+#: templates/pengaa/pengaa.html:494 templates/pengaa/pengaa.html:516
+msgid "Meet the Team"
+msgstr "Ekiple Tanışın"
+
+#: templates/pengaa/pengaa.html:310 templates/pengaa/pengaa.html:332
+#: templates/pengaa/pengaa.html:390 templates/pengaa/pengaa.html:412
+#: templates/pengaa/pengaa.html:495 templates/pengaa/pengaa.html:517
+#: templates/pengaa/pengaa.html:1217 templates/pengaa/pengaa.html:1727
+#: templates/pengaa/pengaa.html:1739
+msgid "Blog"
+msgstr "Bloglar"
+
+#: templates/pengaa/pengaa.html:313 templates/pengaa/pengaa.html:335
+#: templates/pengaa/pengaa.html:393 templates/pengaa/pengaa.html:415
+#: templates/pengaa/pengaa.html:498 templates/pengaa/pengaa.html:520
+msgid "Pricing"
+msgstr "Fiyatlandırma"
+
+#: templates/pengaa/pengaa.html:316 templates/pengaa/pengaa.html:338
+#: templates/pengaa/pengaa.html:396 templates/pengaa/pengaa.html:418
+#: templates/pengaa/pengaa.html:501 templates/pengaa/pengaa.html:523
+#: templates/pengaa/pengaa.html:1128 templates/pengaa/pengaa.html:1730
+#: templates/pengaa/pengaa.html:1742 templates/pengaa/template_file.html:1127
+msgid "Success Stories"
+msgstr "Başarı Hikayeleri"
+
+#: templates/pengaa/pengaa.html:317 templates/pengaa/pengaa.html:339
+#: templates/pengaa/pengaa.html:397 templates/pengaa/pengaa.html:419
+#: templates/pengaa/pengaa.html:502 templates/pengaa/pengaa.html:524
+#: templates/pengaa/pengaa.html:1731 templates/pengaa/pengaa.html:1743
+msgid "Awards"
+msgstr "Ödülleri"
+
+#: templates/pengaa/pengaa.html:320 templates/pengaa/pengaa.html:342
+#: templates/pengaa/pengaa.html:400 templates/pengaa/pengaa.html:422
+#: templates/pengaa/pengaa.html:505 templates/pengaa/pengaa.html:527
+#: templates/pengaa/pengaa.html:1732 templates/pengaa/pengaa.html:1744
+msgid "Contact"
+msgstr "Temas"
+
+#: templates/pengaa/pengaa.html:323 templates/pengaa/pengaa.html:403
+#: templates/pengaa/pengaa.html:508 templates/pengaa/pengaa.html:1670
+#: templates/pengaa/pengaa.html:1685 templates/pengaa/pengaa.html:1700
+#: templates/pengaa/pengaa.html:1715 templates/pengaa/pengaa.html:1735
+#: templates/pengaa/pengaa.html:1771
+msgid "Menu"
+msgstr "Menü"
+
+#: templates/pengaa/pengaa.html:357 templates/pengaa/pengaa.html:437
+msgid "Free audit"
+msgstr "Ücretsiz denetim"
+
+#: templates/pengaa/pengaa.html:458
+msgid "Get a Free Audit"
+msgstr "Ücretsiz Denetim Alın"
+
+#: templates/pengaa/pengaa.html:577 templates/pengaa/template_file.html:576
+msgid "Marketing Without Borders"
+msgstr "Sınır Tanımayan Pazarlama"
+
+#: templates/pengaa/pengaa.html:582 templates/pengaa/template_file.html:581
+msgid ""
+"Amplify your business with our data-centric, performance-driven Digital "
+"Marketing Solutions."
+msgstr ""
+"Veri merkezli, performans odaklı Dijital Pazarlama Çözümlerimizle işinizi "
+"güçlendirin."
+
+#: templates/pengaa/pengaa.html:598 templates/pengaa/template_file.html:597
+msgid "Award Wining Agency"
+msgstr "Ödül Kazanan Ajans"
+
+#: templates/pengaa/pengaa.html:634 templates/pengaa/template_file.html:633
+msgid "Get Your Free Audit Today"
+msgstr "Ücretsiz Denetiminizi Bugün Alın"
+
+#: templates/pengaa/pengaa.html:643
+msgid "Let’s Talk"
+msgstr "Hadi Konuşalım"
+
+#: templates/pengaa/pengaa.html:684
+msgid "Connect our  experts"
+msgstr "Uzmanlarımızla iletişime geçin"
+
+#: templates/pengaa/pengaa.html:708
+msgid "1,596,000"
+msgstr "1,596,000"
+
+#: templates/pengaa/pengaa.html:712
+msgid "Revenue driven"
+msgstr "Gelir odaklı"
+
+#: templates/pengaa/pengaa.html:712
+msgid "for our clients"
+msgstr "Müşterilerimiz için"
+
+#: templates/pengaa/pengaa.html:763 templates/pengaa/pengaa.html:1483
+msgid "356+ Client reviews"
+msgstr "356+ Müşteri yorumu"
+
+#: templates/pengaa/pengaa.html:775 templates/pengaa/template_file.html:774
+msgid "What we do"
+msgstr "Ne yapıyoruz"
+
+#: templates/pengaa/pengaa.html:779 templates/pengaa/template_file.html:778
+msgid "We solve digital challenges ( Pengaa Digital Marketing Agency )"
+msgstr "Dijital zorlukları çözüyoruz ( Pengaa Dijital Pazarlama Ajansı )"
+
+#: templates/pengaa/pengaa.html:787
+msgid ""
+"Together, we help our clients achieve tangible, measurable results. Focused "
+"on business outcomes — we bring a unique set of expertise and skills to the "
+"party."
+msgstr ""
+"Birlikte, müşterilerimizin somut, ölçülebilir sonuçlar elde etmelerine "
+"yardımcı oluyoruz. İş sonuçlarına odaklanarak — partiye benzersiz bir "
+"uzmanlık ve beceri seti getiriyoruz."
+
+#: templates/pengaa/pengaa.html:794
+msgid "More about us"
+msgstr "Hakkımızda daha fazla bilgi"
+
+#: templates/pengaa/pengaa.html:818 templates/pengaa/template_file.html:817
+msgid "Better audiences"
+msgstr "Daha iyi kitleler"
+
+#: templates/pengaa/pengaa.html:822 templates/pengaa/pengaa.html:842
+#: templates/pengaa/pengaa.html:862
+msgid ""
+"Our proprietary solution leverages an in-house database of 260M+ customers "
+"and 2,000+ custom variables to build custom predictive models to drive "
+"business growth — from only the best customers."
+msgstr ""
+"Tescilli çözümümüz, yalnızca en iyi müşterilerden iş büyümesini sağlamak "
+"için özel tahmine dayalı modeller oluşturmak için 260M+ müşteriden ve 2.000+"
+" özel değişkenden oluşan bir şirket içi veritabanından yararlanır."
+
+#: templates/pengaa/pengaa.html:838 templates/pengaa/template_file.html:837
+msgid "Better analytics"
+msgstr "Daha iyi analizler"
+
+#: templates/pengaa/pengaa.html:858 templates/pengaa/template_file.html:857
+msgid "Better outcomes"
+msgstr "Daha iyi sonuçlar"
+
+#: templates/pengaa/pengaa.html:882 templates/pengaa/template_file.html:881
+msgid "Our Capabilities"
+msgstr "Yeteneklerimiz"
+
+#: templates/pengaa/pengaa.html:886 templates/pengaa/template_file.html:885
+msgid "Data-driven, customer-centric digital services"
+msgstr "Veriye dayalı, müşteri odaklı dijital hizmetler"
+
+#: templates/pengaa/pengaa.html:895
+msgid "View all solutions"
+msgstr "Tüm çözümleri görüntüleyin"
+
+#: templates/pengaa/pengaa.html:918 templates/pengaa/pengaa.html:1666
+#: templates/pengaa/pengaa.html:1673
+msgid "Paid search marketing"
+msgstr "Ücretli arama pazarlaması"
+
+#: templates/pengaa/pengaa.html:922
+msgid ""
+"Craft campaigns — built just for your business — to ensure real and "
+"quantifiable ROI. Digital Marketing Agency Responsibility"
+msgstr ""
+"Gerçek ve ölçülebilir yatırım getirisi sağlamak için yalnızca işletmeniz "
+"için oluşturulmuş kampanyalar oluşturun. Dijital Pazarlama Ajansı "
+"Sorumluluğu"
+
+#: templates/pengaa/pengaa.html:934 templates/pengaa/pengaa.html:973
+#: templates/pengaa/pengaa.html:1012 templates/pengaa/pengaa.html:1051
+msgid "Learn more"
+msgstr "Daha fazla bilgi edinin"
+
+#: templates/pengaa/pengaa.html:957 templates/pengaa/pengaa.html:1667
+#: templates/pengaa/pengaa.html:1674
+msgid "Search engine optimization"
+msgstr "Arama motoru optimizasyonu"
+
+#: templates/pengaa/pengaa.html:961
+msgid ""
+"Maintain your best spot on the search results page, so you can find new "
+"customers and re-engage loyal ones."
+msgstr ""
+"Arama sonuçları sayfasındaki en iyi yerinizi koruyun, böylece yeni "
+"müşteriler bulabilir ve sadık müşterilerle yeniden etkileşim kurabilirsiniz."
+
+#: templates/pengaa/pengaa.html:996 templates/pengaa/pengaa.html:1681
+#: templates/pengaa/pengaa.html:1688
+msgid "Email marketing"
+msgstr "E-posta pazarlama"
+
+#: templates/pengaa/pengaa.html:1000
+msgid ""
+"When it comes to reaching your target audience, you can’t get much closer "
+"than direct to their inboxes. The best from Pengaa Digital Marketing Agency"
+msgstr ""
+"Hedef kitlenize ulaşmak söz konusu olduğunda, gelen kutularına doğrudan "
+"ulaşmaktan daha fazla yaklaşamazsınız. Pengaa Dijital Pazarlama Ajansı'ndan "
+"en iyisi"
+
+#: templates/pengaa/pengaa.html:1035 templates/pengaa/pengaa.html:1682
+#: templates/pengaa/pengaa.html:1689
+msgid "Conversion rate optimization"
+msgstr "Dönüşüm oranı optimizasyonu"
+
+#: templates/pengaa/pengaa.html:1039
+msgid ""
+"Craft campaigns — built just for your business — to ensure real and "
+"quantifiable ROI."
+msgstr ""
+"Gerçek ve ölçülebilir yatırım getirisi sağlamak için yalnızca işletmeniz "
+"için oluşturulmuş kampanyalar oluşturun."
+
+#: templates/pengaa/pengaa.html:1074 templates/pengaa/pengaa.html:1079
+#: templates/pengaa/template_file.html:1073
+#: templates/pengaa/template_file.html:1078
+msgid "Transparency"
+msgstr "Şeffaflık"
+
+#: templates/pengaa/pengaa.html:1075 templates/pengaa/pengaa.html:1081
+#: templates/pengaa/template_file.html:1074
+#: templates/pengaa/template_file.html:1080
+msgid "Team of experts"
+msgstr "Uzmanlardan oluşan ekip"
+
+#: templates/pengaa/pengaa.html:1076 templates/pengaa/pengaa.html:1083
+#: templates/pengaa/template_file.html:1075
+#: templates/pengaa/template_file.html:1082
+msgid "Results"
+msgstr "Sonuç -ları"
+
+#: templates/pengaa/pengaa.html:1080 templates/pengaa/template_file.html:1079
+#, python-format
+msgid "100%% Campaign transparency"
+msgstr "0 Kampanya şeffaflığı"
+
+#: templates/pengaa/pengaa.html:1080 templates/pengaa/template_file.html:1079
+msgid ""
+"We cultivate an environment of transparency and communication in all we do. "
+"You don’t have to wonder what is going on with your campaign – we will keep "
+"you in the loop and in control."
+msgstr ""
+"Yaptığımız her şeyde bir şeffaflık ve iletişim ortamı geliştiriyoruz. "
+"Kampanyanızda neler olup bittiğini merak etmenize gerek yok - sizi döngüde "
+"ve kontrol altında tutacağız."
+
+#: templates/pengaa/pengaa.html:1082 templates/pengaa/template_file.html:1081
+msgid "Friendly team of experts"
+msgstr "Güler yüzlü uzman ekip"
+
+#: templates/pengaa/pengaa.html:1082 templates/pengaa/template_file.html:1081
+msgid ""
+"Our experts and professionals are never more than an email or a phone call "
+"away. Or, if you prefer to talk face to face, drop by our office to discuss "
+"your plans and goals over a cup of coffee. We are here for you."
+msgstr ""
+"Uzmanlarımız ve profesyonellerimiz bir e-posta veya bir telefon "
+"görüşmesinden öteye gitmez. Ya da yüz yüze konuşmayı tercih ederseniz, bir "
+"fincan kahve eşliğinde planlarınızı ve hedeflerinizi tartışmak için "
+"ofisimize uğrayın. Sizin için buradayız."
+
+#: templates/pengaa/pengaa.html:1084 templates/pengaa/template_file.html:1083
+msgid "Choose a partner that understands you"
+msgstr "Sizi anlayan bir iş ortağı seçin"
+
+#: templates/pengaa/pengaa.html:1084 templates/pengaa/template_file.html:1083
+msgid ""
+"All our decisions are based on your goals and concerns. Whether it’s website"
+" design, SEO, PPC, or anything else, we want to understand what keeps you up"
+" at night so we can deliver the business results you seek."
+msgstr ""
+"Tüm kararlarımız hedeflerinize ve endişelerinize dayanmaktadır. Web sitesi "
+"tasarımı, SEO, PPC veya başka bir şey olsun, aradığınız iş sonuçlarını "
+"sunabilmemiz için sizi geceleri neyin ayakta tuttuğunu anlamak istiyoruz."
+
+#: templates/pengaa/pengaa.html:1099 templates/pengaa/template_file.html:1098
+msgid "Why Pengaa is your top-choice"
+msgstr "Pengaa neden en iyi seçiminiz?"
+
+#: templates/pengaa/pengaa.html:1103
+msgid ""
+"We are a five-star rated holistic full-service Digital Marketing Agency, "
+"serving thousands of clients. Our digital agency covers all aspects of "
+"internet marketing: SEO, social media, and PPC management, all the way to "
+"email marketing, website design, application development, and web "
+"development."
+msgstr ""
+"Binlerce müşteriye hizmet veren beş yıldızlı bütünsel bir tam hizmet Dijital"
+" Pazarlama Ajansıyız. Dijital ajansımız internet pazarlamacılığının tüm "
+"yönlerini kapsar: SEO, sosyal medya ve PPC yönetimi, e-posta pazarlaması, "
+"web sitesi tasarımı, uygulama geliştirme ve web geliştirmeye kadar."
+
+#: templates/pengaa/pengaa.html:1112
+msgid "Get Proposal"
+msgstr "Teklif Al"
+
+#: templates/pengaa/pengaa.html:1132 templates/pengaa/template_file.html:1131
+msgid "Our work drives businesses forward"
+msgstr "Çalışmalarımız işletmeleri ileriye taşıyor"
+
+#: templates/pengaa/pengaa.html:1146
+msgid "View all"
+msgstr "Tümünü görüntüle"
+
+#: templates/pengaa/pengaa.html:1166 templates/pengaa/template_file.html:1165
+msgid "The best brands choose Pengaa"
+msgstr "En iyi markalar Pengaa'yı tercih ediyor"
+
+#: templates/pengaa/pengaa.html:1221
+msgid "Think further with our expert insights"
+msgstr "Uzman görüşlerimizle daha fazla düşünün"
+
+#: templates/pengaa/pengaa.html:1233
+msgid "The proof is in the numbers"
+msgstr "Kanıt sayılarda"
+
+#: templates/pengaa/pengaa.html:1255
+#, python-format
+msgid "37%%"
+msgstr "37%%"
+
+#: templates/pengaa/pengaa.html:1267
+msgid "Average increase in sales for our clients"
+msgstr "Müşterilerimiz için satışlarda ortalama artış"
+
+#: templates/pengaa/pengaa.html:1289
+#, python-format
+msgid "100%%"
+msgstr "100%%"
+
+#: templates/pengaa/pengaa.html:1301
+msgid "Google and Facebook-certified team"
+msgstr "Google ve Facebook sertifikalı ekip"
+
+#: templates/pengaa/pengaa.html:1323
+#, python-format
+msgid "81%%"
+msgstr "81%%"
+
+#: templates/pengaa/pengaa.html:1335
+msgid "Results improved compared to previous agencies"
+msgstr "Sonuçlar önceki ajanslara göre daha iyi"
+
+#: templates/pengaa/pengaa.html:1343
+msgid "282,000+"
+msgstr "282,000+"
+
+#: templates/pengaa/pengaa.html:1347
+msgid "Leads generated so far…"
+msgstr "Şimdiye kadar oluşturulan potansiyel müşteriler..."
+
+#: templates/pengaa/pengaa.html:1356
+msgid "Contact us"
+msgstr "Bize ulaşın"
+
+#: templates/pengaa/pengaa.html:1391
+msgid ""
+"Exceptional service! Pengaa exceeded my expectations with their prompt and "
+"efficient response. The team was highly professional, and their attention to"
+" detail truly sets them apart. I highly recommend Pengaa for their "
+"outstanding customer service."
+msgstr ""
+"Olağanüstü hizmet! Pengaa, hızlı ve etkili yanıtlarıyla beklentilerimi aştı."
+" Ekip son derece profesyoneldi ve detaylara gösterdikleri özen onları "
+"gerçekten farklı kılıyor. Olağanüstü müşteri hizmetleri için Pengaa'yı "
+"şiddetle tavsiye ederim."
+
+#: templates/pengaa/pengaa.html:1392
+msgid "Edward Kennedy"
+msgstr "Edward Kennedy'nin fotoğrafı."
+
+#: templates/pengaa/pengaa.html:1392
+msgid "Director, Client Experience"
+msgstr "Direktör, Müşteri Deneyimi"
+
+#: templates/pengaa/pengaa.html:1401
+msgid ""
+"Pengaa has been a game-changer for my business. Their innovative solutions "
+"and commitment to customer satisfaction are unparalleled. I appreciate the "
+"seamless experience and the personalized approach they bring to every "
+"interaction. Thank you, Pengaa!"
+msgstr ""
+"Pengaa, işim için oyunun kurallarını değiştirdi. Yenilikçi çözümleri ve "
+"müşteri memnuniyetine olan bağlılıkları benzersizdir. Her etkileşime "
+"getirdikleri kusursuz deneyimi ve kişiselleştirilmiş yaklaşımı takdir "
+"ediyorum. Teşekkürler Pengaa!"
+
+#: templates/pengaa/pengaa.html:1402
+msgid "Edith Sorelle"
+msgstr "Edith Sorelle"
+
+#: templates/pengaa/pengaa.html:1402
+msgid "Sales argent"
+msgstr "Satış argent"
+
+#: templates/pengaa/pengaa.html:1411
+msgid ""
+"I've had the pleasure of working with Pengaa, and I must say they are a "
+"reliable partner. Their team is not only knowledgeable but also incredibly "
+"responsive. I feel confident knowing that Pengaa is there to support my "
+"business needs. Five stars!"
+msgstr ""
+"Pengaa ile çalışmaktan zevk aldım ve güvenilir bir ortak olduklarını "
+"söylemeliyim. Ekipleri sadece bilgili değil, aynı zamanda inanılmaz derecede"
+" duyarlı. Pengaa'nın iş ihtiyaçlarımı desteklemek için orada olduğunu "
+"bilerek kendime güveniyorum. Beş yıldız!"
+
+#: templates/pengaa/pengaa.html:1412
+msgid "Francess Liliane"
+msgstr "Francess Liliane"
+
+#: templates/pengaa/pengaa.html:1412
+msgid "Customer"
+msgstr "Müşteri"
+
+#: templates/pengaa/pengaa.html:1421
+msgid ""
+"Pengaa has transformed the way we operate. The user-friendly interface and "
+"intuitive features make it easy to navigate, saving us time and effort. The "
+"level of support we receive from the Pengaa team is top-notch. We're "
+"thrilled to be working with such a forward-thinking company."
+msgstr ""
+"Pengaa, çalışma şeklimizi değiştirdi. Kullanıcı dostu arayüz ve sezgisel "
+"özellikler, gezinmeyi kolaylaştırarak zamandan ve emekten tasarruf etmemizi "
+"sağlar. Pengaa ekibinden aldığımız destek seviyesi birinci sınıf. Böylesine "
+"ileri görüşlü bir şirketle çalışmaktan heyecan duyuyoruz."
+
+#: templates/pengaa/pengaa.html:1422
+msgid "John Doe"
+msgstr "John Doe"
+
+#: templates/pengaa/pengaa.html:1422
+msgid "CEO"
+msgstr "Ceo 'su"
+
+#: templates/pengaa/pengaa.html:1429
+msgid "Previous"
+msgstr "Önceki"
+
+#: templates/pengaa/pengaa.html:1432
+msgid "Next"
+msgstr "Önümüzdeki"
+
+#: templates/pengaa/pengaa.html:1520
+msgid "View all reviews"
+msgstr "Tüm değerlendirmeleri görüntüle"
+
+#: templates/pengaa/pengaa.html:1562
+msgid ""
+"See how we can help your business grow with Our Digital Marketing Agency"
+msgstr ""
+"Dijital Pazarlama Ajansımızla işletmenizin büyümesine nasıl yardımcı "
+"olabileceğimizi görün"
+
+#: templates/pengaa/pengaa.html:1570
+msgid "Ready to speak with a marketing expert? Give us a ring"
+msgstr "Bir pazarlama uzmanıyla konuşmaya hazır mısınız? Bize bir yüzük ver"
+
+#: templates/pengaa/pengaa.html:1577
+msgid "+90 536 219 62 10"
+msgstr "+90 536 219 62 10"
+
+#: templates/pengaa/pengaa.html:1590
+msgid "Get a Free audit"
+msgstr "Ücretsiz denetim alın"
+
+#: templates/pengaa/pengaa.html:1613
+msgid "A partner, not a vendor"
+msgstr "Satıcı değil, iş ortağı"
+
+#: templates/pengaa/pengaa.html:1637
+msgid "6.7"
+msgstr "6.7"
+
+#: templates/pengaa/pengaa.html:1641
+msgid "/ Average ROAS"
+msgstr "/ Ortalama ROAS"
+
+#: templates/pengaa/pengaa.html:1645
+msgid "across our 100+ Global Clients on SEO, PPC &amp; Social"
+msgstr "SEO, PPC ve 100+ Küresel Müşterimiz arasında Sosyal"
+
+#: templates/pengaa/pengaa.html:1661
+msgid "Solutions"
+msgstr "Çözümleri"
+
+#: templates/pengaa/pengaa.html:1696 templates/pengaa/pengaa.html:1703
+#: templates/pengaa/pengaa.html:1995
+msgid "Social Media Marketing"
+msgstr "Sosyal Medya Pazarlaması"
+
+#: templates/pengaa/pengaa.html:1697 templates/pengaa/pengaa.html:1704
+msgid "Google shopping"
+msgstr "Google'da alışveriş"
+
+#: templates/pengaa/pengaa.html:1711 templates/pengaa/pengaa.html:1718
+msgid "Influencer marketing"
+msgstr "Etkileyici pazarlama"
+
+#: templates/pengaa/pengaa.html:1712 templates/pengaa/pengaa.html:1719
+msgid "Amazon shopping"
+msgstr "Amazon'da alışveriş"
+
+#: templates/pengaa/pengaa.html:1726 templates/pengaa/pengaa.html:1738
+msgid "About"
+msgstr "Hakkında"
+
+#: templates/pengaa/pengaa.html:1728 templates/pengaa/pengaa.html:1740
+msgid "Careers"
+msgstr "Kariyer"
+
+#: templates/pengaa/pengaa.html:1729 templates/pengaa/pengaa.html:1741
+msgid "Team"
+msgstr "Takım"
+
+#: templates/pengaa/pengaa.html:1758
+msgid "© 2025"
+msgstr "© 2025 Yılı"
+
+#: templates/pengaa/pengaa.html:1762
+msgid "Pengaa"
+msgstr "Pengaa Gölü"
+
+#: templates/pengaa/pengaa.html:1767 templates/pengaa/pengaa.html:1774
+msgid "Terms &amp; Conditions"
+msgstr "Şartlar &amp; Koşul -ları"
+
+#: templates/pengaa/pengaa.html:1768 templates/pengaa/pengaa.html:1775
+msgid "Privacy Policy"
+msgstr "Gizlilik Politikası"
+
+#: templates/pengaa/pengaa.html:1794
+msgid "Twitter"
+msgstr "Heyecan"
+
+#: templates/pengaa/pengaa.html:1799
+msgid "Facebook"
+msgstr "Bizi Arayın"
+
+#: templates/pengaa/pengaa.html:1804
+msgid "Youtube"
+msgstr "Youtube'da T"
+
+#: templates/pengaa/pengaa.html:1824
+msgid "top"
+msgstr "Sayfanın Üstü"
+
+#: templates/pengaa/pengaa.html:1833
+msgid "WhatsApp us"
+msgstr "Bize WhatsApp'tan ulaşın"
+
+#: templates/pengaa/pengaa.html:1903
+msgid "Paid Search Marketing"
+msgstr "Ücretli Arama Pazarlaması"
+
+#: templates/pengaa/pengaa.html:1925
+msgid "Search Engine Optimization"
+msgstr "Arama Motoru Optimizasyonu"
+
+#: templates/pengaa/pengaa.html:1947
+msgid "Email Marketing"
+msgstr "E-posta pazarlama"
+
+#: templates/pengaa/pengaa.html:1969
+msgid "Conversion Rate Optimization"
+msgstr "Dönüşüm Oranı Optimizasyonu"
+
+#: templates/pengaa/pengaa.html:2018
+msgid "Web Delopment"
+msgstr "Web Departmanı"
+
+#: templates/pengaa/pengaa.html:2040
+msgid "Influencer Marketing"
+msgstr "Influencer Pazarlama"
+
+#: templates/pengaa/pengaa.html:2062
+msgid "Amazon Shopping"
+msgstr "Amazon'da Alışveriş Mekanları"
+
+#: templates/pengaa/pengaa.html:2088
+msgid "Explore all solutions"
+msgstr "Tüm çözümleri keşfedin"
+
+#: templates/wagtailcore/page.html:27
+msgid " Crafting Digital artister"
+msgstr " Dijital sanat eseri işçiliği"
+
+#: templates/wagtailcore/page.html:29
+msgid ""
+"Development of unique digital experiences with precision & love ♥ Fabienne "
+"Bielmann, Interactive Developer, Freiburg Fribourg Schweiz CH"
+msgstr ""
+"Hassasiyet ve sevgi ♥ ile benzersiz dijital deneyimlerin geliştirilmesi "
+"Fabienne Bielmann, İnteraktif Geliştirici, Freiburg Fribourg Schweiz CH"
+
+#: templates/wagtailcore/page.html:288
+msgid "↑"
+msgstr "↑"
+
+#: templates/wagtailcore/page.html:336
+msgid "Unique"
+msgstr "Eşsiz"
+
+#: templates/wagtailcore/page.html:336
+msgid "Digital"
+msgstr "Dijital"
+
+#: templates/wagtailcore/page.html:336
+msgid "artistery"
+msgstr "Sanat"
+
+#: templates/wagtailcore/page.html:357
+msgid "Why manage your website when it can manage itself?"
+msgstr "Web sitenizi kendi kendini yönetebilecekken neden yönetesiniz?"
+
+#: templates/wagtailcore/page.html:364
+msgid "Imagine a website that can listen, think, act – and REMEMBER..!!"
+msgstr ""
+"Dinleyebilen, düşünebilen, harekete geçebilen ve HATIRLAYABILEN bir web "
+"sitesi hayal edin..!!"
+
+#: templates/wagtailcore/page.html:369
+msgid ""
+"Having an AI-powered website is great—it can assist with content creation, "
+"SEO, and basic management. But what if your website was an autonomous "
+"intelligence, built to understand, adapt, and evolve with you? With MEMORY "
+"at its core, you never have to repeat yourself—once it learns your "
+"preferences, content style, and design approach, it handles everything "
+"seamlessly. The websites we create at "
+msgstr ""
+"Yapay zeka destekli bir web sitesine sahip olmak harikadır - içerik "
+"oluşturma, SEO ve temel yönetim konularında yardımcı olabilir. Peki ya web "
+"siteniz sizinle birlikte anlamak, uyum sağlamak ve gelişmek için "
+"oluşturulmuş özerk bir zeka olsaydı? Özünde MEMORY ile asla kendinizi tekrar"
+" etmek zorunda kalmazsınız - tercihlerinizi, içerik stilinizi ve tasarım "
+"yaklaşımınızı öğrendikten sonra her şeyi sorunsuz bir şekilde halleder. "
+"Oluşturduğumuz web siteleri "
+
+#: templates/wagtailcore/page.html:369 templates/wagtailcore/page.html:496
+#: templates/wagtailcore/page.html:616 templates/wagtailcore/page.html:788
+#: templates/wagtailcore/page.html:872
+msgid "lotfinity"
+msgstr "lotfinity (lotfinity)"
+
+#: templates/wagtailcore/page.html:369
+msgid ""
+" are not just AI-supported; they are AI itself—self-thinking, self-"
+"optimizing, and constantly improving. This is not just a website. This is "
+"intelligence in motion."
+msgstr ""
+" sadece yapay zeka destekli değil; bunlar yapay zekanın kendisidir - kendi "
+"kendine düşünen, kendi kendini optimize eden ve sürekli gelişen. Bu sadece "
+"bir web sitesi değil. Bu, hareket halindeki zekadır."
+
+#: templates/wagtailcore/page.html:379
+msgid "Smart & Fast : Click to Preview !"
+msgstr "Akıllı ve Hızlı: Önizlemek için tıklayın!"
+
+#: templates/wagtailcore/page.html:387
+msgid "DentiDelil International"
+msgstr "DentiDelil Uluslararası"
+
+#: templates/wagtailcore/page.html:389
+msgid ""
+"A state-of-the-art multilingual CMS-powered website designed to cater to "
+"international dental services."
+msgstr ""
+"Uluslararası dişhekimliği hizmetlerine hitap etmek için tasarlanmış, son "
+"teknoloji ürünü çok dilli CMS destekli bir web sitesi."
+
+#: templates/wagtailcore/page.html:390 templates/wagtailcore/page.html:414
+#: templates/wagtailcore/page.html:436 templates/wagtailcore/page.html:460
+msgid "Key Features:"
+msgstr "Ana Özellikler:"
+
+#: templates/wagtailcore/page.html:392
+msgid "Multilingual Support: Supports 13+ languages."
+msgstr "Çok Dilli Destek: 13+ dili destekler."
+
+#: templates/wagtailcore/page.html:393
+msgid ""
+"AI-Powered Enhancements: Integrated OpenAI GPT-4o model and Azure "
+"Translator."
+msgstr ""
+"Yapay Zeka Destekli Geliştirmeler: Entegre OpenAI GPT-4o modeli ve Azure "
+"Translator."
+
+#: templates/wagtailcore/page.html:394
+msgid "Dynamic API Integrations: JotForm, Unsplash, and more."
+msgstr "Dinamik API Entegrasyonları: JotForm, Unsplash ve daha fazlası."
+
+#: templates/wagtailcore/page.html:411
+msgid "DentiDelil App"
+msgstr "DentiDelil Uygulaması"
+
+#: templates/wagtailcore/page.html:413
+msgid "A modern, all-in-one dashboard for beauty salon management."
+msgstr ""
+"Güzellik salonu yönetimi için modern, hepsi bir arada bir gösterge paneli."
+
+#: templates/wagtailcore/page.html:416
+msgid "Appointment Scheduling: Interactive calendar with reminders."
+msgstr "Randevu Planlama: Hatırlatıcılar içeren etkileşimli takvim."
+
+#: templates/wagtailcore/page.html:417
+msgid "Client Management: Profiles and treatment histories."
+msgstr "Müşteri Yönetimi: Profiller ve tedavi geçmişleri."
+
+#: templates/wagtailcore/page.html:418
+msgid "Real-Time Analytics: Revenue, top services, and productivity tracking."
+msgstr ""
+"Gerçek Zamanlı Analitik: Gelir, en iyi hizmetler ve üretkenlik takibi."
+
+#: templates/wagtailcore/page.html:433
+msgid "Dental Management App"
+msgstr "Diş Yönetimi Uygulaması"
+
+#: templates/wagtailcore/page.html:435
+msgid "A comprehensive dental management solution."
+msgstr "Kapsamlı bir dental yönetim çözümü."
+
+#: templates/wagtailcore/page.html:438
+msgid "Patient Scheduling: Simplify appointment management for clinics."
+msgstr "Hasta Planlaması: Klinikler için randevu yönetimini basitleştirin."
+
+#: templates/wagtailcore/page.html:439
+msgid "Records Management: Secure and accessible patient records."
+msgstr "Kayıt Yönetimi: Güvenli ve erişilebilir hasta kayıtları."
+
+#: templates/wagtailcore/page.html:440
+msgid "Financial Tracking: Monitor invoices, payments, and insurance claims."
+msgstr "Finansal Takip: Faturaları, ödemeleri ve sigorta taleplerini izleyin."
+
+#: templates/wagtailcore/page.html:441
+msgid ""
+"Multilingual Support: Enable communication with patients from diverse "
+"backgrounds."
+msgstr ""
+"Çok Dilli Destek: Farklı geçmişlere sahip hastalarla iletişimi sağlayın."
+
+#: templates/wagtailcore/page.html:457
+msgid "Salon Nassnor"
+msgstr "Salon Nassnor"
+
+#: templates/wagtailcore/page.html:459
+msgid ""
+"The pro version of Salon Nassnor, offering enhanced tools for beauty "
+"professionals."
+msgstr ""
+"Güzellik profesyonelleri için gelişmiş araçlar sunan Salon Nassnor'un "
+"profesyonel sürümü."
+
+#: templates/wagtailcore/page.html:462
+msgid "Advanced Appointment System: Customizable bookings and reminders."
+msgstr ""
+"Gelişmiş Randevu Sistemi: Özelleştirilebilir rezervasyonlar ve "
+"hatırlatıcılar."
+
+#: templates/wagtailcore/page.html:463
+msgid "Inventory Management: Track beauty product availability."
+msgstr "Envanter Yönetimi: Güzellik ürününün kullanılabilirliğini takip edin."
+
+#: templates/wagtailcore/page.html:464
+msgid "Customer Relationship Management: Tools to engage and retain clients."
+msgstr ""
+"Müşteri İlişkileri Yönetimi: Müşterilerle etkileşim kurmak ve elde tutmak "
+"için araçlar."
+
+#: templates/wagtailcore/page.html:465
+msgid "Reporting Tools: Visualize revenue and staff productivity."
+msgstr "Raporlama Araçları: Geliri ve personel verimliliğini görselleştirin."
+
+#: templates/wagtailcore/page.html:484
+msgid "Your Website. Your Data. Your Control."
+msgstr "Sizin web siteniz. Sizin Verileriniz. Sizin Kontrolünüz Sizde."
+
+#: templates/wagtailcore/page.html:491
+msgid "A Website That Operates Locally, Securely, and Intelligently."
+msgstr "Yerel, güvenli ve akıllı bir şekilde çalışan bir web sitesi."
+
+#: templates/wagtailcore/page.html:496
+msgid ""
+"Unlike AI systems that rely on external APIs, every website we create at "
+msgstr ""
+"Harici API'lere dayanan AI sistemlerinin aksine, oluşturduğumuz her web "
+"sitesi "
+
+#: templates/wagtailcore/page.html:496
+msgid ""
+" runs entirely on private hardware  either yours or ours—ensuring total "
+"independence and security. Your website, your chatbot, and every lead or "
+"interaction it handles remain stored in a dedicated environment. No third-"
+"party access, no unnecessary data exposure—only YOU control your digital "
+"ecosystem."
+msgstr ""
+" Tamamen size veya bize ait özel donanımla çalışır ve tam bağımsızlık ve "
+"güvenlik sağlar. Web siteniz, sohbet botunuz ve ele aldığı her müşteri adayı"
+" veya etkileşim, özel bir ortamda saklanmaya devam eder. Üçüncü taraf "
+"erişimi yok, gereksiz veri ifşası yok - dijital ekosisteminizi yalnızca SİZ "
+"kontrol ediyorsunuz."
+
+#: templates/wagtailcore/page.html:498
+msgid ""
+"More than just a management system, this AI functions as an integrated "
+"chatbot that captures leads, automates interactions, and serves as a "
+"seamless bridge between human teams and AI automation. Whether it's "
+"assisting customers, structuring content, or executing tasks in real time, "
+"it operates like an intelligent digital assistant always working behind the "
+"scenes."
+msgstr ""
+"Bir yönetim sisteminden daha fazlası olan bu yapay zeka, müşteri adaylarını "
+"yakalayan, etkileşimleri otomatikleştiren ve insan ekipleri ile yapay zeka "
+"otomasyonu arasında sorunsuz bir köprü görevi gören entegre bir sohbet "
+"robotu işlevi görür. Müşterilere yardımcı olmak, içeriği yapılandırmak veya "
+"görevleri gerçek zamanlı olarak yürütmek olsun, her zaman perde arkasında "
+"çalışan akıllı bir dijital asistan gibi çalışır."
+
+#: templates/wagtailcore/page.html:539
+msgid "Content Management"
+msgstr "İçerik Yönetimi"
+
+#: templates/wagtailcore/page.html:598
+msgid "Get in Touch"
+msgstr "Temasa geçin"
+
+#: templates/wagtailcore/page.html:639
+msgid "LOTFI KANOUNI, FSDev & Designer, SEO & Marketing"
+msgstr "LOTFI KANOUNI, FSDev ve Tasarımcı, SEO ve Pazarlama"
+
+#: templates/wagtailcore/page.html:788
+msgid "2025"
+msgstr "2025"
+
+#: templates/wagtailcore/page.html:798
+msgid "Gmail"
+msgstr "E-posta Adresi"
+
+#: templates/wagtailcore/page.html:802
+msgid "Telegram"
+msgstr "Telgraf"
+
+#: templates/wagtailcore/page.html:805
+msgid "WhatsApp"
+msgstr "Hemen Ulaşın"
+
+#: templates/wagtailcore/page.html:808
+msgid "github"
+msgstr "Github (İngilizce)"
+
+#: templates/wagtailcore/page.html:817
+msgid ""
+"Mind. Clean code from scratch, immersive web experience, performance, "
+"organized workflow, fun!"
+msgstr ""
+"Akıl. Sıfırdan temiz kod, sürükleyici web deneyimi, performans, düzenli iş "
+"akışı, eğlence!"
+
+#: templates/wagtailcore/page.html:833
+msgid "Istanbul - Turkey"
+msgstr "İstanbul - Türkiye"
+
+#: templates/wagtailcore/page.html:873
+msgid "NewGen Web Design >"
+msgstr "Yeni Nesil Web Tasarım >"

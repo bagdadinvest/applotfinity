@@ -1,0 +1,43 @@
+{% load coderedcms_tags i18n static language_switcher wagtailcore_tags wagtailimages_tags wagtailsettings_tags wagtailuserbar django_bootstrap5 %}
+
+<!-- Button to trigger the Globe -->
+<button class="btn btn-icon-only btn--large email-button" id="globeTrigger">
+    <svg class="icon icon-envelope"><use xlink:href="#icon-envelope"></use></svg>
+</button>
+
+<!-- Background Overlay -->
+<div id="background-overlay" class="hidden"></div>
+
+<!-- Globe Container (Initially Hidden) -->
+<div id="language-switcher-container" class="hidden">
+    <div id="globe-container"></div>
+
+    <div id="language-info">
+        <img id="current-flag" src="{% static 'images/flags/'|add:current_lang.language_code|add:'.png' %}"
+             alt="{{ current_lang.language_name }}" class="lang-icon">
+        <span id="current-language">{{ current_lang.language_name }}</span>
+    </div>
+
+    <div id="hover-info">
+        <span id="hover-country"></span>
+    </div>
+
+    <div id="language-dropdown">
+        <ul>
+            {% for lang in language_links %}
+                <li data-lang="{{ lang.language_code }}" data-url="{{ lang.url }}" class="language-item">
+                    <img src="{% static 'images/flags/'|add:lang.language_code|add:'.png' %}" class="lang-icon">
+                    {{ lang.language_name }}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <!-- Close Button -->
+    <button id="closeGlobe" class="close-button">Close</button>
+</div>
+
+<script src="{% static 'js/language_switcher.js' %}"></script>
+
+</body>
+</html>

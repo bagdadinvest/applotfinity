@@ -1,0 +1,2436 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>REST API - Nextcloud Deck</title>
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
+  <link rel="stylesheet" href="../css/highlight.css">
+  <link href="../extra.css" rel="stylesheet">
+  
+  
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "REST API";
+    var mkdocs_page_input_path = "API.md";
+    var mkdocs_page_url = "/API/";
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js"></script>
+  <script src="../js/modernizr-2.8.3.min.js"></script>
+  <script type="text/javascript" src="../js/highlight.pack.js"></script> 
+  
+<script async type="text/javascript" src="/_/static/javascript/readthedocs-addons.js"></script><meta name="readthedocs-project-slug" content="deck" /><meta name="readthedocs-version-slug" content="latest" /><meta name="readthedocs-resolver-filename" content="/API/" /><meta name="readthedocs-http-status" content="200" /></head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Nextcloud Deck</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+	<ul class="current">
+	  
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="..">Home</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../User_documentation_en/">User documentation</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <a class="" href="../Markdown/">Markdown composing</a>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">API documentation</span>
+    <ul class="subnav">
+                <li class=" current">
+                    
+    <a class="current" href="./">REST API</a>
+    <ul class="subnav">
+            
+    <li class="toctree-l3"><a href="#prerequisites">Prerequisites</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#naming">Naming</a></li>
+        
+            <li><a class="toctree-l4" href="#global-responses">Global responses</a></li>
+        
+            <li><a class="toctree-l4" href="#formats">Formats</a></li>
+        
+            <li><a class="toctree-l4" href="#headers">Headers</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#changelog">Changelog</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#api-version-10">API version 1.0</a></li>
+        
+            <li><a class="toctree-l4" href="#api-version-11">API version 1.1</a></li>
+        
+            <li><a class="toctree-l4" href="#api-version-12-unreleased">API version 1.2 (unreleased)</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#endpoints">Endpoints</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#boards">Boards</a></li>
+        
+            <li><a class="toctree-l4" href="#stacks">Stacks</a></li>
+        
+            <li><a class="toctree-l4" href="#cards">Cards</a></li>
+        
+            <li><a class="toctree-l4" href="#labels">Labels</a></li>
+        
+            <li><a class="toctree-l4" href="#attachments">Attachments</a></li>
+        
+        </ul>
+    
+
+    <li class="toctree-l3"><a href="#ocs-api">OCS API</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#config">Config</a></li>
+        
+            <li><a class="toctree-l4" href="#comments">Comments</a></li>
+        
+            <li><a class="toctree-l4" href="#sessions">Sessions</a></li>
+        
+        </ul>
+    
+
+    </ul>
+                </li>
+                <li class="">
+                    
+    <a class="" href="../API-Nextcloud/">Nextcloud API</a>
+                </li>
+    </ul>
+	    </li>
+          
+            <li class="toctree-l1">
+		
+    <span class="caption-text">Developer documentation</span>
+    <ul class="subnav">
+                <li class="">
+                    
+    <a class="" href="../structure/">Data structure</a>
+                </li>
+                <li class="">
+                    
+    <span class="caption-text">Import documentation</span>
+    <ul class="subnav">
+                <li class="toctree-l3">
+                    
+    <a class="" href="../implement-import/">Implement import</a>
+                </li>
+                <li class="toctree-l3">
+                    
+    <a class="" href="../import-class-diagram/">Class diagram</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+	    </li>
+          
+        </ul>
+      </div>
+      &nbsp;
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Nextcloud Deck</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+        
+          <li>API documentation &raquo;</li>
+        
+      
+    
+    <li>REST API</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <p>The REST API provides access for authenticated users to their data inside the Deck app. To get a better understanding of Decks data models and their relations, please have a look at the  <a href="../structure/">data structure</a> documentation.</p>
+<h1 id="prerequisites">Prerequisites</h1>
+<ul>
+<li>All requests require a <code>OCS-APIRequest</code> HTTP header to be set to <code>true</code> and a <code>Content-Type</code> of <code>application/json</code>.</li>
+<li>The API is located at https://nextcloud.local/index.php/apps/deck/api/v1.0</li>
+<li>All request parameters are required, unless otherwise specified</li>
+</ul>
+<h2 id="naming">Naming</h2>
+<ul>
+<li>
+<p>Board is the project like grouping of tasks that can be shared to different users and groups</p>
+</li>
+<li>
+<p>Stack is the grouping of cards which is rendered in vertical columns in the UI</p>
+</li>
+<li>
+<p>Card is the representation of a single task</p>
+</li>
+<li>
+<p>Labels are defined on a board level and can be assigned to any number of cards</p>
+</li>
+</ul>
+<h2 id="global-responses">Global responses</h2>
+<h3 id="400-bad-request">400 Bad request</h3>
+<p>In case the request is invalid, e.g. because a parameter is missing or an invalid value has been transmitted, a 400 error will be returned:</p>
+<pre><code class="json">{
+  &quot;status&quot;: 400,
+  &quot;message&quot;: &quot;title must be provided&quot;
+}
+</code></pre>
+
+<h3 id="403-permission-denied">403 Permission denied</h3>
+<p>In any case a user doesn't have access to a requested entity, a 403 error will be returned:</p>
+<pre><code class="json">{
+    &quot;status&quot;: 403,
+    &quot;message&quot;: &quot;Permission denied&quot;
+}
+</code></pre>
+
+<h2 id="formats">Formats</h2>
+<h3 id="date">Date</h3>
+<p>Datetime values in request data need to be provided in ISO-8601. Example: 2020-01-20T09:52:43+00:00</p>
+<h2 id="headers">Headers</h2>
+<h3 id="if-modified-since">If-Modified-Since</h3>
+<p>Some index endpoints support limiting the result set to entries that have been changed since the given time.
+The supported date formats are:</p>
+<ul>
+<li>IMF-fixdate:                 <code>Sun, 03 Aug 2019 10:34:12 GMT</code></li>
+<li>(obsolete) RFC 850:          <code>Sunday, 03-Aug-19 10:34:12 GMT</code></li>
+<li>(obsolete) ANSI C asctime(): <code>Sun Aug  3 10:34:12 2019</code></li>
+</ul>
+<p>It is highly recommended to only use the IMF-fixdate format. Note that according to <a href="https://tools.ietf.org/html/rfc2616#section-3.3">RFC2616</a> all HTTP date/time stamps MUST be represented in Greenwich Mean Time (GMT), without exception.</p>
+<p>Example curl request:</p>
+<pre><code class="bash">curl -u admin:admin -X GET \
+    'http://localhost:8000/index.php/apps/deck/api/v1.0/boards/2/stacks' \
+    -H &quot;OCS-APIRequest: true&quot; \
+    -H &quot;If-Modified-Since: Mon, 05 Nov 2018 09:28:00 GMT&quot;
+</code></pre>
+
+<h3 id="etag">ETag</h3>
+<p>An ETag header is returned in order to determine if further child elements have been updated for the following endpoints:</p>
+<ul>
+<li>Fetch all user board <code>GET /api/v1.0/boards</code></li>
+<li>Fetch a single board <code>GET /api/v1.0/boards/{boardId}</code></li>
+<li>Fetch all stacks of a board <code>GET /api/v1.0/boards/{boardId}/stacks</code></li>
+<li>Fetch a single stacks of a board <code>GET /api/v1.0/boards/{boardId}/stacks/{stackId}</code></li>
+<li>Fetch a single card of a board <code>GET /api/v1.0/boards/{boardId}/stacks/{stackId}/cards/{cardId}</code></li>
+<li>Fetch attachments of a card <code>GET /api/v1.0/boards/{boardId}/stacks/{stackId}/cards/{cardId}/attachments</code></li>
+</ul>
+<p>If a <code>If-None-Match</code> header is provided and the requested element has not changed a <code>304</code> Not Modified response will be returned. </p>
+<p>Changes of child elements will propagate to their parents and also cause an update of the ETag which will be useful for determining if a sync is necessary on any client integration side. As an example, if a label is added to a card, the ETag of all related entities (the card, stack and board) will change.</p>
+<p>If available the ETag will also be part of JSON response objects as shown below for a card:</p>
+<pre><code class="json">{
+  &quot;id&quot;: 81,
+  &quot;ETag&quot;: &quot;bdb10fa2d2aeda092a2b6b469454dc90&quot;,
+  &quot;title&quot;: &quot;Test card&quot;
+}
+</code></pre>
+
+<h1 id="changelog">Changelog</h1>
+<h2 id="api-version-10">API version 1.0</h2>
+<ul>
+<li>Deck &gt;=1.0.0: The maximum length of the card title has been extended from 100 to 255 characters</li>
+<li>Deck &gt;=1.0.0: The API will now return a 400 Bad request response if the length limitation of a board, stack or card title is exceeded</li>
+</ul>
+<h2 id="api-version-11">API version 1.1</h2>
+<p>This API version has become available with <strong>Deck 1.3.0</strong>.</p>
+<ul>
+<li>The maximum length of the card title has been extended from 100 to 255 characters</li>
+<li>The API will now return a 400 Bad request response if the length limitation of a board, stack or card title is exceeded</li>
+<li>The attachments API endpoints will return other attachment types than deck_file</li>
+<li>Prior to Deck version v1.3.0 (API v1.0), attachments were stored within deck. For this type of attachments <code>deck_file</code> was used as the default type of attachments</li>
+<li>Starting with Deck version 1.3.0 (API v1.1) files are stored within the users regular Nextcloud files and the type <code>file</code> has been introduced for that</li>
+</ul>
+<h2 id="api-version-12-unreleased">API version 1.2 (unreleased)</h2>
+<ul>
+<li>Endpoints for the new import functionality have been added:</li>
+<li><a href="#get-boardsimportgetsystems-import-a-board">GET /boards/import/getSystems - Import a board</a></li>
+<li><a href="#get-boardsimportconfigsystemschema-import-a-board">GET /boards/import/config/system/{schema} - Import a board</a></li>
+<li><a href="#post-boardsimport-import-a-board">POST /boards/import - Import a board</a></li>
+</ul>
+<h1 id="endpoints">Endpoints</h1>
+<h2 id="boards">Boards</h2>
+<h3 id="get-boards-get-a-list-of-boards">GET /boards - Get a list of boards</h3>
+<h4 id="headers_1">Headers</h4>
+<p>The board list endpoint supports setting an <code>If-Modified-Since</code> header to limit the results to entities that are changed after the provided time.</p>
+<h4 id="request-parameters">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>details</td>
+<td>Bool</td>
+<td><strong>Optional</strong> Enhance boards with details about labels, stacks and users</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response">Response</h4>
+<h5 id="200-success">200 Success</h5>
+<p>Returns an array of board items</p>
+<pre><code class="json">[
+    {
+        &quot;title&quot;: &quot;Board title&quot;,
+        &quot;owner&quot;: {
+            &quot;primaryKey&quot;: &quot;admin&quot;,
+            &quot;uid&quot;: &quot;admin&quot;,
+            &quot;displayname&quot;: &quot;Administrator&quot;
+        },
+        &quot;color&quot;: &quot;ff0000&quot;,
+        &quot;archived&quot;: false,
+        &quot;labels&quot;: [],
+        &quot;acl&quot;: [],
+        &quot;permissions&quot;: {
+            &quot;PERMISSION_READ&quot;: true,
+            &quot;PERMISSION_EDIT&quot;: true,
+            &quot;PERMISSION_MANAGE&quot;: true,
+            &quot;PERMISSION_SHARE&quot;: true
+        },
+        &quot;users&quot;: [],
+        &quot;shared&quot;: 0,
+        &quot;deletedAt&quot;: 0,
+        &quot;id&quot;: 10,
+        &quot;lastModified&quot;: 1586269585,
+        &quot;settings&quot;: {
+            &quot;notify-due&quot;: &quot;off&quot;,
+            &quot;calendar&quot;: true
+        }
+    }
+]
+</code></pre>
+
+<h3 id="post-boards-create-a-new-board">POST /boards - Create a new board</h3>
+<h4 id="request-body">Request body</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>String</td>
+<td>The title of the new board, maximum length is limited to 100 characters</td>
+</tr>
+<tr>
+<td>color</td>
+<td>String</td>
+<td>The hexadecimal color of the new board (e.g. FF0000)</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="json">{
+    &quot;title&quot;: &quot;Board title&quot;,
+    &quot;color&quot;: &quot;ff0000&quot;
+}
+</code></pre>
+
+<h4 id="response_1">Response</h4>
+<h5 id="200-success_1">200 Success</h5>
+<pre><code class="json">{
+    &quot;title&quot;: &quot;Board title&quot;,
+    &quot;owner&quot;: {
+        &quot;primaryKey&quot;: &quot;admin&quot;,
+        &quot;uid&quot;: &quot;admin&quot;,
+        &quot;displayname&quot;: &quot;Administrator&quot;
+    },
+    &quot;color&quot;: &quot;ff0000&quot;,
+    &quot;archived&quot;: false,
+    &quot;labels&quot;: [
+        {
+            &quot;title&quot;: &quot;Finished&quot;,
+            &quot;color&quot;: &quot;31CC7C&quot;,
+            &quot;boardId&quot;: 10,
+            &quot;cardId&quot;: null,
+            &quot;id&quot;: 37
+        },
+        {
+            &quot;title&quot;: &quot;To review&quot;,
+            &quot;color&quot;: &quot;317CCC&quot;,
+            &quot;boardId&quot;: 10,
+            &quot;cardId&quot;: null,
+            &quot;id&quot;: 38
+        },
+        {
+            &quot;title&quot;: &quot;Action needed&quot;,
+            &quot;color&quot;: &quot;FF7A66&quot;,
+            &quot;boardId&quot;: 10,
+            &quot;cardId&quot;: null,
+            &quot;id&quot;: 39
+        },
+        {
+            &quot;title&quot;: &quot;Later&quot;,
+            &quot;color&quot;: &quot;F1DB50&quot;,
+            &quot;boardId&quot;: 10,
+            &quot;cardId&quot;: null,
+            &quot;id&quot;: 40
+        }
+    ],
+    &quot;acl&quot;: [],
+    &quot;permissions&quot;: {
+        &quot;PERMISSION_READ&quot;: true,
+        &quot;PERMISSION_EDIT&quot;: true,
+        &quot;PERMISSION_MANAGE&quot;: true,
+        &quot;PERMISSION_SHARE&quot;: true
+    },
+    &quot;users&quot;: [],
+    &quot;deletedAt&quot;: 0,
+    &quot;id&quot;: 10,
+    &quot;lastModified&quot;: 1586269585
+}
+</code></pre>
+
+<h5 id="403-forbidden">403 Forbidden</h5>
+<p>A 403 response might be returned if the users ability to create new boards has been disabled by the administrator. For checking this before, see the <code>canCreateBoards</code> value in the <a href="../API-Nextcloud/">Nextcloud capabilties</a>.</p>
+<h3 id="get-boardsboardid-get-board-details">GET /boards/{boardId} - Get board details</h3>
+<h4 id="request-parameters_1">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board to fetch</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_2">Response</h4>
+<h5 id="200-success_2">200 Success</h5>
+<pre><code class="json">{
+    &quot;title&quot;: &quot;Board title&quot;,
+    &quot;owner&quot;: {
+        &quot;primaryKey&quot;: &quot;admin&quot;,
+        &quot;uid&quot;: &quot;admin&quot;,
+        &quot;displayname&quot;: &quot;Administrator&quot;
+    },
+    &quot;color&quot;: &quot;ff0000&quot;,
+    &quot;archived&quot;: false,
+    &quot;labels&quot;: [
+        {
+            &quot;title&quot;: &quot;Finished&quot;,
+            &quot;color&quot;: &quot;31CC7C&quot;,
+            &quot;boardId&quot;: &quot;10&quot;,
+            &quot;cardId&quot;: null,
+            &quot;id&quot;: 37
+        },
+        {
+            &quot;title&quot;: &quot;To review&quot;,
+            &quot;color&quot;: &quot;317CCC&quot;,
+            &quot;boardId&quot;: &quot;10&quot;,
+            &quot;cardId&quot;: null,
+            &quot;id&quot;: 38
+        },
+        {
+            &quot;title&quot;: &quot;Action needed&quot;,
+            &quot;color&quot;: &quot;FF7A66&quot;,
+            &quot;boardId&quot;: &quot;10&quot;,
+            &quot;cardId&quot;: null,
+            &quot;id&quot;: 39
+        },
+        {
+            &quot;title&quot;: &quot;Later&quot;,
+            &quot;color&quot;: &quot;F1DB50&quot;,
+            &quot;boardId&quot;: &quot;10&quot;,
+            &quot;cardId&quot;: null,
+            &quot;id&quot;: 40
+        }
+    ],
+    &quot;acl&quot;: [],
+    &quot;permissions&quot;: {
+        &quot;PERMISSION_READ&quot;: true,
+        &quot;PERMISSION_EDIT&quot;: true,
+        &quot;PERMISSION_MANAGE&quot;: true,
+        &quot;PERMISSION_SHARE&quot;: true
+    },
+    &quot;users&quot;: [
+        {
+            &quot;primaryKey&quot;: &quot;admin&quot;,
+            &quot;uid&quot;: &quot;admin&quot;,
+            &quot;displayname&quot;: &quot;Administrator&quot;
+        }
+    ],
+    &quot;deletedAt&quot;: 0,
+    &quot;id&quot;: 10
+}
+</code></pre>
+
+<h3 id="put-boardsboardid-update-board-details">PUT /boards/{boardId} - Update board details</h3>
+<h4 id="request-body_1">Request body</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>String</td>
+<td>The title of the board, maximum length is limited to 100 characters</td>
+</tr>
+<tr>
+<td>color</td>
+<td>String</td>
+<td>The hexadecimal color of the board (e.g. FF0000)</td>
+</tr>
+<tr>
+<td>archived</td>
+<td>Bool</td>
+<td>Whether or not this board should be archived.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="json">{
+    &quot;title&quot;: &quot;Board title&quot;,
+    &quot;color&quot;: &quot;ff0000&quot;,
+    &quot;archived&quot;: false
+}
+</code></pre>
+
+<h4 id="response_3">Response</h4>
+<h5 id="200-success_3">200 Success</h5>
+<h3 id="delete-boardsboardid-delete-a-board">DELETE /boards/{boardId} - Delete a board</h3>
+<h4 id="request-parameters_2">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board to fetch</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_4">Response</h4>
+<h5 id="200-success_4">200 Success</h5>
+<h3 id="post-boardsboardidundo_delete-restore-a-deleted-board">POST /boards/{boardId}/undo_delete - Restore a deleted board</h3>
+<h4 id="request-parameters_3">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board to fetch</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_5">Response</h4>
+<h5 id="200-success_5">200 Success</h5>
+<h3 id="post-boardsboardidacl-add-new-acl-rule">POST /boards/{boardId}/acl - Add new acl rule</h3>
+<h4 id="request-body_2">Request body</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>Integer</td>
+<td>Type of the participant</td>
+</tr>
+<tr>
+<td>participant</td>
+<td>String</td>
+<td>The uid of the participant</td>
+</tr>
+<tr>
+<td>permissionEdit</td>
+<td>Bool</td>
+<td>Setting if the participant has edit permissions</td>
+</tr>
+<tr>
+<td>permissionShare</td>
+<td>Bool</td>
+<td>Setting if the participant has sharing permissions</td>
+</tr>
+<tr>
+<td>permissionManage</td>
+<td>Bool</td>
+<td>Setting if the participant has management permissions</td>
+</tr>
+</tbody>
+</table>
+<h5 id="supported-participant-types">Supported participant types:</h5>
+<ul>
+<li>0 User</li>
+<li>1 Group</li>
+<li>7 Circle</li>
+</ul>
+<h4 id="response_6">Response</h4>
+<h5 id="200-success_6">200 Success</h5>
+<pre><code class="json">[{
+  &quot;participant&quot;: {
+    &quot;primaryKey&quot;: &quot;userid&quot;,
+    &quot;uid&quot;: &quot;userid&quot;,
+    &quot;displayname&quot;: &quot;User Name&quot;
+  },
+  &quot;type&quot;: 0,
+  &quot;boardId&quot;: 1,
+  &quot;permissionEdit&quot;: true,
+  &quot;permissionShare&quot;: false,
+  &quot;permissionManage&quot;: true,
+  &quot;owner&quot;: false,
+  &quot;id&quot;: 1
+}]
+</code></pre>
+
+<h3 id="put-boardsboardidaclaclid-update-an-acl-rule">PUT /boards/{boardId}/acl/{aclId} - Update an acl rule</h3>
+<h4 id="request-parameters_4">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>permissionEdit</td>
+<td>Bool</td>
+<td>Setting if the participant has edit permissions</td>
+</tr>
+<tr>
+<td>permissionShare</td>
+<td>Bool</td>
+<td>Setting if the participant has sharing permissions</td>
+</tr>
+<tr>
+<td>permissionManage</td>
+<td>Bool</td>
+<td>Setting if the participant has management permissions</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_7">Response</h4>
+<h5 id="200-success_7">200 Success</h5>
+<h3 id="delete-boardsboardidaclaclid-delete-an-acl-rule">DELETE /boards/{boardId}/acl/{aclId} - Delete an acl rule</h3>
+<h4 id="response_8">Response</h4>
+<h5 id="200-success_8">200 Success</h5>
+<h2 id="stacks">Stacks</h2>
+<h3 id="get-boardsboardidstacks-get-stacks">GET /boards/{boardId}/stacks - Get stacks</h3>
+<h4 id="headers_2">Headers</h4>
+<p>The board list endpoint supports setting an <code>If-Modified-Since</code> header to limit the results to entities that are changed after the provided time.</p>
+<h4 id="request-parameters_5">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board to fetch</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_9">Response</h4>
+<pre><code class="json">[
+  {
+    &quot;title&quot;: &quot;ToDo&quot;,
+    &quot;boardId&quot;: 2,
+    &quot;deletedAt&quot;: 0,
+    &quot;lastModified&quot;: 1541426139,
+    &quot;cards&quot;: [...],
+    &quot;order&quot;: 999,
+    &quot;id&quot;: 4
+  }
+]
+</code></pre>
+
+<h5 id="200-success_9">200 Success</h5>
+<h3 id="get-boardsboardidstacksarchived-get-list-of-archived-stacks">GET /boards/{boardId}/stacks/archived - Get list of archived stacks</h3>
+<h4 id="request-parameters_6">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board to fetch</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_10">Response</h4>
+<pre><code class="json">[
+  {
+    &quot;title&quot;: &quot;ToDo&quot;,
+    &quot;boardId&quot;: 2,
+    &quot;deletedAt&quot;: 0,
+    &quot;lastModified&quot;: 1541426139,
+    &quot;cards&quot;: [...],
+    &quot;order&quot;: 999,
+    &quot;id&quot;: 4
+  }
+]
+</code></pre>
+
+<h5 id="200-success_10">200 Success</h5>
+<h3 id="get-boardsboardidstacksstackid-get-stack-details">GET /boards/{boardId}/stacks/{stackId} - Get stack details</h3>
+<h4 id="request-parameters_7">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the stack belongs to</td>
+</tr>
+<tr>
+<td>stackId</td>
+<td>Integer</td>
+<td>The id of the stack</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_11">Response</h4>
+<h5 id="200-success_11">200 Success</h5>
+<h3 id="post-boardsboardidstacks-create-a-new-stack">POST /boards/{boardId}/stacks - Create a new stack</h3>
+<h4 id="request-body_3">Request body</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>String</td>
+<td>The title of the new stack, maximum length is limited to 100 characters</td>
+</tr>
+<tr>
+<td>order</td>
+<td>Integer</td>
+<td>Order for sorting the stacks</td>
+</tr>
+</tbody>
+</table>
+<h4 id="request-parameters_8">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board to fetch</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_12">Response</h4>
+<h5 id="200-success_12">200 Success</h5>
+<h3 id="put-boardsboardidstacksstackid-update-stack-details">PUT /boards/{boardId}/stacks/{stackId} - Update stack details</h3>
+<h4 id="request-parameters_9">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the stack belongs to</td>
+</tr>
+<tr>
+<td>stackId</td>
+<td>Integer</td>
+<td>The id of the stack</td>
+</tr>
+</tbody>
+</table>
+<h4 id="request-body_4">Request body</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>String</td>
+<td>The title of the stack, maximum length is limited to 100 characters</td>
+</tr>
+<tr>
+<td>order</td>
+<td>Integer</td>
+<td>Order for sorting the stacks</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_13">Response</h4>
+<h5 id="200-success_13">200 Success</h5>
+<h3 id="delete-boardsboardidstacksstackid-delete-a-stack">DELETE /boards/{boardId}/stacks/{stackId} - Delete a stack</h3>
+<h4 id="request-parameters_10">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the stack belongs to</td>
+</tr>
+<tr>
+<td>stackId</td>
+<td>Integer</td>
+<td>The id of the stack</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_14">Response</h4>
+<h5 id="200-success_14">200 Success</h5>
+<h2 id="cards">Cards</h2>
+<h3 id="get-boardsboardidstacksstackidcardscardid-get-card-details">GET /boards/{boardId}/stacks/{stackId}/cards/{cardId} - Get card details</h3>
+<h4 id="request-parameters_11">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the card belongs to</td>
+</tr>
+<tr>
+<td>stackId</td>
+<td>Integer</td>
+<td>The id of the stack the card belongs to</td>
+</tr>
+<tr>
+<td>cardId</td>
+<td>Integer</td>
+<td>The id of the card</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_15">Response</h4>
+<h5 id="200-success_15">200 Success</h5>
+<h3 id="post-boardsboardidstacksstackidcards-create-a-new-card">POST /boards/{boardId}/stacks/{stackId}/cards - Create a new card</h3>
+<h4 id="request-parameters_12">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the card belongs to</td>
+</tr>
+<tr>
+<td>stackId</td>
+<td>Integer</td>
+<td>The id of the stack the card belongs to</td>
+</tr>
+</tbody>
+</table>
+<h4 id="request-body_5">Request body</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>String</td>
+<td>The title of the card, maximum length is limited to 255 characters</td>
+</tr>
+<tr>
+<td>type</td>
+<td>String</td>
+<td>Type of the card (for later use) use 'plain' for now</td>
+</tr>
+<tr>
+<td>order</td>
+<td>Integer</td>
+<td>Order for sorting the stacks</td>
+</tr>
+<tr>
+<td>description</td>
+<td>String</td>
+<td><em>(optional)</em> The markdown description of the card</td>
+</tr>
+<tr>
+<td>duedate</td>
+<td>timestamp</td>
+<td><em>(optional)</em> The duedate of the card or null</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_16">Response</h4>
+<pre><code class="json">{  
+   &quot;title&quot;:&quot;Test&quot;,
+   &quot;description&quot;:null,
+   &quot;stackId&quot;:6,
+   &quot;type&quot;:&quot;plain&quot;,
+   &quot;lastModified&quot;:1541528026,
+   &quot;createdAt&quot;:1541528026,
+   &quot;labels&quot;:null,
+   &quot;assignedUsers&quot;:null,
+   &quot;attachments&quot;:null,
+   &quot;attachmentCount&quot;:null,
+   &quot;owner&quot;:&quot;admin&quot;,
+   &quot;order&quot;:999,
+   &quot;archived&quot;:false,
+   &quot;duedate&quot;: &quot;2019-12-24T19:29:30+00:00&quot;,
+   &quot;deletedAt&quot;:0,
+   &quot;commentsUnread&quot;:0,
+   &quot;id&quot;:10,
+   &quot;overdue&quot;:0
+}
+</code></pre>
+
+<h5 id="200-success_16">200 Success</h5>
+<h3 id="put-boardsboardidstacksstackidcardscardid-update-card-details">PUT /boards/{boardId}/stacks/{stackId}/cards/{cardId} - Update card details</h3>
+<h4 id="request-parameters_13">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the card belongs to</td>
+</tr>
+<tr>
+<td>stackId</td>
+<td>Integer</td>
+<td>The id of the stack the card belongs to</td>
+</tr>
+<tr>
+<td>cardId</td>
+<td>Integer</td>
+<td>The id of the card</td>
+</tr>
+</tbody>
+</table>
+<h4 id="request-data">Request data</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>String</td>
+<td>The title of the card, maximum length is limited to 255 characters</td>
+</tr>
+<tr>
+<td>description</td>
+<td>String</td>
+<td>The markdown description of the card</td>
+</tr>
+<tr>
+<td>type</td>
+<td>String</td>
+<td>Type of the card (for later use) use 'plain' for now</td>
+</tr>
+<tr>
+<td>order</td>
+<td>Integer</td>
+<td>Order for sorting the stacks</td>
+</tr>
+<tr>
+<td>duedate</td>
+<td>timestamp</td>
+<td>The ISO-8601 formatted duedate of the card or null</td>
+</tr>
+</tbody>
+</table>
+<pre><code>{  
+   &quot;title&quot;: &quot;Test card&quot;,
+   &quot;description&quot;: &quot;A card description&quot;,
+   &quot;type&quot;: &quot;plain&quot;,
+   &quot;order&quot;: 999,
+   &quot;duedate&quot;: &quot;2019-12-24T19:29:30+00:00&quot;,
+}
+</code></pre>
+
+<h4 id="response_17">Response</h4>
+<h5 id="200-success_17">200 Success</h5>
+<h3 id="delete-boardsboardidstacksstackidcardscardid-delete-a-card">DELETE /boards/{boardId}/stacks/{stackId}/cards/{cardId} - Delete a card</h3>
+<h4 id="request-parameters_14">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the card belongs to</td>
+</tr>
+<tr>
+<td>stackId</td>
+<td>Integer</td>
+<td>The id of the stack the card belongs to</td>
+</tr>
+<tr>
+<td>cardId</td>
+<td>Integer</td>
+<td>The id of the card</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_18">Response</h4>
+<h5 id="200-success_18">200 Success</h5>
+<h3 id="put-boardsboardidstacksstackidcardscardidassignlabel-assign-a-label-to-a-card">PUT /boards/{boardId}/stacks/{stackId}/cards/{cardId}/assignLabel - Assign a label to a card</h3>
+<h4 id="request-parameters_15">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the card belongs to</td>
+</tr>
+<tr>
+<td>stackId</td>
+<td>Integer</td>
+<td>The id of the stack the card belongs to</td>
+</tr>
+<tr>
+<td>cardId</td>
+<td>Integer</td>
+<td>The id of the card</td>
+</tr>
+</tbody>
+</table>
+<h4 id="request-data_1">Request data</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>labelId</td>
+<td>Integer</td>
+<td>The label id to assign to the card</td>
+</tr>
+<tr>
+<td>#### Response</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h5 id="200-success_19">200 Success</h5>
+<h3 id="put-boardsboardidstacksstackidcardscardidremovelabel-remove-a-label-to-a-card">PUT /boards/{boardId}/stacks/{stackId}/cards/{cardId}/removeLabel - Remove a label to a card</h3>
+<h4 id="request-parameters_16">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the card belongs to</td>
+</tr>
+<tr>
+<td>stackId</td>
+<td>Integer</td>
+<td>The id of the stack the card belongs to</td>
+</tr>
+<tr>
+<td>cardId</td>
+<td>Integer</td>
+<td>The id of the card</td>
+</tr>
+</tbody>
+</table>
+<h4 id="request-data_2">Request data</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>labelId</td>
+<td>Integer</td>
+<td>The label id to remove to the card</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_19">Response</h4>
+<h5 id="200-success_20">200 Success</h5>
+<h3 id="put-boardsboardidstacksstackidcardscardidassignuser-assign-a-user-to-a-card">PUT /boards/{boardId}/stacks/{stackId}/cards/{cardId}/assignUser - Assign a user to a card</h3>
+<h4 id="request-parameters_17">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the card belongs to</td>
+</tr>
+<tr>
+<td>stackId</td>
+<td>Integer</td>
+<td>The id of the stack the card belongs to</td>
+</tr>
+<tr>
+<td>cardId</td>
+<td>Integer</td>
+<td>The id of the card</td>
+</tr>
+</tbody>
+</table>
+<h4 id="request-data_3">Request data</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>userId</td>
+<td>String</td>
+<td>The user id to assign to the card</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_20">Response</h4>
+<h5 id="200-success_21">200 Success</h5>
+<pre><code class="json">{
+  &quot;id&quot;: 3,
+  &quot;participant&quot;: {
+    &quot;primaryKey&quot;: &quot;admin&quot;,
+    &quot;uid&quot;: &quot;admin&quot;,
+    &quot;displayname&quot;: &quot;admin&quot;
+  },
+  &quot;cardId&quot;: 1
+}
+</code></pre>
+
+<h5 id="400-bad-request_1">400 Bad request</h5>
+<pre><code class="json">{
+  &quot;status&quot;: 400,
+  &quot;message&quot;: &quot;The user is already assigned to the card&quot;
+}
+</code></pre>
+
+<p>The request can fail with a bad request response for the following reasons:
+- Missing or wrongly formatted request parameters
+- The user is already assigned to the card
+- The user is not part of the board</p>
+<h3 id="put-boardsboardidstacksstackidcardscardidunassignuser-unassign-a-user-from-a-card">PUT /boards/{boardId}/stacks/{stackId}/cards/{cardId}/unassignUser - Unassign a user from a card</h3>
+<h4 id="request-parameters_18">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the card belongs to</td>
+</tr>
+<tr>
+<td>stackId</td>
+<td>Integer</td>
+<td>The id of the stack the card belongs to</td>
+</tr>
+<tr>
+<td>cardId</td>
+<td>Integer</td>
+<td>The id of the card</td>
+</tr>
+</tbody>
+</table>
+<h4 id="request-data_4">Request data</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>userId</td>
+<td>String</td>
+<td>The user id to unassign from the card</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_21">Response</h4>
+<h5 id="200-success_22">200 Success</h5>
+<h3 id="put-boardsboardidstacksstackidcardscardidreorder-change-the-sorting-order-of-a-card">PUT /boards/{boardId}/stacks/{stackId}/cards/{cardId}/reorder - Change the sorting order of a card</h3>
+<h4 id="request-parameters_19">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the card belongs to</td>
+</tr>
+<tr>
+<td>stackId</td>
+<td>Integer</td>
+<td>The id of the stack the card belongs to</td>
+</tr>
+<tr>
+<td>cardId</td>
+<td>Integer</td>
+<td>The id of the card</td>
+</tr>
+</tbody>
+</table>
+<h4 id="request-data_5">Request data</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>order</td>
+<td>Integer</td>
+<td>The position in the stack where the card should be moved to</td>
+</tr>
+<tr>
+<td>stackId</td>
+<td>Integer</td>
+<td>The id of the stack where the card should be moved to</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_22">Response</h4>
+<h5 id="200-success_23">200 Success</h5>
+<h2 id="labels">Labels</h2>
+<h3 id="get-boardsboardidlabelslabelid-get-label-details">GET /boards/{boardId}/labels/{labelId} - Get label details</h3>
+<h4 id="request-parameters_20">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the label belongs to</td>
+</tr>
+<tr>
+<td>labelId</td>
+<td>Integer</td>
+<td>The id of the label</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_23">Response</h4>
+<h5 id="200-success_24">200 Success</h5>
+<pre><code class="json">{
+  &quot;title&quot;: &quot;Abgeschlossen&quot;,
+  &quot;color&quot;: &quot;31CC7C&quot;,
+  &quot;boardId&quot;: &quot;2&quot;,
+  &quot;cardId&quot;: null,
+  &quot;id&quot;: 5
+}
+</code></pre>
+
+<h3 id="post-boardsboardidlabels-create-a-new-label">POST /boards/{boardId}/labels - Create a new label</h3>
+<h4 id="request-parameters_21">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the label belongs to</td>
+</tr>
+</tbody>
+</table>
+<h4 id="request-data_6">Request data</h4>
+<pre><code class="json">{
+  &quot;title&quot;: &quot;Finished&quot;,
+  &quot;color&quot;: &quot;31CC7C&quot;
+}
+</code></pre>
+
+<h4 id="response_24">Response</h4>
+<h5 id="200-success_25">200 Success</h5>
+<h3 id="put-boardsboardidlabelslabelid-update-label-details">PUT /boards/{boardId}/labels/{labelId} - Update label details</h3>
+<h4 id="request-parameters_22">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the label belongs to</td>
+</tr>
+<tr>
+<td>labelId</td>
+<td>Integer</td>
+<td>The id of the label</td>
+</tr>
+</tbody>
+</table>
+<h4 id="request-data_7">Request data</h4>
+<pre><code class="json">{
+  &quot;title&quot;: &quot;Finished&quot;,
+  &quot;color&quot;: &quot;31CC7C&quot;
+}
+</code></pre>
+
+<h4 id="response_25">Response</h4>
+<h5 id="200-success_26">200 Success</h5>
+<h3 id="delete-boardsboardidlabelslabelid-delete-a-label">DELETE /boards/{boardId}/labels/{labelId} - Delete a label</h3>
+<h4 id="request-parameters_23">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the label belongs to</td>
+</tr>
+<tr>
+<td>labelId</td>
+<td>Integer</td>
+<td>The id of the label</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_26">Response</h4>
+<h5 id="200-success_27">200 Success</h5>
+<h2 id="attachments">Attachments</h2>
+<h3 id="get-boardsboardidstacksstackidcardscardidattachments-get-a-list-of-attachments">GET /boards/{boardId}/stacks/{stackId}/cards/{cardId}/attachments - Get a list of attachments</h3>
+<h4 id="request-parameters_24">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the card belongs to</td>
+</tr>
+<tr>
+<td>stackId</td>
+<td>Integer</td>
+<td>The id of the stack the card belongs to</td>
+</tr>
+<tr>
+<td>cardId</td>
+<td>Integer</td>
+<td>The id of the card</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_27">Response</h4>
+<h5 id="200-success_28">200 Success</h5>
+<pre><code class="json">[
+  {
+    &quot;cardId&quot;: 5,
+    &quot;type&quot;: &quot;deck_file&quot;,
+    &quot;data&quot;: &quot;6DADC2C69F4.eml&quot;,
+    &quot;lastModified&quot;: 1541529048,
+    &quot;createdAt&quot;: 1541529048,
+    &quot;createdBy&quot;: &quot;admin&quot;,
+    &quot;deletedAt&quot;: 0,
+    &quot;extendedData&quot;: {
+      &quot;filesize&quot;: 922258,
+      &quot;mimetype&quot;: &quot;application/octet-stream&quot;,
+      &quot;info&quot;: {
+        &quot;dirname&quot;: &quot;.&quot;,
+        &quot;basename&quot;: &quot;6DADC2C69F4.eml&quot;,
+        &quot;extension&quot;: &quot;eml&quot;,
+        &quot;filename&quot;: &quot;6DADC2C69F4&quot;
+      }
+    },
+    &quot;id&quot;: 6
+  }
+]
+
+</code></pre>
+
+<h3 id="get-boardsboardidstacksstackidcardscardidattachmentsattachmentid-get-the-attachment-file">GET /boards/{boardId}/stacks/{stackId}/cards/{cardId}/attachments/{attachmentId} - Get the attachment file</h3>
+<h4 id="request-parameters_25">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the attachment belongs to</td>
+</tr>
+<tr>
+<td>stackId</td>
+<td>Integer</td>
+<td>The id of the stack the attachment belongs to</td>
+</tr>
+<tr>
+<td>cardId</td>
+<td>Integer</td>
+<td>The id of the card the attachment belongs to</td>
+</tr>
+<tr>
+<td>attachmentId</td>
+<td>Integer</td>
+<td>The id of the attachment</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_28">Response</h4>
+<h5 id="200-success_29">200 Success</h5>
+<h3 id="post-boardsboardidstacksstackidcardscardidattachments-upload-an-attachment">POST /boards/{boardId}/stacks/{stackId}/cards/{cardId}/attachments - Upload an attachment</h3>
+<h4 id="request-parameters_26">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the attachment belongs to</td>
+</tr>
+<tr>
+<td>stackId</td>
+<td>Integer</td>
+<td>The id of the stack the attachment belongs to</td>
+</tr>
+<tr>
+<td>cardId</td>
+<td>Integer</td>
+<td>The id of the card the attachment belongs to</td>
+</tr>
+</tbody>
+</table>
+<h4 id="request-data_8">Request data</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>String</td>
+<td>The type of the attachement</td>
+</tr>
+<tr>
+<td>file</td>
+<td>Binary</td>
+<td>File data to add as an attachment</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Prior to Deck version v1.3.0 (API v1.0), attachments were stored within deck. For this type of attachments <code>deck_file</code> was used as the default type of attachments</li>
+<li>Starting with Deck version 1.3.0 (API v1.1) files are stored within the users regular Nextcloud files and the type <code>file</code> has been introduced for that</li>
+</ul>
+<h4 id="response_29">Response</h4>
+<h5 id="200-success_30">200 Success</h5>
+<h3 id="put-boardsboardidstacksstackidcardscardidattachmentsattachmentid-update-an-attachment">PUT /boards/{boardId}/stacks/{stackId}/cards/{cardId}/attachments/{attachmentId} - Update an attachment</h3>
+<h4 id="request-parameters_27">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the attachment belongs to</td>
+</tr>
+<tr>
+<td>stackId</td>
+<td>Integer</td>
+<td>The id of the stack the attachment belongs to</td>
+</tr>
+<tr>
+<td>cardId</td>
+<td>Integer</td>
+<td>The id of the card the attachment belongs to</td>
+</tr>
+<tr>
+<td>attachmentId</td>
+<td>Integer</td>
+<td>The id of the attachment</td>
+</tr>
+</tbody>
+</table>
+<h4 id="request-data_9">Request data</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>type</td>
+<td>String</td>
+<td>The type of the attachement</td>
+</tr>
+<tr>
+<td>file</td>
+<td>Binary</td>
+<td>File data to add as an attachment</td>
+</tr>
+</tbody>
+</table>
+<p>For now only <code>deck_file</code> is supported as an attachment type.</p>
+<h4 id="response_30">Response</h4>
+<h5 id="200-success_31">200 Success</h5>
+<h3 id="delete-boardsboardidstacksstackidcardscardidattachmentsattachmentid-delete-an-attachment">DELETE /boards/{boardId}/stacks/{stackId}/cards/{cardId}/attachments/{attachmentId} - Delete an attachment</h3>
+<h4 id="request-parameters_28">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the attachment belongs to</td>
+</tr>
+<tr>
+<td>stackId</td>
+<td>Integer</td>
+<td>The id of the stack the attachment belongs to</td>
+</tr>
+<tr>
+<td>cardId</td>
+<td>Integer</td>
+<td>The id of the card the attachment belongs to</td>
+</tr>
+<tr>
+<td>attachmentId</td>
+<td>Integer</td>
+<td>The id of the attachment</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_31">Response</h4>
+<h5 id="200-success_32">200 Success</h5>
+<h3 id="put-boardsboardidstacksstackidcardscardidattachmentsattachmentidrestore-resore-a-deleted-attachment">PUT /boards/{boardId}/stacks/{stackId}/cards/{cardId}/attachments/{attachmentId}/restore - Resore a deleted attachment</h3>
+<h4 id="request-parameters_29">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the board the attachment belongs to</td>
+</tr>
+<tr>
+<td>stackId</td>
+<td>Integer</td>
+<td>The id of the stack the attachment belongs to</td>
+</tr>
+<tr>
+<td>cardId</td>
+<td>Integer</td>
+<td>The id of the card the attachment belongs to</td>
+</tr>
+<tr>
+<td>attachmentId</td>
+<td>Integer</td>
+<td>The id of the attachment</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_32">Response</h4>
+<h5 id="200-success_33">200 Success</h5>
+<h3 id="get-boardsimportgetsystems-import-a-board">GET /boards/import/getSystems - Import a board</h3>
+<h4 id="request-parameters_30">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>system</td>
+<td>Integer</td>
+<td>The system name. Example: trello</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_33">Response</h4>
+<p>Make a request to see the json schema of system</p>
+<pre><code class="json">{
+}
+</code></pre>
+
+<h3 id="get-boardsimportconfigsystemschema-import-a-board">GET /boards/import/config/system/{schema} - Import a board</h3>
+<h4 id="request-parameters_31">Request parameters</h4>
+<h4 id="response_34">Response</h4>
+<pre><code class="json">[
+  &quot;trello&quot;
+]
+</code></pre>
+
+<h3 id="post-boardsimport-import-a-board">POST /boards/import - Import a board</h3>
+<h4 id="request-parameters_32">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>system</td>
+<td>string</td>
+<td>The allowed name of system to import from</td>
+</tr>
+<tr>
+<td>config</td>
+<td>Object</td>
+<td>The config object  (JSON)</td>
+</tr>
+<tr>
+<td>data</td>
+<td>Object</td>
+<td>The data object to import (JSON)</td>
+</tr>
+</tbody>
+</table>
+<h4 id="response_35">Response</h4>
+<h5 id="200-success_34">200 Success</h5>
+<h1 id="ocs-api">OCS API</h1>
+<p>The following endpoints are available through the Nextcloud OCS endpoint, which is available at <code>/ocs/v2.php/apps/deck/api/v1.0/</code>. 
+This has the benefit that both the web UI as well as external integrations can use the same API.</p>
+<h2 id="config">Config</h2>
+<p>Deck stores user and app configuration values globally and per board. The GET endpoint allows to fetch the current global configuration while board settings will be exposed through the board element on the regular API endpoints. </p>
+<h3 id="get-apiv10config-fetch-app-configuration-values">GET /api/v1.0/config - Fetch app configuration values</h3>
+<h4 id="response_36">Response</h4>
+<table>
+<thead>
+<tr>
+<th>Config key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>calendar</td>
+<td>Determines if the calendar/tasks integration through the CalDAV backend is enabled for the user (boolean)</td>
+</tr>
+<tr>
+<td>cardDetailsInModal</td>
+<td>Determines if the bigger view is used (boolean)</td>
+</tr>
+<tr>
+<td>cardIdBadge</td>
+<td>Determines if the ID badges are displayed on cards (boolean)</td>
+</tr>
+<tr>
+<td>groupLimit</td>
+<td>Determines if creating new boards is limited to certain groups of the instance. The resulting output is an array of group objects with the id and the displayname (Admin only)</td>
+</tr>
+</tbody>
+</table>
+<pre><code>{
+  &quot;ocs&quot;: {
+    &quot;meta&quot;: {
+      &quot;status&quot;: &quot;ok&quot;,
+      &quot;statuscode&quot;: 200,
+      &quot;message&quot;: &quot;OK&quot;
+    },
+    &quot;data&quot;: {
+      &quot;calendar&quot;: true,
+      &quot;cardDetailsInModal&quot;: true,
+      &quot;cardIdBadge&quot;: true,
+      &quot;groupLimit&quot;: [
+        {
+          &quot;id&quot;: &quot;admin&quot;,
+          &quot;displayname&quot;: &quot;admin&quot;
+        }
+      ]
+    }
+  }
+}
+
+</code></pre>
+
+<h3 id="post-apiv10configidkey-set-a-config-value">POST /api/v1.0/config/{id}/{key} - Set a config value</h3>
+<h4 id="request-parameters_33">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>id</td>
+<td>Integer</td>
+<td>The id of the board</td>
+</tr>
+<tr>
+<td>key</td>
+<td>String</td>
+<td>The config key to set, prefixed with <code>board:{boardId}:</code> for board specific settings</td>
+</tr>
+<tr>
+<td>value</td>
+<td>String</td>
+<td>The value that should be stored for the config key</td>
+</tr>
+</tbody>
+</table>
+<h5 id="board-configuration">Board configuration</h5>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>notify-due</td>
+<td><code>off</code>, <code>assigned</code> or <code>all</code></td>
+</tr>
+<tr>
+<td>calendar</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td>cardDetailsInModal</td>
+<td>Boolean</td>
+</tr>
+<tr>
+<td>cardIdBadge</td>
+<td>Boolean</td>
+</tr>
+</tbody>
+</table>
+<h4 id="example-request">Example request</h4>
+<pre><code>curl -X POST 'https://admin:admin@nextcloud.local/ocs/v2.php/apps/deck/api/v1.0/config/calendar' -H 'Accept: application/json' -H &quot;Content-Type: application/json&quot; -H 'OCS-APIRequest: true' --data-raw '{&quot;value&quot;:false}'
+
+{
+  &quot;ocs&quot;: {
+    &quot;meta&quot;: {
+      &quot;status&quot;: &quot;ok&quot;,
+      &quot;statuscode&quot;: 200,
+      &quot;message&quot;: &quot;OK&quot;
+    },
+    &quot;data&quot;: false
+  }
+}
+
+</code></pre>
+
+<h2 id="comments">Comments</h2>
+<h3 id="get-cardscardidcomments-list-comments">GET /cards/{cardId}/comments - List comments</h3>
+<h4 id="request-parameters_34">Request parameters</h4>
+<p>string $cardId, int $limit = 20, int $offset = 0</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cardId</td>
+<td>Integer</td>
+<td>The id of the card</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>Integer</td>
+<td>The maximum number of comments that should be returned, defaults to 20</td>
+</tr>
+<tr>
+<td>offset</td>
+<td>Integer</td>
+<td>The start offset used for pagination, defaults to 0</td>
+</tr>
+</tbody>
+</table>
+<pre><code>curl 'https://admin:admin@nextcloud/ocs/v2.php/apps/deck/api/v1.0/cards/12/comments' \
+    -H 'Accept: application/json' -H 'OCS-APIRequest: true'
+</code></pre>
+
+<h4 id="response_37">Response</h4>
+<p>A list of comments will be provided under the <code>ocs.data</code> key. If no or no more comments are available the list will be empty.</p>
+<h5 id="200-success_35">200 Success</h5>
+<pre><code>{
+  &quot;ocs&quot;: {
+    &quot;meta&quot;: {
+      &quot;status&quot;: &quot;ok&quot;,
+      &quot;statuscode&quot;: 200,
+      &quot;message&quot;: &quot;OK&quot;
+    },
+    &quot;data&quot;: [
+      {
+        &quot;id&quot;: 175,
+        &quot;objectId&quot;: 12,
+        &quot;message&quot;: &quot;This is a comment with a mention to  @alice&quot;,
+        &quot;actorId&quot;: &quot;admin&quot;,
+        &quot;actorType&quot;: &quot;users&quot;,
+        &quot;actorDisplayName&quot;: &quot;Administrator&quot;,
+        &quot;creationDateTime&quot;: &quot;2020-03-10T10:23:07+00:00&quot;,
+        &quot;mentions&quot;: [
+          {
+            &quot;mentionId&quot;: &quot;alice&quot;,
+            &quot;mentionType&quot;: &quot;user&quot;,
+            &quot;mentionDisplayName&quot;: &quot;alice&quot;
+          }
+        ]
+      }
+    ]
+  }
+}
+</code></pre>
+
+<p>In case a comment is marked as a reply to another comment object, the parent comment will be added as <code>replyTo</code> entry to the response. Only the next parent node is added, nested replies are not exposed directly. </p>
+<pre><code class="json">[
+  {
+    &quot;id&quot;: 175,
+    &quot;objectId&quot;: 12,
+    &quot;message&quot;: &quot;This is a comment with a mention to  @alice&quot;,
+    &quot;actorId&quot;: &quot;admin&quot;,
+    &quot;actorType&quot;: &quot;users&quot;,
+    &quot;actorDisplayName&quot;: &quot;Administrator&quot;,
+    &quot;creationDateTime&quot;: &quot;2020-03-10T10:23:07+00:00&quot;,
+    &quot;mentions&quot;: [
+      {
+        &quot;mentionId&quot;: &quot;alice&quot;,
+        &quot;mentionType&quot;: &quot;user&quot;,
+        &quot;mentionDisplayName&quot;: &quot;alice&quot;
+      }
+    ],
+    &quot;replyTo&quot;: {
+     &quot;id&quot;: 175,
+     &quot;objectId&quot;: 12,
+     &quot;message&quot;: &quot;This is a comment with a mention to  @alice&quot;,
+     &quot;actorId&quot;: &quot;admin&quot;,
+     &quot;actorType&quot;: &quot;users&quot;,
+     &quot;actorDisplayName&quot;: &quot;Administrator&quot;,
+     &quot;creationDateTime&quot;: &quot;2020-03-10T10:23:07+00:00&quot;,
+     &quot;mentions&quot;: [
+       {
+         &quot;mentionId&quot;: &quot;alice&quot;,
+         &quot;mentionType&quot;: &quot;user&quot;,
+         &quot;mentionDisplayName&quot;: &quot;alice&quot;
+       }
+     ]
+   }
+  }
+]
+</code></pre>
+
+<h3 id="post-cardscardidcomments-create-a-new-comment">POST /cards/{cardId}/comments - Create a new comment</h3>
+<h4 id="request-parameters_35">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cardId</td>
+<td>Integer</td>
+<td>The id of the card</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+<td>The message of the comment, maximum length is limited to 1000 characters</td>
+</tr>
+<tr>
+<td>parentId</td>
+<td>Integer</td>
+<td><em>(optional)</em> The start offset used for pagination, defaults to null</td>
+</tr>
+</tbody>
+</table>
+<p>Mentions will be parsed by the server. The server will return a list of mentions in the response to this request as shown below.</p>
+<pre><code>curl -X POST 'https://admin:admin@nextcloud/ocs/v2.php/apps/deck/api/v1.0/cards/12/comments' \
+    -H 'Accept: application/json' -H 'OCS-APIRequest: true'
+    -H 'Content-Type: application/json;charset=utf-8'
+    --data '{&quot;message&quot;:&quot;My message to @bob&quot;,&quot;parentId&quot;:null}'
+</code></pre>
+
+<h4 id="response_38">Response</h4>
+<p>A list of comments will be provided under the <code>ocs.data</code> key. If no or no more comments are available the list will be empty.</p>
+<h5 id="200-success_36">200 Success</h5>
+<pre><code>{
+  &quot;ocs&quot;: {
+    &quot;meta&quot;: {
+      &quot;status&quot;: &quot;ok&quot;,
+      &quot;statuscode&quot;: 200,
+      &quot;message&quot;: &quot;OK&quot;
+    },
+    &quot;data&quot;: {
+      &quot;id&quot;: &quot;177&quot;,
+      &quot;objectId&quot;: &quot;13&quot;,
+      &quot;message&quot;: &quot;My message to @bob&quot;,
+      &quot;actorId&quot;: &quot;admin&quot;,
+      &quot;actorType&quot;: &quot;users&quot;,
+      &quot;actorDisplayName&quot;: &quot;Administrator&quot;,
+      &quot;creationDateTime&quot;: &quot;2020-03-10T10:30:17+00:00&quot;,
+      &quot;mentions&quot;: [
+        {
+          &quot;mentionId&quot;: &quot;bob&quot;,
+          &quot;mentionType&quot;: &quot;user&quot;,
+          &quot;mentionDisplayName&quot;: &quot;bob&quot;
+        }
+      ]
+    }
+  }
+}
+</code></pre>
+
+<h5 id="400-bad-request_2">400 Bad request</h5>
+<p>A bad request response is returned if invalid input values are provided. The response message will contain details about which part was not valid.</p>
+<h5 id="404-not-found">404 Not found</h5>
+<p>A not found response might be returned if:
+- The card for the given cardId could not be found
+- The parent comment could not be found</p>
+<h3 id="put-cardscardidcommentscommentid-update-a-comment">PUT /cards/{cardId}/comments/{commentId} - Update a comment</h3>
+<h4 id="request-parameters_36">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cardId</td>
+<td>Integer</td>
+<td>The id of the card</td>
+</tr>
+<tr>
+<td>commentId</td>
+<td>Integer</td>
+<td>The id of the comment</td>
+</tr>
+<tr>
+<td>message</td>
+<td>String</td>
+<td>The message of the comment, maximum length is limited to 1000 characters</td>
+</tr>
+</tbody>
+</table>
+<p>Mentions will be parsed by the server. The server will return a list of mentions in the response to this request as shown below.</p>
+<p>Updating comments is limited to the current user being the same as the comment author specified in the <code>actorId</code> of the comment.</p>
+<pre><code>curl -X POST 'https://admin:admin@nextcloud/ocs/v2.php/apps/deck/api/v1.0/cards/12/comments' \
+    -H 'Accept: application/json' -H 'OCS-APIRequest: true'
+    -H 'Content-Type: application/json;charset=utf-8'
+    --data '{&quot;message&quot;:&quot;My message&quot;}'
+</code></pre>
+
+<h4 id="response_39">Response</h4>
+<p>A list of comments will be provided under the <code>ocs.data</code> key. If no or no more comments are available the list will be empty.</p>
+<h5 id="200-success_37">200 Success</h5>
+<pre><code>{
+  &quot;ocs&quot;: {
+    &quot;meta&quot;: {
+      &quot;status&quot;: &quot;ok&quot;,
+      &quot;statuscode&quot;: 200,
+      &quot;message&quot;: &quot;OK&quot;
+    },
+    &quot;data&quot;: {
+      &quot;id&quot;: &quot;177&quot;,
+      &quot;objectId&quot;: &quot;13&quot;,
+      &quot;message&quot;: &quot;My message&quot;,
+      &quot;actorId&quot;: &quot;admin&quot;,
+      &quot;actorType&quot;: &quot;users&quot;,
+      &quot;actorDisplayName&quot;: &quot;Administrator&quot;,
+      &quot;creationDateTime&quot;: &quot;2020-03-10T10:30:17+00:00&quot;,
+      &quot;mentions&quot;: []
+    }
+  }
+}
+</code></pre>
+
+<h5 id="400-bad-request_3">400 Bad request</h5>
+<p>A bad request response is returned if invalid input values are provided. The response message will contain details about which part was not valid.</p>
+<h5 id="404-not-found_1">404 Not found</h5>
+<p>A not found response might be returned if:
+- The card for the given cardId could not be found
+- The comment could not be found</p>
+<h3 id="delete-cardscardidcommentscommentid-delete-a-comment">DELETE /cards/{cardId}/comments/{commentId} - Delete a comment</h3>
+<h4 id="request-parameters_37">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>cardId</td>
+<td>Integer</td>
+<td>The id of the card</td>
+</tr>
+<tr>
+<td>commentId</td>
+<td>Integer</td>
+<td>The id of the comment</td>
+</tr>
+</tbody>
+</table>
+<p>Deleting comments is limited to the current user being the same as the comment author specified in the <code>actorId</code> of the comment.</p>
+<pre><code>curl -X DELETE 'https://admin:admin@nextcloud/ocs/v2.php/apps/deck/api/v1.0/cards/12/comments' \
+    -H 'Accept: application/json' -H 'OCS-APIRequest: true'
+    -H 'Content-Type: application/json;charset=utf-8'
+</code></pre>
+
+<h4 id="response_40">Response</h4>
+<p>A list of comments will be provided under the <code>ocs.data</code> key. If no or no more comments are available the list will be empty.</p>
+<h5 id="200-success_38">200 Success</h5>
+<pre><code>{
+  &quot;ocs&quot;: {
+    &quot;meta&quot;: {
+      &quot;status&quot;: &quot;ok&quot;,
+      &quot;statuscode&quot;: 200,
+      &quot;message&quot;: &quot;OK&quot;
+    },
+    &quot;data&quot;: []
+  }
+}
+</code></pre>
+
+<h5 id="400-bad-request_4">400 Bad request</h5>
+<p>A bad request response is returned if invalid input values are provided. The response message will contain details about which part was not valid.</p>
+<h5 id="404-not-found_2">404 Not found</h5>
+<p>A not found response might be returned if:
+- The card for the given cardId could not be found
+- The comment could not be found</p>
+<h2 id="sessions">Sessions</h2>
+<h3 id="put-sessioncreate-creates-a-new-session">PUT /session/create - creates a new session</h3>
+<h4 id="request-parameters_38">Request parameters</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the opened board</td>
+</tr>
+</tbody>
+</table>
+<pre><code>curl -X PUT 'https://admin:admin@nextcloud/ocs/v2.php/apps/deck/api/v1.0/session/create' \
+    -H 'Accept: application/json' -H 'OCS-APIRequest: true' \
+    -H 'Content-Type: application/json;charset=utf-8' \
+    --data '{&quot;boardId&quot;:1}'
+</code></pre>
+
+<h4 id="response_41">Response</h4>
+<h5 id="200-success_39">200 Success</h5>
+<pre><code class="json">{
+  &quot;ocs&quot;: {
+    &quot;meta&quot;: {
+      &quot;status&quot;: &quot;ok&quot;,
+      &quot;statuscode&quot;: 200,
+      &quot;message&quot;: &quot;OK&quot;
+    },
+    &quot;data&quot;: {
+      &quot;token&quot;: &quot;+zcJHf4rC6dobVSbuNa3delkCSfTW8OvYWTyLFvSpIv80FjtgLIj0ARlxspsazNQ&quot;
+    }
+  }
+}
+</code></pre>
+
+<h3 id="post-sessionsync-notifies-the-server-that-the-session-is-still-open">POST /session/sync - notifies the server, that the session is still open</h3>
+<h4 id="request-body_6">Request body</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the opened board</td>
+</tr>
+<tr>
+<td>token</td>
+<td>String</td>
+<td>The session token from the /sessions/create response</td>
+</tr>
+</tbody>
+</table>
+<pre><code>curl -X POST 'https://admin:admin@nextcloud/ocs/v2.php/apps/deck/api/v1.0/session/create' \
+    -H 'Accept: application/json' -H 'OCS-APIRequest: true' \
+    -H 'Content-Type: application/json;charset=utf-8' \
+    --data '{&quot;boardId&quot;:1, &quot;token&quot;:&quot;X3DyyoFslArF0t0NBZXzZXzcy8feoX/OEytSNXZtPg9TpUgO5wrkJ38IW3T/FfpV&quot;}'
+</code></pre>
+
+<h4 id="response_42">Response</h4>
+<h5 id="200-success_40">200 Success</h5>
+<pre><code class="json">{
+  &quot;ocs&quot;: {
+    &quot;meta&quot;: {
+      &quot;status&quot;: &quot;ok&quot;,
+      &quot;statuscode&quot;: 200,
+      &quot;message&quot;: &quot;OK&quot;
+    },
+    &quot;data&quot;: []
+  }
+}
+</code></pre>
+
+<h5 id="404-not-found_3">404 Not Found</h5>
+<p>the provided token is invalid or expired</p>
+<h3 id="post-sessionclose-closes-the-session">POST /session/close - closes the session</h3>
+<h4 id="request-body_7">Request body</h4>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>boardId</td>
+<td>Integer</td>
+<td>The id of the opened board</td>
+</tr>
+<tr>
+<td>token</td>
+<td>String</td>
+<td>The session token from the /sessions/create response</td>
+</tr>
+</tbody>
+</table>
+<pre><code>curl -X POST 'https://admin:admin@nextcloud/ocs/v2.php/apps/deck/api/v1.0/session/close' \
+    -H 'Accept: application/json' -H 'OCS-APIRequest: true' \
+    -H 'Content-Type: application/json;charset=utf-8' \
+    --data '{&quot;boardId&quot;:1, &quot;token&quot;:&quot;X3DyyoFslArF0t0NBZXzZXzcy8feoX/OEytSNXZtPg9TpUgO5wrkJ38IW3T/FfpV&quot;}'
+</code></pre>
+
+<h4 id="response_43">Response</h4>
+<h5 id="200-success_41">200 Success</h5>
+<pre><code class="json">{
+  &quot;ocs&quot;: {
+    &quot;meta&quot;: {
+      &quot;status&quot;: &quot;ok&quot;,
+      &quot;statuscode&quot;: 200,
+      &quot;message&quot;: &quot;OK&quot;
+    },
+    &quot;data&quot;: []
+  }
+}
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../API-Nextcloud/" class="btn btn-neutral float-right" title="Nextcloud API">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../Markdown/" class="btn btn-neutral" title="Markdown composing"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+      <script src="../readthedocs-data.js"></script>
+      
+      
+      <script src="../search/require.js"></script>
+      <script src="../search/search.js"></script>
+
+</body>
+</html>

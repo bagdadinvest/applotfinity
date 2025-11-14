@@ -1,0 +1,82 @@
+{% load coderedcms_tags i18n static language_switcher wagtailcore_tags wagtailimages_tags wagtailsettings_tags wagtailuserbar django_bootstrap5 %}
+
+<style>
+/* Language Switcher */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 5px;
+    color: white;
+}
+
+.dropdown-toggle img.lang-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.dropdown-toggle .arrow-down {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background: white;
+    list-style: none;
+    margin: 0;
+    display: none;
+    box-shadow: none;
+    width: max-content;
+}
+
+.dropdown-menu li {
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.dropdown-menu li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu li a img.lang-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.language-switcher:hover .dropdown-menu {
+    display: block;
+}
+</style>
+
+<div class="language-switcher">
+    <button class="dropdown-toggle" id="languageDropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="{% static 'images/flags/'|add:current_lang.language_code|add:'.png' %}"
+             alt="{{ current_lang.language_name }}" class="lang-icon">
+        <span class="arrow-down"></span>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+        {% for lang in language_links %}
+            <li>
+                <a href="{{ lang.url }}">
+                    <img src="{% static 'images/flags/'|add:lang.language_code|add:'.png' %}"
+                         alt="{{ lang.language_name }}" class="lang-icon">
+                      {{ lang.language_name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

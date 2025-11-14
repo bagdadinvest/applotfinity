@@ -1,0 +1,1297 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-17 14:17+0000\n"
+"PO-Revision-Date: 2025-02-17 18:32+0300\n"
+"Last-Translator:   <>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.10.1\n"
+
+#: base.html:28
+msgid "lotfinity I> Crafting Digital artister"
+msgstr "lotfinity I> Crafting Artista digitale"
+
+#: base.html:29 templates/wagtailcore/page.html:28
+msgid "lotfinity I> Creative Web Studio"
+msgstr "lotfinity I> Creative Web Studio"
+
+#: base.html:213 templates/pengaa/pengaa.html:314
+#: templates/pengaa/pengaa.html:336 templates/pengaa/pengaa.html:394
+#: templates/pengaa/pengaa.html:416 templates/pengaa/pengaa.html:499
+#: templates/pengaa/pengaa.html:521 templates/wagtailcore/page.html:291
+msgid "Work"
+msgstr "Lavoro"
+
+#: base.html:215 base.html:446 templates/wagtailcore/page.html:293
+#: templates/wagtailcore/page.html:624
+msgid "Studio"
+msgstr "Studio"
+
+#: base.html:230
+msgid "Crafting"
+msgstr "Crafting"
+
+#: base.html:231
+msgid "Digital artistery"
+msgstr "Artisteria digitale"
+
+#: base.html:248 templates/wagtailcore/page.html:321
+msgid "← Scroll"
+msgstr "← Scorri"
+
+#: base.html:276 templates/wagtailcore/page.html:350
+msgid "Fullstack Development"
+msgstr "Sviluppo Fullstack"
+
+#: base.html:281 templates/wagtailcore/page.html:378
+msgid "Web-apps"
+msgstr "Applicazioni web"
+
+#: base.html:282
+msgid "smart & Fast"
+msgstr "intelligente e veloce"
+
+#: base.html:289
+msgid ""
+"Now Live → Website Relaunch | Concept & Development<br class='hide-mobile'> "
+"| Design Editions Publisher"
+msgstr ""
+"Ora è disponibile il rilancio del sito web → | Concetto e sviluppo<br "
+"class='hide-mobile'> | Design Edizioni Editore"
+
+#: base.html:294
+msgid "Custom Web Projects with Modern Technology and Distinctive Design"
+msgstr ""
+"Progetti Web personalizzati con tecnologia moderna e design distintivo"
+
+#: base.html:296
+msgid ""
+"merges technology with aesthetics, transforming client needs into "
+"extraordinary digital experiences. Each website is unique and can be "
+"extended into a Progressive Web App or equipped with administration modules "
+"if needed."
+msgstr ""
+"fonde la tecnologia con l'estetica, trasformando le esigenze del cliente in "
+"straordinarie esperienze digitali. Ogni sito web è unico e può essere esteso"
+" in una Progressive Web App o dotato di moduli di amministrazione, se "
+"necessario."
+
+#: base.html:309 templates/wagtailcore/page.html:509
+msgid "In-Depth Research & Insightful Strategy"
+msgstr "Ricerca approfondita e strategia approfondita"
+
+#: base.html:319 templates/wagtailcore/page.html:519
+msgid "Tailored Digital Concepts & Strategic Vision"
+msgstr "Concetti digitali su misura e visione strategica"
+
+#: base.html:329 templates/wagtailcore/page.html:529
+msgid "User-Centric UI & UX Design"
+msgstr "Progettazione UI e UX incentrata sull'utente"
+
+#: base.html:359 templates/wagtailcore/page.html:559
+msgid "Frontend Development"
+msgstr "Sviluppo Frontend"
+
+#: base.html:369 templates/wagtailcore/page.html:569
+msgid "Animations & Interactions"
+msgstr "Animazioni e interazioni"
+
+#: base.html:379 templates/wagtailcore/page.html:579
+msgid "Admin System & Backend"
+msgstr "Sistema di amministrazione e backend"
+
+#: base.html:389 templates/wagtailcore/page.html:589
+msgid "Support & Maintaining"
+msgstr "Supporto e manutenzione"
+
+#: base.html:399
+msgid "start project"
+msgstr "Inizia il progetto"
+
+#: base.html:400
+msgid "Los!"
+msgstr "Los!"
+
+#: base.html:438 templates/wagtailcore/page.html:616
+msgid "That's"
+msgstr "Cioè"
+
+#: base.html:451 templates/wagtailcore/page.html:628
+msgid "passion & profession"
+msgstr "Passione e professione"
+
+#: base.html:462
+msgid "LOTFI KANOUNI, <br>FSDev & Designer, SEO & Marketing"
+msgstr "LOTFI KANOUNI, <br>FSDev &amp; Designer, SEO &amp; Marketing"
+
+#: base.html:480 templates/wagtailcore/page.html:788
+msgid "Fullstack Developer"
+msgstr "Sviluppatore Fullstack"
+
+#: base.html:553 templates/wagtailcore/page.html:844
+msgid "Expertise in:"
+msgstr "Competenze in:"
+
+#: base.html:556 base.html:557 base.html:558
+#: templates/wagtailcore/page.html:847
+msgid ""
+"Django, Flask, PaaS APIs, LLM Models, Hosting Solutions, Server Development,"
+" and more – Providing high-performance, scalable solutions for top-tier "
+"clients – Thanks!"
+msgstr ""
+"Django, Flask, API PaaS, modelli LLM, soluzioni di hosting, sviluppo di "
+"server e altro ancora - Fornire soluzioni scalabili e ad alte prestazioni "
+"per clienti di alto livello - Grazie!"
+
+#: base.html:586
+msgid "NewGen Web Design"
+msgstr "Progettazione web di nuova generazione"
+
+#: templates/basedoc.html:260
+msgid "Related"
+msgstr "Imparentato"
+
+#: templates/instagram_post_page.html:10 templates/pengaa/pengaa.html:1789
+msgid "Instagram"
+msgstr "Profilo Instagram"
+
+#: templates/instagram_post_page.html:81 templates/instagram_post_page.html:82
+msgid "logo"
+msgstr "logo"
+
+#: templates/instagram_post_page.html:90 templates/pengaa/pengaa.html:304
+#: templates/pengaa/pengaa.html:326 templates/pengaa/pengaa.html:384
+#: templates/pengaa/pengaa.html:406 templates/pengaa/pengaa.html:489
+#: templates/pengaa/pengaa.html:511
+msgid "Home"
+msgstr "Casa"
+
+#: templates/instagram_post_page.html:96
+#: templates/instagram_post_page.html:204
+#: templates/instagram_post_page.html:257
+#: templates/instagram_post_page.html:259 templates/pengaa/pengaa.html:1868
+msgid "Search"
+msgstr "Ricerca"
+
+#: templates/instagram_post_page.html:102
+msgid "Explore"
+msgstr "Esplorare"
+
+#: templates/instagram_post_page.html:108
+msgid "Reels"
+msgstr "Bobine"
+
+#: templates/instagram_post_page.html:114
+msgid "Messages"
+msgstr "Messaggi"
+
+#: templates/instagram_post_page.html:120
+#: templates/instagram_post_page.html:295
+msgid "Notifications"
+msgstr "Notifiche"
+
+#: templates/instagram_post_page.html:126
+msgid "Create"
+msgstr "Creare"
+
+#: templates/instagram_post_page.html:133
+msgid "Profile"
+msgstr "Profilo"
+
+#: templates/instagram_post_page.html:143
+msgid "More"
+msgstr "Più"
+
+#: templates/instagram_post_page.html:147
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: templates/instagram_post_page.html:151
+msgid "Your activity"
+msgstr "La tua attività"
+
+#: templates/instagram_post_page.html:155
+msgid "Saved"
+msgstr "Salvato"
+
+#: templates/instagram_post_page.html:159
+msgid "Switch appearance"
+msgstr "Aspetto dell'interruttore"
+
+#: templates/instagram_post_page.html:163
+msgid "Report a problem"
+msgstr "Segnala un problema"
+
+#: templates/instagram_post_page.html:167
+msgid "Switch accounts"
+msgstr "Cambiare account"
+
+#: templates/instagram_post_page.html:170
+msgid "Log out"
+msgstr "Disconnettersi"
+
+#: templates/instagram_post_page.html:188
+#: templates/instagram_post_page.html:227
+msgid "Following"
+msgstr "Seguente"
+
+#: templates/instagram_post_page.html:192
+#: templates/instagram_post_page.html:231
+msgid "Favorites"
+msgstr "Preferiti"
+
+#: templates/instagram_post_page.html:202
+msgid "search"
+msgstr "ricerca"
+
+#: templates/instagram_post_page.html:263
+msgid "Recent"
+msgstr "Recente"
+
+#: templates/instagram_post_page.html:264
+msgid "Clear all"
+msgstr "Cancella tutto"
+
+#: templates/instagram_post_page.html:274
+#: templates/instagram_post_page.html:443
+msgid "Dent-i Delil Health Group"
+msgstr "Gruppo Sanitario Dent-i Delil"
+
+#: templates/instagram_post_page.html:275
+#: templates/instagram_post_page.html:444
+msgid "Médecine et santé"
+msgstr "Médecine et santé"
+
+#: templates/instagram_post_page.html:281
+msgid "plus"
+msgstr "più"
+
+#: templates/instagram_post_page.html:306
+#: templates/instagram_post_page.html:326
+#: templates/instagram_post_page.html:368
+#: templates/instagram_post_page.html:410
+msgid "started following you."
+msgstr "ha iniziato a seguirti."
+
+#: templates/instagram_post_page.html:313
+#: templates/instagram_post_page.html:333
+#: templates/instagram_post_page.html:375
+#: templates/instagram_post_page.html:417
+msgid "Follow"
+msgstr "Seguire"
+
+#: templates/instagram_post_page.html:347
+#: templates/instagram_post_page.html:389
+msgid "liked your story."
+msgstr "Mi è piaciuta la tua storia."
+
+#: templates/instagram_post_page.html:435
+msgid "Let's Chat!"
+msgstr "Chiacchieriamo!"
+
+#: templates/instagram_post_page.html:439
+msgid "post"
+msgstr "Inserisci"
+
+#: templates/instagram_post_page.html:440
+msgid "followers"
+msgstr "Seguaci"
+
+#: templates/instagram_post_page.html:441
+msgid "following"
+msgstr "seguente"
+
+#: templates/instagram_post_page.html:465
+msgid "Our Clinic"
+msgstr "La nostra clinica"
+
+#: templates/instagram_post_page.html:471
+msgid "Our Patients"
+msgstr "I nostri pazienti"
+
+#: templates/instagram_post_page.html:477
+msgid "Zirconium"
+msgstr "Zirconio"
+
+#: templates/instagram_post_page.html:483
+msgid "Emax"
+msgstr "Emax"
+
+#: templates/instagram_post_page.html:489
+msgid "Our Dentists"
+msgstr "I nostri dentisti"
+
+#: templates/instagram_post_page.html:495
+msgid "Esenler"
+msgstr "Esenler"
+
+#: templates/instagram_post_page.html:501
+msgid "Beylikdizü"
+msgstr "Beylikdizü"
+
+#: templates/instagram_post_page.html:513
+msgid "New"
+msgstr "Nuovo"
+
+#: templates/instagram_post_page.html:526
+msgid "POSTS"
+msgstr "MESSAGGI"
+
+#: templates/instagram_post_page.html:532
+msgid "SAVED"
+msgstr "SALVATO"
+
+#: templates/instagram_post_page.html:538
+msgid "TAGGED"
+msgstr "TAGGATI"
+
+#: templates/instagram_post_page.html:591
+msgid "Post Details"
+msgstr "Dettagli del post"
+
+#: templates/instagram_post_page.html:610
+msgid "Create new post"
+msgstr "Crea un nuovo post"
+
+#: templates/instagram_post_page.html:616
+msgid "upload"
+msgstr "caricare"
+
+#: templates/instagram_post_page.html:617
+msgid "Drag photos and videos here"
+msgstr "Trascina qui foto e video"
+
+#: templates/instagram_post_page.html:619
+msgid "select from your computer"
+msgstr "Seleziona dal tuo computer"
+
+#: templates/instagram_post_page.html:640
+msgid "write your email"
+msgstr "Scrivi la tua email"
+
+#: templates/pengaa/pengaa.html:186 templates/pengaa/template_file.html:185
+msgid "Leading Digital Marketing Agency - Boost Your Online Presence"
+msgstr ""
+"Agenzia di marketing digitale leader - Potenzia la tua presenza online"
+
+#: templates/pengaa/pengaa.html:187 templates/pengaa/template_file.html:186
+msgid ""
+"Empower your brand with your Leading Digital Marketing Agency. From "
+"strategic planning to execution, Pengaa delivers tailored strategies"
+msgstr ""
+"Potenzia il tuo marchio con la tua agenzia di marketing digitale leader. "
+"Dalla pianificazione strategica all'esecuzione, Pengaa offre strategie su "
+"misura"
+
+#: templates/pengaa/pengaa.html:305 templates/pengaa/pengaa.html:327
+#: templates/pengaa/pengaa.html:385 templates/pengaa/pengaa.html:407
+#: templates/pengaa/pengaa.html:490 templates/pengaa/pengaa.html:512
+msgid "Marketing Solutions"
+msgstr "Soluzioni di marketing"
+
+#: templates/pengaa/pengaa.html:306 templates/pengaa/pengaa.html:328
+#: templates/pengaa/pengaa.html:386 templates/pengaa/pengaa.html:408
+#: templates/pengaa/pengaa.html:491 templates/pengaa/pengaa.html:513
+msgid "Who We Are"
+msgstr "Chi siamo"
+
+#: templates/pengaa/pengaa.html:308 templates/pengaa/pengaa.html:330
+#: templates/pengaa/pengaa.html:388 templates/pengaa/pengaa.html:410
+#: templates/pengaa/pengaa.html:493 templates/pengaa/pengaa.html:515
+msgid "About Us"
+msgstr "Chi Siamo"
+
+#: templates/pengaa/pengaa.html:309 templates/pengaa/pengaa.html:331
+#: templates/pengaa/pengaa.html:389 templates/pengaa/pengaa.html:411
+#: templates/pengaa/pengaa.html:494 templates/pengaa/pengaa.html:516
+msgid "Meet the Team"
+msgstr "Incontra il team"
+
+#: templates/pengaa/pengaa.html:310 templates/pengaa/pengaa.html:332
+#: templates/pengaa/pengaa.html:390 templates/pengaa/pengaa.html:412
+#: templates/pengaa/pengaa.html:495 templates/pengaa/pengaa.html:517
+#: templates/pengaa/pengaa.html:1217 templates/pengaa/pengaa.html:1727
+#: templates/pengaa/pengaa.html:1739
+msgid "Blog"
+msgstr "Blog"
+
+#: templates/pengaa/pengaa.html:313 templates/pengaa/pengaa.html:335
+#: templates/pengaa/pengaa.html:393 templates/pengaa/pengaa.html:415
+#: templates/pengaa/pengaa.html:498 templates/pengaa/pengaa.html:520
+msgid "Pricing"
+msgstr "Prezzi"
+
+#: templates/pengaa/pengaa.html:316 templates/pengaa/pengaa.html:338
+#: templates/pengaa/pengaa.html:396 templates/pengaa/pengaa.html:418
+#: templates/pengaa/pengaa.html:501 templates/pengaa/pengaa.html:523
+#: templates/pengaa/pengaa.html:1128 templates/pengaa/pengaa.html:1730
+#: templates/pengaa/pengaa.html:1742 templates/pengaa/template_file.html:1127
+msgid "Success Stories"
+msgstr "Storie di successo"
+
+#: templates/pengaa/pengaa.html:317 templates/pengaa/pengaa.html:339
+#: templates/pengaa/pengaa.html:397 templates/pengaa/pengaa.html:419
+#: templates/pengaa/pengaa.html:502 templates/pengaa/pengaa.html:524
+#: templates/pengaa/pengaa.html:1731 templates/pengaa/pengaa.html:1743
+msgid "Awards"
+msgstr "Premi"
+
+#: templates/pengaa/pengaa.html:320 templates/pengaa/pengaa.html:342
+#: templates/pengaa/pengaa.html:400 templates/pengaa/pengaa.html:422
+#: templates/pengaa/pengaa.html:505 templates/pengaa/pengaa.html:527
+#: templates/pengaa/pengaa.html:1732 templates/pengaa/pengaa.html:1744
+msgid "Contact"
+msgstr "Contatto"
+
+#: templates/pengaa/pengaa.html:323 templates/pengaa/pengaa.html:403
+#: templates/pengaa/pengaa.html:508 templates/pengaa/pengaa.html:1670
+#: templates/pengaa/pengaa.html:1685 templates/pengaa/pengaa.html:1700
+#: templates/pengaa/pengaa.html:1715 templates/pengaa/pengaa.html:1735
+#: templates/pengaa/pengaa.html:1771
+msgid "Menu"
+msgstr "Menù"
+
+#: templates/pengaa/pengaa.html:357 templates/pengaa/pengaa.html:437
+msgid "Free audit"
+msgstr "Audit gratuito"
+
+#: templates/pengaa/pengaa.html:458
+msgid "Get a Free Audit"
+msgstr "Ottieni un audit gratuito"
+
+#: templates/pengaa/pengaa.html:577 templates/pengaa/template_file.html:576
+msgid "Marketing Without Borders"
+msgstr "Marketing senza confini"
+
+#: templates/pengaa/pengaa.html:582 templates/pengaa/template_file.html:581
+msgid ""
+"Amplify your business with our data-centric, performance-driven Digital "
+"Marketing Solutions."
+msgstr ""
+"Amplifica il tuo business con le nostre soluzioni di marketing digitale "
+"incentrate sui dati e orientate alle prestazioni."
+
+#: templates/pengaa/pengaa.html:598 templates/pengaa/template_file.html:597
+msgid "Award Wining Agency"
+msgstr "Agenzia pluripremiata"
+
+#: templates/pengaa/pengaa.html:634 templates/pengaa/template_file.html:633
+msgid "Get Your Free Audit Today"
+msgstr "Ottieni il tuo audit gratuito oggi"
+
+#: templates/pengaa/pengaa.html:643
+msgid "Let’s Talk"
+msgstr "Parliamo"
+
+#: templates/pengaa/pengaa.html:684
+msgid "Connect our  experts"
+msgstr "Connetti i nostri esperti"
+
+#: templates/pengaa/pengaa.html:708
+msgid "1,596,000"
+msgstr "1,596,000"
+
+#: templates/pengaa/pengaa.html:712
+msgid "Revenue driven"
+msgstr "Orientato ai ricavi"
+
+#: templates/pengaa/pengaa.html:712
+msgid "for our clients"
+msgstr "per i nostri clienti"
+
+#: templates/pengaa/pengaa.html:763 templates/pengaa/pengaa.html:1483
+msgid "356+ Client reviews"
+msgstr "356+ Recensioni dei clienti"
+
+#: templates/pengaa/pengaa.html:775 templates/pengaa/template_file.html:774
+msgid "What we do"
+msgstr "Cosa facciamo"
+
+#: templates/pengaa/pengaa.html:779 templates/pengaa/template_file.html:778
+msgid "We solve digital challenges ( Pengaa Digital Marketing Agency )"
+msgstr "Risolviamo le sfide digitali ( Pengaa Digital Marketing Agency )"
+
+#: templates/pengaa/pengaa.html:787
+msgid ""
+"Together, we help our clients achieve tangible, measurable results. Focused "
+"on business outcomes — we bring a unique set of expertise and skills to the "
+"party."
+msgstr ""
+"Insieme, aiutiamo i nostri clienti a raggiungere risultati tangibili e "
+"misurabili. Focalizzati sui risultati aziendali: portiamo un insieme unico "
+"di competenze e abilità alla festa."
+
+#: templates/pengaa/pengaa.html:794
+msgid "More about us"
+msgstr "Di più su di noi"
+
+#: templates/pengaa/pengaa.html:818 templates/pengaa/template_file.html:817
+msgid "Better audiences"
+msgstr "Audience migliori"
+
+#: templates/pengaa/pengaa.html:822 templates/pengaa/pengaa.html:842
+#: templates/pengaa/pengaa.html:862
+msgid ""
+"Our proprietary solution leverages an in-house database of 260M+ customers "
+"and 2,000+ custom variables to build custom predictive models to drive "
+"business growth — from only the best customers."
+msgstr ""
+"La nostra soluzione proprietaria sfrutta un database interno di 260 milioni+"
+" di clienti e 2.000+ variabili personalizzate per creare modelli predittivi "
+"personalizzati per guidare la crescita del business, solo dai migliori "
+"clienti."
+
+#: templates/pengaa/pengaa.html:838 templates/pengaa/template_file.html:837
+msgid "Better analytics"
+msgstr "Analisi migliori"
+
+#: templates/pengaa/pengaa.html:858 templates/pengaa/template_file.html:857
+msgid "Better outcomes"
+msgstr "Risultati migliori"
+
+#: templates/pengaa/pengaa.html:882 templates/pengaa/template_file.html:881
+msgid "Our Capabilities"
+msgstr "Le nostre capacità"
+
+#: templates/pengaa/pengaa.html:886 templates/pengaa/template_file.html:885
+msgid "Data-driven, customer-centric digital services"
+msgstr "Servizi digitali incentrati sui dati e sul cliente"
+
+#: templates/pengaa/pengaa.html:895
+msgid "View all solutions"
+msgstr "Visualizza tutte le soluzioni"
+
+#: templates/pengaa/pengaa.html:918 templates/pengaa/pengaa.html:1666
+#: templates/pengaa/pengaa.html:1673
+msgid "Paid search marketing"
+msgstr "Marketing di ricerca a pagamento"
+
+#: templates/pengaa/pengaa.html:922
+msgid ""
+"Craft campaigns — built just for your business — to ensure real and "
+"quantifiable ROI. Digital Marketing Agency Responsibility"
+msgstr ""
+"Crea campagne, create appositamente per la tua azienda, per garantire un ROI"
+" reale e quantificabile. Responsabilità dell'agenzia di marketing digitale"
+
+#: templates/pengaa/pengaa.html:934 templates/pengaa/pengaa.html:973
+#: templates/pengaa/pengaa.html:1012 templates/pengaa/pengaa.html:1051
+msgid "Learn more"
+msgstr "Ulteriori informazioni"
+
+#: templates/pengaa/pengaa.html:957 templates/pengaa/pengaa.html:1667
+#: templates/pengaa/pengaa.html:1674
+msgid "Search engine optimization"
+msgstr "Ottimizzazione per i motori di ricerca"
+
+#: templates/pengaa/pengaa.html:961
+msgid ""
+"Maintain your best spot on the search results page, so you can find new "
+"customers and re-engage loyal ones."
+msgstr ""
+"Mantieni il tuo posto migliore nella pagina dei risultati di ricerca, in "
+"modo da poter trovare nuovi clienti e coinvolgere nuovamente quelli fedeli."
+
+#: templates/pengaa/pengaa.html:996 templates/pengaa/pengaa.html:1681
+#: templates/pengaa/pengaa.html:1688
+msgid "Email marketing"
+msgstr "Marketing via e-mail"
+
+#: templates/pengaa/pengaa.html:1000
+msgid ""
+"When it comes to reaching your target audience, you can’t get much closer "
+"than direct to their inboxes. The best from Pengaa Digital Marketing Agency"
+msgstr ""
+"Quando si tratta di raggiungere il tuo pubblico di destinazione, non puoi "
+"avvicinarti molto se non direttamente alle loro caselle di posta. Il meglio "
+"dell'agenzia di marketing digitale Pengaa"
+
+#: templates/pengaa/pengaa.html:1035 templates/pengaa/pengaa.html:1682
+#: templates/pengaa/pengaa.html:1689
+msgid "Conversion rate optimization"
+msgstr "Ottimizzazione del tasso di conversione"
+
+#: templates/pengaa/pengaa.html:1039
+msgid ""
+"Craft campaigns — built just for your business — to ensure real and "
+"quantifiable ROI."
+msgstr ""
+"Crea campagne, create appositamente per la tua azienda, per garantire un ROI"
+" reale e quantificabile."
+
+#: templates/pengaa/pengaa.html:1074 templates/pengaa/pengaa.html:1079
+#: templates/pengaa/template_file.html:1073
+#: templates/pengaa/template_file.html:1078
+msgid "Transparency"
+msgstr "Trasparenza"
+
+#: templates/pengaa/pengaa.html:1075 templates/pengaa/pengaa.html:1081
+#: templates/pengaa/template_file.html:1074
+#: templates/pengaa/template_file.html:1080
+msgid "Team of experts"
+msgstr "Team di esperti"
+
+#: templates/pengaa/pengaa.html:1076 templates/pengaa/pengaa.html:1083
+#: templates/pengaa/template_file.html:1075
+#: templates/pengaa/template_file.html:1082
+msgid "Results"
+msgstr "Risultati"
+
+#: templates/pengaa/pengaa.html:1080 templates/pengaa/template_file.html:1079
+#, python-format
+msgid "100%% Campaign transparency"
+msgstr "100%% Trasparenza della campagna"
+
+#: templates/pengaa/pengaa.html:1080 templates/pengaa/template_file.html:1079
+msgid ""
+"We cultivate an environment of transparency and communication in all we do. "
+"You don’t have to wonder what is going on with your campaign – we will keep "
+"you in the loop and in control."
+msgstr ""
+"Coltiviamo un ambiente di trasparenza e comunicazione in tutto ciò che "
+"facciamo. Non devi chiederti cosa sta succedendo con la tua campagna: ti "
+"terremo aggiornato e in controllo."
+
+#: templates/pengaa/pengaa.html:1082 templates/pengaa/template_file.html:1081
+msgid "Friendly team of experts"
+msgstr "Un team di esperti amichevole"
+
+#: templates/pengaa/pengaa.html:1082 templates/pengaa/template_file.html:1081
+msgid ""
+"Our experts and professionals are never more than an email or a phone call "
+"away. Or, if you prefer to talk face to face, drop by our office to discuss "
+"your plans and goals over a cup of coffee. We are here for you."
+msgstr ""
+"I nostri esperti e professionisti sono sempre a portata di e-mail o di "
+"telefonata. Oppure, se preferisci parlare faccia a faccia, passa dal nostro "
+"ufficio per discutere i tuoi piani e obiettivi davanti a una tazza di caffè."
+" Siamo qui per voi."
+
+#: templates/pengaa/pengaa.html:1084 templates/pengaa/template_file.html:1083
+msgid "Choose a partner that understands you"
+msgstr "Scegli un partner che ti capisca"
+
+#: templates/pengaa/pengaa.html:1084 templates/pengaa/template_file.html:1083
+msgid ""
+"All our decisions are based on your goals and concerns. Whether it’s website"
+" design, SEO, PPC, or anything else, we want to understand what keeps you up"
+" at night so we can deliver the business results you seek."
+msgstr ""
+"Tutte le nostre decisioni si basano sui tuoi obiettivi e sulle tue "
+"preoccupazioni. Che si tratti di progettazione di siti web, SEO, PPC o "
+"qualsiasi altra cosa, vogliamo capire cosa ti tiene sveglio la notte in modo"
+" da poter fornire i risultati aziendali che cerchi."
+
+#: templates/pengaa/pengaa.html:1099 templates/pengaa/template_file.html:1098
+msgid "Why Pengaa is your top-choice"
+msgstr "Perché Pengaa è la tua prima scelta"
+
+#: templates/pengaa/pengaa.html:1103
+msgid ""
+"We are a five-star rated holistic full-service Digital Marketing Agency, "
+"serving thousands of clients. Our digital agency covers all aspects of "
+"internet marketing: SEO, social media, and PPC management, all the way to "
+"email marketing, website design, application development, and web "
+"development."
+msgstr ""
+"Siamo un'agenzia di marketing digitale olistica a servizio completo a cinque"
+" stelle, al servizio di migliaia di clienti. La nostra agenzia digitale "
+"copre tutti gli aspetti dell'internet marketing: SEO, social media e "
+"gestione PPC, fino all'email marketing, alla progettazione di siti web, allo"
+" sviluppo di applicazioni e allo sviluppo web."
+
+#: templates/pengaa/pengaa.html:1112
+msgid "Get Proposal"
+msgstr "Richiedi una proposta"
+
+#: templates/pengaa/pengaa.html:1132 templates/pengaa/template_file.html:1131
+msgid "Our work drives businesses forward"
+msgstr "Il nostro lavoro fa progredire le aziende"
+
+#: templates/pengaa/pengaa.html:1146
+msgid "View all"
+msgstr "Vedi tutto"
+
+#: templates/pengaa/pengaa.html:1166 templates/pengaa/template_file.html:1165
+msgid "The best brands choose Pengaa"
+msgstr "Le migliori marche scelgono Pengaa"
+
+#: templates/pengaa/pengaa.html:1221
+msgid "Think further with our expert insights"
+msgstr "Pensa oltre con le nostre opinioni esperte"
+
+#: templates/pengaa/pengaa.html:1233
+msgid "The proof is in the numbers"
+msgstr "La prova è nei numeri"
+
+#: templates/pengaa/pengaa.html:1255
+#, python-format
+msgid "37%%"
+msgstr "37%%"
+
+#: templates/pengaa/pengaa.html:1267
+msgid "Average increase in sales for our clients"
+msgstr "Aumento medio delle vendite per i nostri clienti"
+
+#: templates/pengaa/pengaa.html:1289
+#, python-format
+msgid "100%%"
+msgstr "100%%"
+
+#: templates/pengaa/pengaa.html:1301
+msgid "Google and Facebook-certified team"
+msgstr "Team certificato Google e Facebook"
+
+#: templates/pengaa/pengaa.html:1323
+#, python-format
+msgid "81%%"
+msgstr "81%%"
+
+#: templates/pengaa/pengaa.html:1335
+msgid "Results improved compared to previous agencies"
+msgstr "Risultati migliorati rispetto alle agenzie precedenti"
+
+#: templates/pengaa/pengaa.html:1343
+msgid "282,000+"
+msgstr "282,000+"
+
+#: templates/pengaa/pengaa.html:1347
+msgid "Leads generated so far…"
+msgstr "Lead generati finora..."
+
+#: templates/pengaa/pengaa.html:1356
+msgid "Contact us"
+msgstr "Contattaci"
+
+#: templates/pengaa/pengaa.html:1391
+msgid ""
+"Exceptional service! Pengaa exceeded my expectations with their prompt and "
+"efficient response. The team was highly professional, and their attention to"
+" detail truly sets them apart. I highly recommend Pengaa for their "
+"outstanding customer service."
+msgstr ""
+"Servizio eccezionale! Pengaa ha superato le mie aspettative con la sua "
+"risposta rapida ed efficiente. Il team è stato altamente professionale e la "
+"loro attenzione ai dettagli li distingue davvero. Consiglio vivamente Pengaa"
+" per il loro eccezionale servizio clienti."
+
+#: templates/pengaa/pengaa.html:1392
+msgid "Edward Kennedy"
+msgstr "Edward Kennedy"
+
+#: templates/pengaa/pengaa.html:1392
+msgid "Director, Client Experience"
+msgstr "Direttore, Esperienza del cliente"
+
+#: templates/pengaa/pengaa.html:1401
+msgid ""
+"Pengaa has been a game-changer for my business. Their innovative solutions "
+"and commitment to customer satisfaction are unparalleled. I appreciate the "
+"seamless experience and the personalized approach they bring to every "
+"interaction. Thank you, Pengaa!"
+msgstr ""
+"Pengaa è stato un punto di svolta per la mia attività. Le loro soluzioni "
+"innovative e l'impegno per la soddisfazione del cliente non hanno eguali. "
+"Apprezzo l'esperienza senza soluzione di continuità e l'approccio "
+"personalizzato che apportano a ogni interazione. Grazie, Pengaa!"
+
+#: templates/pengaa/pengaa.html:1402
+msgid "Edith Sorelle"
+msgstr "Edith Sorelle"
+
+#: templates/pengaa/pengaa.html:1402
+msgid "Sales argent"
+msgstr "Vendite d'argento"
+
+#: templates/pengaa/pengaa.html:1411
+msgid ""
+"I've had the pleasure of working with Pengaa, and I must say they are a "
+"reliable partner. Their team is not only knowledgeable but also incredibly "
+"responsive. I feel confident knowing that Pengaa is there to support my "
+"business needs. Five stars!"
+msgstr ""
+"Ho avuto il piacere di lavorare con Pengaa, e devo dire che sono un partner "
+"affidabile. Il loro team non è solo ben informato, ma anche incredibilmente "
+"reattivo. Mi sento sicuro sapendo che Pengaa è lì per supportare le mie "
+"esigenze aziendali. Cinque stelle!"
+
+#: templates/pengaa/pengaa.html:1412
+msgid "Francess Liliane"
+msgstr "Francess Liliane"
+
+#: templates/pengaa/pengaa.html:1412
+msgid "Customer"
+msgstr "Cliente"
+
+#: templates/pengaa/pengaa.html:1421
+msgid ""
+"Pengaa has transformed the way we operate. The user-friendly interface and "
+"intuitive features make it easy to navigate, saving us time and effort. The "
+"level of support we receive from the Pengaa team is top-notch. We're "
+"thrilled to be working with such a forward-thinking company."
+msgstr ""
+"Pengaa ha trasformato il nostro modo di operare. L'interfaccia user-friendly"
+" e le funzioni intuitive facilitano la navigazione, facendoci risparmiare "
+"tempo e fatica. Il livello di supporto che riceviamo dal team di Pengaa è di"
+" prim'ordine. Siamo entusiasti di lavorare con un'azienda così lungimirante."
+
+#: templates/pengaa/pengaa.html:1422
+msgid "John Doe"
+msgstr "John Doe"
+
+#: templates/pengaa/pengaa.html:1422
+msgid "CEO"
+msgstr "Amministratore delegato"
+
+#: templates/pengaa/pengaa.html:1429
+msgid "Previous"
+msgstr "Precedente"
+
+#: templates/pengaa/pengaa.html:1432
+msgid "Next"
+msgstr "Prossimo"
+
+#: templates/pengaa/pengaa.html:1520
+msgid "View all reviews"
+msgstr "Visualizza tutte le recensioni"
+
+#: templates/pengaa/pengaa.html:1562
+msgid ""
+"See how we can help your business grow with Our Digital Marketing Agency"
+msgstr ""
+"Scopri come possiamo aiutare la tua azienda a crescere con la nostra agenzia"
+" di marketing digitale"
+
+#: templates/pengaa/pengaa.html:1570
+msgid "Ready to speak with a marketing expert? Give us a ring"
+msgstr "Sei pronto a parlare con un esperto di marketing? Dacci un anello"
+
+#: templates/pengaa/pengaa.html:1577
+msgid "+90 536 219 62 10"
+msgstr "+90 536 219 62 10"
+
+#: templates/pengaa/pengaa.html:1590
+msgid "Get a Free audit"
+msgstr "Richiedi un audit gratuito"
+
+#: templates/pengaa/pengaa.html:1613
+msgid "A partner, not a vendor"
+msgstr "Un partner, non un fornitore"
+
+#: templates/pengaa/pengaa.html:1637
+msgid "6.7"
+msgstr "6.7"
+
+#: templates/pengaa/pengaa.html:1641
+msgid "/ Average ROAS"
+msgstr "/ ROAS medio"
+
+#: templates/pengaa/pengaa.html:1645
+msgid "across our 100+ Global Clients on SEO, PPC &amp; Social"
+msgstr "tra i nostri 100+ clienti globali su SEO, PPC e Sociale"
+
+#: templates/pengaa/pengaa.html:1661
+msgid "Solutions"
+msgstr "Soluzioni"
+
+#: templates/pengaa/pengaa.html:1696 templates/pengaa/pengaa.html:1703
+#: templates/pengaa/pengaa.html:1995
+msgid "Social Media Marketing"
+msgstr "Social Media Marketing"
+
+#: templates/pengaa/pengaa.html:1697 templates/pengaa/pengaa.html:1704
+msgid "Google shopping"
+msgstr "Acquisti su Google"
+
+#: templates/pengaa/pengaa.html:1711 templates/pengaa/pengaa.html:1718
+msgid "Influencer marketing"
+msgstr "Influencer marketing"
+
+#: templates/pengaa/pengaa.html:1712 templates/pengaa/pengaa.html:1719
+msgid "Amazon shopping"
+msgstr "Acquisti su Amazon"
+
+#: templates/pengaa/pengaa.html:1726 templates/pengaa/pengaa.html:1738
+msgid "About"
+msgstr "Circa"
+
+#: templates/pengaa/pengaa.html:1728 templates/pengaa/pengaa.html:1740
+msgid "Careers"
+msgstr "Carriere"
+
+#: templates/pengaa/pengaa.html:1729 templates/pengaa/pengaa.html:1741
+msgid "Team"
+msgstr "Squadra"
+
+#: templates/pengaa/pengaa.html:1758
+msgid "© 2025"
+msgstr "© Anno 2025"
+
+#: templates/pengaa/pengaa.html:1762
+msgid "Pengaa"
+msgstr "Pengaa"
+
+#: templates/pengaa/pengaa.html:1767 templates/pengaa/pengaa.html:1774
+msgid "Terms &amp; Conditions"
+msgstr "Termini &amp; Condizioni"
+
+#: templates/pengaa/pengaa.html:1768 templates/pengaa/pengaa.html:1775
+msgid "Privacy Policy"
+msgstr "Informativa sulla privacy"
+
+#: templates/pengaa/pengaa.html:1794
+msgid "Twitter"
+msgstr "Cinguettare"
+
+#: templates/pengaa/pengaa.html:1799
+msgid "Facebook"
+msgstr "Contatti"
+
+#: templates/pengaa/pengaa.html:1804
+msgid "Youtube"
+msgstr "Canale Youtube"
+
+#: templates/pengaa/pengaa.html:1824
+msgid "top"
+msgstr "In alto"
+
+#: templates/pengaa/pengaa.html:1833
+msgid "WhatsApp us"
+msgstr "Inviaci WhatsApp"
+
+#: templates/pengaa/pengaa.html:1903
+msgid "Paid Search Marketing"
+msgstr "Marketing di ricerca a pagamento"
+
+#: templates/pengaa/pengaa.html:1925
+msgid "Search Engine Optimization"
+msgstr "Ottimizzazione per i motori di ricerca"
+
+#: templates/pengaa/pengaa.html:1947
+msgid "Email Marketing"
+msgstr "Marketing via e-mail"
+
+#: templates/pengaa/pengaa.html:1969
+msgid "Conversion Rate Optimization"
+msgstr "Ottimizzazione del tasso di conversione"
+
+#: templates/pengaa/pengaa.html:2018
+msgid "Web Delopment"
+msgstr "Rimozione del nastro"
+
+#: templates/pengaa/pengaa.html:2040
+msgid "Influencer Marketing"
+msgstr "Influencer Marketing"
+
+#: templates/pengaa/pengaa.html:2062
+msgid "Amazon Shopping"
+msgstr "Acquisti su Amazon"
+
+#: templates/pengaa/pengaa.html:2088
+msgid "Explore all solutions"
+msgstr "Esplora tutte le soluzioni"
+
+#: templates/wagtailcore/page.html:27
+msgid " Crafting Digital artister"
+msgstr " Creazione Artista digitale"
+
+#: templates/wagtailcore/page.html:29
+msgid ""
+"Development of unique digital experiences with precision & love ♥ Fabienne "
+"Bielmann, Interactive Developer, Freiburg Fribourg Schweiz CH"
+msgstr ""
+"Sviluppo di esperienze digitali uniche con precisione e amore ♥ Fabienne "
+"Bielmann, Interactive Developer, Friburgo, Svizzera, CH"
+
+#: templates/wagtailcore/page.html:288
+msgid "↑"
+msgstr "↑"
+
+#: templates/wagtailcore/page.html:336
+msgid "Unique"
+msgstr "Unico"
+
+#: templates/wagtailcore/page.html:336
+msgid "Digital"
+msgstr "Digitale"
+
+#: templates/wagtailcore/page.html:336
+msgid "artistery"
+msgstr "Maestria"
+
+#: templates/wagtailcore/page.html:357
+msgid "Why manage your website when it can manage itself?"
+msgstr "Perché gestire il tuo sito web quando può gestirsi da solo?"
+
+#: templates/wagtailcore/page.html:364
+msgid "Imagine a website that can listen, think, act – and REMEMBER..!!"
+msgstr ""
+"Immagina un sito web in grado di ascoltare, pensare, agire e RICORDARE..!!"
+
+#: templates/wagtailcore/page.html:369
+msgid ""
+"Having an AI-powered website is great—it can assist with content creation, "
+"SEO, and basic management. But what if your website was an autonomous "
+"intelligence, built to understand, adapt, and evolve with you? With MEMORY "
+"at its core, you never have to repeat yourself—once it learns your "
+"preferences, content style, and design approach, it handles everything "
+"seamlessly. The websites we create at "
+msgstr ""
+"Avere un sito web basato sull'intelligenza artificiale è fantastico: può "
+"aiutare con la creazione di contenuti, la SEO e la gestione di base. Ma cosa"
+" succederebbe se il tuo sito web fosse un'intelligenza autonoma, costruita "
+"per capire, adattarsi ed evolversi con te? Con MEMORY al centro, non devi "
+"mai ripeterti: una volta che impara le tue preferenze, lo stile dei "
+"contenuti e l'approccio al design, gestisce tutto senza problemi. I siti web"
+" che creiamo su "
+
+#: templates/wagtailcore/page.html:369 templates/wagtailcore/page.html:496
+#: templates/wagtailcore/page.html:616 templates/wagtailcore/page.html:788
+#: templates/wagtailcore/page.html:872
+msgid "lotfinity"
+msgstr "lotfinity"
+
+#: templates/wagtailcore/page.html:369
+msgid ""
+" are not just AI-supported; they are AI itself—self-thinking, self-"
+"optimizing, and constantly improving. This is not just a website. This is "
+"intelligence in motion."
+msgstr ""
+" non sono solo supportati dall'intelligenza artificiale; sono l'intelligenza"
+" artificiale stessa: pensa se stessa, si ottimizza e migliora costantemente."
+" Questo non è solo un sito web. Questa è l'intelligenza in movimento."
+
+#: templates/wagtailcore/page.html:379
+msgid "Smart & Fast : Click to Preview !"
+msgstr "Intelligente e veloce : Clicca per visualizzare l'anteprima!"
+
+#: templates/wagtailcore/page.html:387
+msgid "DentiDelil International"
+msgstr "DentiDelil Internazionale"
+
+#: templates/wagtailcore/page.html:389
+msgid ""
+"A state-of-the-art multilingual CMS-powered website designed to cater to "
+"international dental services."
+msgstr ""
+"Un sito web multilingue all'avanguardia basato su CMS, progettato per "
+"soddisfare i servizi odontoiatrici internazionali."
+
+#: templates/wagtailcore/page.html:390 templates/wagtailcore/page.html:414
+#: templates/wagtailcore/page.html:436 templates/wagtailcore/page.html:460
+msgid "Key Features:"
+msgstr "Caratteristiche principali:"
+
+#: templates/wagtailcore/page.html:392
+msgid "Multilingual Support: Supports 13+ languages."
+msgstr "Supporto multilingue: supporta 13+ lingue."
+
+#: templates/wagtailcore/page.html:393
+msgid ""
+"AI-Powered Enhancements: Integrated OpenAI GPT-4o model and Azure "
+"Translator."
+msgstr ""
+"Miglioramenti basati sull'intelligenza artificiale: modello OpenAI GPT-4o "
+"integrato e Azure Translator."
+
+#: templates/wagtailcore/page.html:394
+msgid "Dynamic API Integrations: JotForm, Unsplash, and more."
+msgstr "Integrazioni API dinamiche: JotForm, Unsplash e altro ancora."
+
+#: templates/wagtailcore/page.html:411
+msgid "DentiDelil App"
+msgstr "Applicazione DentiDelil"
+
+#: templates/wagtailcore/page.html:413
+msgid "A modern, all-in-one dashboard for beauty salon management."
+msgstr ""
+"Una dashboard moderna e all-in-one per la gestione dei saloni di bellezza."
+
+#: templates/wagtailcore/page.html:416
+msgid "Appointment Scheduling: Interactive calendar with reminders."
+msgstr ""
+"Pianificazione degli appuntamenti: Calendario interattivo con promemoria."
+
+#: templates/wagtailcore/page.html:417
+msgid "Client Management: Profiles and treatment histories."
+msgstr "Gestione dei clienti: profili e storie di trattamento."
+
+#: templates/wagtailcore/page.html:418
+msgid "Real-Time Analytics: Revenue, top services, and productivity tracking."
+msgstr ""
+"Analisi in tempo reale: fatturato, servizi di alto livello e monitoraggio "
+"della produttività."
+
+#: templates/wagtailcore/page.html:433
+msgid "Dental Management App"
+msgstr "App per la gestione dentale"
+
+#: templates/wagtailcore/page.html:435
+msgid "A comprehensive dental management solution."
+msgstr "Una soluzione completa per la gestione dentale."
+
+#: templates/wagtailcore/page.html:438
+msgid "Patient Scheduling: Simplify appointment management for clinics."
+msgstr ""
+"Pianificazione dei pazienti: semplifica la gestione degli appuntamenti per "
+"le cliniche."
+
+#: templates/wagtailcore/page.html:439
+msgid "Records Management: Secure and accessible patient records."
+msgstr ""
+"Gestione delle registrazioni: Cartelle cliniche sicure e accessibili per i "
+"pazienti."
+
+#: templates/wagtailcore/page.html:440
+msgid "Financial Tracking: Monitor invoices, payments, and insurance claims."
+msgstr ""
+"Monitoraggio finanziario: monitora fatture, pagamenti e richieste di "
+"risarcimento assicurativo."
+
+#: templates/wagtailcore/page.html:441
+msgid ""
+"Multilingual Support: Enable communication with patients from diverse "
+"backgrounds."
+msgstr ""
+"Supporto multilingue: consente la comunicazione con pazienti di diversa "
+"estrazione."
+
+#: templates/wagtailcore/page.html:457
+msgid "Salon Nassnor"
+msgstr "Salone Nassnor"
+
+#: templates/wagtailcore/page.html:459
+msgid ""
+"The pro version of Salon Nassnor, offering enhanced tools for beauty "
+"professionals."
+msgstr ""
+"La versione pro di Salon Nassnor, che offre strumenti avanzati per i "
+"professionisti della bellezza."
+
+#: templates/wagtailcore/page.html:462
+msgid "Advanced Appointment System: Customizable bookings and reminders."
+msgstr ""
+"Sistema avanzato di appuntamenti: prenotazioni e promemoria "
+"personalizzabili."
+
+#: templates/wagtailcore/page.html:463
+msgid "Inventory Management: Track beauty product availability."
+msgstr ""
+"Gestione dell'inventario: tieni traccia della disponibilità dei prodotti di "
+"bellezza."
+
+#: templates/wagtailcore/page.html:464
+msgid "Customer Relationship Management: Tools to engage and retain clients."
+msgstr ""
+"Gestione delle relazioni con i clienti: strumenti per coinvolgere e "
+"fidelizzare i clienti."
+
+#: templates/wagtailcore/page.html:465
+msgid "Reporting Tools: Visualize revenue and staff productivity."
+msgstr ""
+"Strumenti di reporting: visualizza i ricavi e la produttività del personale."
+
+#: templates/wagtailcore/page.html:484
+msgid "Your Website. Your Data. Your Control."
+msgstr "Il tuo sito web. I tuoi dati. Il tuo controllo."
+
+#: templates/wagtailcore/page.html:491
+msgid "A Website That Operates Locally, Securely, and Intelligently."
+msgstr "Un sito Web che opera localmente, in modo sicuro e intelligente."
+
+#: templates/wagtailcore/page.html:496
+msgid ""
+"Unlike AI systems that rely on external APIs, every website we create at "
+msgstr ""
+"A differenza dei sistemi di intelligenza artificiale che si basano su API "
+"esterne, ogni sito web che creiamo "
+
+#: templates/wagtailcore/page.html:496
+msgid ""
+" runs entirely on private hardware  either yours or ours—ensuring total "
+"independence and security. Your website, your chatbot, and every lead or "
+"interaction it handles remain stored in a dedicated environment. No third-"
+"party access, no unnecessary data exposure—only YOU control your digital "
+"ecosystem."
+msgstr ""
+" Funziona interamente su hardware privato, tuo o nostro, garantendo totale "
+"indipendenza e sicurezza. Il tuo sito web, il tuo chatbot e ogni lead o "
+"interazione che gestisce rimangono archiviati in un ambiente dedicato. "
+"Nessun accesso di terze parti, nessuna esposizione inutile dei dati: solo TU"
+" controlli il tuo ecosistema digitale."
+
+#: templates/wagtailcore/page.html:498
+msgid ""
+"More than just a management system, this AI functions as an integrated "
+"chatbot that captures leads, automates interactions, and serves as a "
+"seamless bridge between human teams and AI automation. Whether it's "
+"assisting customers, structuring content, or executing tasks in real time, "
+"it operates like an intelligent digital assistant always working behind the "
+"scenes."
+msgstr ""
+"Più che un semplice sistema di gestione, questa intelligenza artificiale "
+"funziona come un chatbot integrato che acquisisce lead, automatizza le "
+"interazioni e funge da ponte senza soluzione di continuità tra i team umani "
+"e l'automazione dell'intelligenza artificiale. Che si tratti di assistere i "
+"clienti, strutturare contenuti o eseguire attività in tempo reale, funziona "
+"come un assistente digitale intelligente che lavora sempre dietro le quinte."
+
+#: templates/wagtailcore/page.html:539
+msgid "Content Management"
+msgstr "Gestione dei contenuti"
+
+#: templates/wagtailcore/page.html:598
+msgid "Get in Touch"
+msgstr "Mettiti in contatto"
+
+#: templates/wagtailcore/page.html:639
+msgid "LOTFI KANOUNI, FSDev & Designer, SEO & Marketing"
+msgstr "LOTFI KANOUNI, FSDev &amp; Designer, SEO &amp; Marketing"
+
+#: templates/wagtailcore/page.html:788
+msgid "2025"
+msgstr "2025"
+
+#: templates/wagtailcore/page.html:798
+msgid "Gmail"
+msgstr "Gmail"
+
+#: templates/wagtailcore/page.html:802
+msgid "Telegram"
+msgstr "Telegramma"
+
+#: templates/wagtailcore/page.html:805
+msgid "WhatsApp"
+msgstr "Contatti"
+
+#: templates/wagtailcore/page.html:808
+msgid "github"
+msgstr "github"
+
+#: templates/wagtailcore/page.html:817
+msgid ""
+"Mind. Clean code from scratch, immersive web experience, performance, "
+"organized workflow, fun!"
+msgstr ""
+"Mente. Codice pulito da zero, esperienza web coinvolgente, prestazioni, "
+"flusso di lavoro organizzato, divertimento!"
+
+#: templates/wagtailcore/page.html:833
+msgid "Istanbul - Turkey"
+msgstr "Istanbul - Turchia"
+
+#: templates/wagtailcore/page.html:873
+msgid "NewGen Web Design >"
+msgstr "NewGen Web Design >"

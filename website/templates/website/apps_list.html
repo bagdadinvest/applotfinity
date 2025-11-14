@@ -1,0 +1,41 @@
+{% extends "website/apps_index_page.html" %}
+{% load coderedcms_tags i18n static wagtailcore_tags wagtailimages_tags wagtailsettings_tags wagtailuserbar %}
+
+{% block content %}
+<section class="app-section" id="app">
+
+    <div class="app-section__content">
+
+        <h1 class="app-section__title">{{ page.title }}</h1>
+        <p class="app-section__description">{{ page.description|richtext }}</p>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                {% for app in page.get_children.live %}
+                <div class="swiper-slide">
+                    <img src="{{ app.specific.image.url }}" alt="{{ app.specific.name }} logo" class="img--responsive mockup"
+                         data-url="{{ app.specific.url }}"
+                         data-name="{{ app.specific.name }}"
+                         data-description="{{ app.specific.description|linebreaksbr }}"
+                         data-tech-details='{% for tech in app.specific.tech_stack.all %}{"name": "{{ tech.name }}", "logo": "{{ tech.logo.url }}", "description": "{{ tech.description }}"}{% if not forloop.last %}, {% endif %}{% endfor %}'>
+                </div>
+                {% endfor %}
+
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <div id="tooltip"></div>
+
+    </div>
+
+</section>
+{% endblock %}
+
+
+

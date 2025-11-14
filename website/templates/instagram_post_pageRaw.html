@@ -1,0 +1,2158 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="/static/insta/sass/vender/bootstrap.css">
+    <link rel="stylesheet" href="/static/insta/sass/vender/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/insta/owlcarousel/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/static/insta/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.css">
+    <link rel="stylesheet" href="/static/insta/sass/main.css">
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="post_page">
+        <!--***** nav menu start ****** -->
+        <div class="nav_menu">
+            <div class="fix_top">
+                <!-- nav for big->medium screen -->
+                <div class="nav">
+                    <div class="logo">
+                        <a href="./home.html">
+                            <img class="d-block d-lg-none small-logo" src="/static/insta/images/instagram.png" alt="logo">
+                            <img class="d-none d-lg-block" src="/static/insta/images/logo_menu.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li>
+                                <a class="active" href="home.html">
+                                    <img src="/static/insta/images/accueil.png">
+                                    <span class="d-none d-lg-block ">Home</span>
+                                </a>
+                            </li>
+                            <li id="search_icon">
+                                <a href="#">
+                                    <img src="/static/insta/images/search.png">
+                                    <span class="d-none d-lg-block search">Search </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./explore.html">
+                                    <img src="/static/insta/images/compass.png">
+                                    <span class="d-none d-lg-block ">Explore</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./reels.html">
+                                    <img src="/static/insta/images/video.png">
+                                    <span class="d-none d-lg-block ">Reels</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./messages.html">
+                                    <img src="/static/insta/images/send.png">
+                                    <span class="d-none d-lg-block ">Messages</span>
+                                </a>
+                            </li>
+                            <li class="notification_icon">
+                     the           <a href="#">
+                                    <img src="/static/insta/images/love.png">
+                                    <span class="d-none d-lg-block ">Notifications</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#create_modal">
+                                    <img src="/static/insta/images/tab.png">
+                                    <span class="d-none d-lg-block ">Create</span>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="./profile.html">
+                                    <img class="circle story" src="/static/insta/images/profile.png">
+                                    <span class="d-none d-lg-block ">Profile</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="more">
+                        <div class="btn-group dropup">
+                            <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="/static/insta/images/menu.png">
+                                <span class="d-none d-lg-block ">More</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">
+                                        <span>Settings</span>
+                                        <img src="/static/insta/images/reglage.png">
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <span>Your activity</span>
+                                        <img src="/static/insta/images/history.png">
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <span>Saved</span>
+                                        <img src="/static/insta/images/save-instagram.png">
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <span>Switch apperance</span>
+                                        <img src="/static/insta/images/moon.png">
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <span>Report a problem</span>
+                                        <img src="/static/insta/images/problem.png">
+                                    </a></li>
+                                <li><a class="dropdown-item bold_border" href="#">
+                                        <span>Switch accounts</span>
+                                    </a></li>
+                                <li><a class="dropdown-item" href="./login.html">
+                                        <span>Log out</span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <!--  -->
+
+                    </div>
+                </div>
+                <!-- nav for small screen  -->
+                <div class="nav_sm">
+                    <div class="content">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img class="logo" src="/static/insta/images/logo_menu.png">
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">
+                                        <span>Following</span>
+                                        <img src="/static/insta/images/add-friend.png">
+                                    </a></li>
+                                <li><a class="dropdown-item" href="#">
+                                        <span>Favorites</span>
+                                        <img src="/static/insta/images/star.png">
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="left">
+                            <div class="search_bar">
+                                <div class="input-group">
+                                    <div class="form-outline">
+                                        <div>
+                                            <img src="/static/insta/images/search.png" alt="search">
+                                        </div>
+                                        <input type="search" id="form1" class="form-control" placeholder="Search" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="notifications notification_icon">
+                                <a href="./notification.html">
+                                     <img src="/static/insta/images/love.png">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- nav for ex-small screen  -->
+                <div class="nav_xm">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img class="logo" src="/static/insta/images/logo_menu.png">
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">
+                                    <span>Following</span>
+                                    <img src="/static/insta/images/add-friend.png">
+                                </a></li>
+                            <li><a class="dropdown-item" href="#">
+                                    <span>Favorites</span>
+                                    <img src="/static/insta/images/star.png">
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="left">
+                        
+                        <img src="/static/insta/images/send.png">
+                        <a href="./notification.html">
+                            <img class="notification_icon" src="/static/insta/images/love.png">
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- menu in the botton for smal screen  -->
+            <div class="nav_bottom">
+                <a href="./home.html"><img src="/static/insta/images/accueil.png"></a>
+                <a href="./explore.html"><img src="/static/insta/images/compass.png"></a>
+                <a href="./reels.html"><img src="/static/insta/images/video.png"></a>
+                <a  href="#" data-bs-toggle="modal" data-bs-target="#create_modal"><img src="/static/insta/images/tab.png"></a>
+                <a href="profile.html"><img class="circle story" src="/static/insta/images/profile_img.jpg"></a>
+            </div>
+        </div>
+        <!-- search  -->
+        <div id="search" class="search_section">
+            <h2>Search</h2>
+            <form method="post">
+                <input type="text" placeholder="Search">
+            </form>
+            <div class="find">
+                <div class="desc">
+                    <h4>Recent</h4>
+                    <p><a href="#">Clear all</a></p>
+                </div>
+                <div class="account">
+                    <div class="cart">
+                        <div>
+                            <div class="img">
+                                <img src="/static/insta/images/profile_img.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">dentidelil</p>
+                                <p class="second_name"><b>Dent-i Delil Health Group</b>
+                                     Médecine et santé
+                                    🇩🇿🇸🇦🇲🇫🇺🇲🇪🇸🇭🇺🇨🇭🇨🇦🇧🇪🇬🇧
+                                    🇹🇷 +90 555 104 30 34
+                                    🇹🇷 +90 552 391 49 30
+                                    🌍 +90 546 102 62 00
+                                    https://dentidelil-international... 
+                                    plus
+                                    www.dentidelil-international.com</p>
+                            </div>
+                        </div>
+                        <div class="clear">
+                            <a href="#">X</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- search  -->
+        <!-- notification -->
+        <div id="notification" class="notification_section">
+            <h2>Notifications</h2>
+            <div class="notifications">
+                <div class="notif follow_notif">
+                    <div class="cart">
+                        <div>
+                            <div class="img">
+                                <img src="/static/insta/images/profile_img.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">
+                                    dentidelil
+                                    <span class="desc">started following you.</span>
+                                    <span class="time">2h</span>
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="follow_you">
+                            <button class="follow_text">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="notif follow_notif">
+                    <div class="cart">
+                        <div>
+                            <div class="img">
+                                <img src="/static/insta/images/profile_img.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">
+                                    dentidelil
+                                    <span class="desc">started following you.</span>
+                                    <span class="time">2h</span>
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="follow_you">
+                            <button class="follow_text">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="notif story_notif">
+                    <div class="cart">
+                        <div>
+                            <div class="img">
+                                <img src="/static/insta/images/profile_img.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="info">
+                                    <p class="name">
+                                        dentidelil
+                                        <span class="desc">liked your story.</span>
+                                        <span class="time">2d</span>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story_like">
+                            <img src="/static/insta/images/img2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="notif follow_notif">
+                    <div class="cart">
+                        <div>
+                            <div class="img">
+                                <img src="/static/insta/images/profile_img.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">
+                                    dentidelil
+                                    <span class="desc">started following you.</span>
+                                    <span class="time">2h</span>
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="follow_you">
+                            <button class="follow_text">Follow</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="notif story_notif">
+                    <div class="cart">
+                        <div>
+                            <div class="img">
+                                <img src="/static/insta/images/profile_img.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <div class="info">
+                                    <p class="name">
+                                        dentidelil
+                                        <span class="desc">liked your story.</span>
+                                        <span class="time">2d</span>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="story_like">
+                            <img src="/static/insta/images/img2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="notif follow_notif">
+                    <div class="cart">
+                        <div>
+                            <div class="img">
+                                <img src="/static/insta/images/profile_img.jpg" alt="">
+                            </div>
+                            <div class="info">
+                                <p class="name">
+                                    dentidelil
+                                    <span class="desc">started following you.</span>
+                                    <span class="time">2h</span>
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="follow_you">
+                            <button class="follow_text">Follow</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--***** nav menu end ****** -->
+
+        <div class="profile_container">
+            <div class="profile_info">
+                <div class="cart">
+                        <div class="img">
+                            <img src="/static/insta/images/profile_img.png" alt="">
+                        </div>
+                        <div class="info">
+                            <p class="name">
+                                dentidelil
+                                <button class="edit_profile">
+                                    Let's Chat! 
+                                </button>
+                            </p>
+                            <div class="general_info">
+                                <p><span>1</span> post</p>
+                                <p><span>177</span> followers</p>
+                                <p><span>137</span> following</p>
+                            </div>
+                            <p class="nick_name">Dent-i Delil Health Group<br>
+                                Médecine et santé
+                                </p>
+                            <p class="desc">
+                                🇩🇿🇸🇦🇲🇫🇺🇲🇪🇸🇭🇺🇨🇭🇨🇦🇧🇪🇬🇧<br>
+                                🇹🇷 +90 555 104 30 34<br>
+                                🇹🇷 +90 552 391 49 30<br>
+                                🌍 +90 546 102 62 00<br>
+                                https://dentidelil-international.com<br>
+                                📍Bağcılar İSTANBUL<br>
+                                www.dentidelil-international.com<br>
+
+                            </p>
+                        </div>
+                </div>
+            </div>
+            <div class="highlights swiper-container" style="max-width: 700px; overflow: hidden;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide highlight">
+                        <div class="img">
+                            <img src="/static/insta/images/profile_story.png" alt="">
+                        </div>
+                        <p>Our Clinic</p>
+                    </div>
+                    <div class="swiper-slide highlight">
+                        <div class="img">
+                            <img src="/static/insta/images/profile_story.png" alt="">
+                        </div>
+                        <p>Our Patients</p>
+                    </div>
+                    <div class="swiper-slide highlight">
+                        <div class="img">
+                            <img src="/static/insta/images/profile_story.png" alt="">
+                        </div>
+                        <p>Zirconium</p>
+                    </div>
+                    <div class="swiper-slide highlight">
+                        <div class="img">
+                            <img src="/static/insta/images/profile_story.png" alt="">
+                        </div>
+                        <p>Emax</p>
+                    </div>
+                    <div class="swiper-slide highlight">
+                        <div class="img">
+                            <img src="/static/insta/images/profile_story.png" alt="">
+                        </div>
+                        <p>Our Dentists</p>
+                    </div>
+                    <div class="swiper-slide highlight">
+                        <div class="img">
+                            <img src="/static/insta/images/profile_story.png" alt="">
+                        </div>
+                        <p>Esenler</p>
+                    </div>
+                    <div class="swiper-slide highlight">
+                        <div class="img">
+                            <img src="/static/insta/images/profile_story.png" alt="">
+                        </div>
+                        <p>Beylikdizü</p>
+                    </div>
+                    <div class="swiper-slide highlight">
+                        <div class="img">
+                            <img src="/static/insta/images/profile_story.png" alt="">
+                        </div>
+                        <p>🦷</p>
+                    </div>
+                    <div class="swiper-slide highlight highlight_add">
+                        <div class="img">
+                            <img src="/static/insta/images/plus.png" alt="">
+                        </div>
+                        <p>New</p>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <!-- Add Navigation -->
+            </div>
+
+            <!-- Swiper JS -->
+            <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    var swiper = new Swiper('.swiper-container', {
+                        slidesPerView: '7',
+                        spaceBetween: 1,
+                        pagination: {
+                            el: '.swiper-pagination',
+                            clickable: true,
+                        },
+                        navigation: {
+                            nextEl: '.swiper-button-next',
+                            prevEl: '.swiper-button-prev',
+                        },
+                    });
+                });
+            </script>
+            <hr>
+            <div class="posts_profile">
+                <ul class="nav-pills w-100 d-flex justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item mx-2" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+                            <img src="/static/insta/images/feed.png" alt="posts">
+                            POSTS
+                        </button>
+                    </li>
+                    <li class="nav-item mx-2" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                        <img src="/static/insta/images/save-instagram.png" alt="saved posts">
+                        SAVED
+                      </button>
+                    </li>
+                    <li class="nav-item mx-2" role="presentation">
+                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                        <img src="/static/insta/images/tagged.png" alt="tagged posts">
+                        TAGGED
+                      </button>
+                    </li>
+                  </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                            <div id="posts_sec" class="post">
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2024-12-28_21-23-47_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2024-12-28_21-18-56_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2024-12-25_22-12-12_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2024-12-20_05-22-37_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2024-12-12_20-25-04_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-12-29_13-41-54_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-12-22_13-41-07_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-12-20_12-40-19_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-11-24_12-54-18_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-11-22_09-53-31_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-10-28_07-00-34_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-10-17_13-56-22_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-10-12_13-28-20_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-10-11_09-13-27_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-10-04_13-31-33_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-09-26_08-27-41_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-09-21_14-49-20_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-08-18_14-22-19_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-08-16_09-47-13_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-06-19_09-00-11_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-06-16_09-00-34_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-06-14_09-00-11_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-06-12_09-00-09_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-06-09_09-46-10_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-06-07_09-00-10_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-06-05_09-00-08_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-05-26_08-52-20_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-05-24_09-00-06_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-05-22_09-00-09_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-05-19_09-00-00_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-05-17_09-00-08_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-05-15_09-00-08_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-05-12_09-01-40_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-05-03_09-00-04_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-05-02_10-00-02_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-04-27_11-47-27_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-04-26_09-00-07_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-04-24_09-00-03_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-04-20_08-48-22_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-04-19_09-00-06_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-04-17_09-00-05_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-04-14_09-03-16_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-04-05_09-00-08_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-04-03_09-00-09_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-03-31_09-07-32_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-03-29_09-00-08_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-03-20_09-00-09_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-03-17_09-04-29_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-03-15_09-00-02_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-03-13_09-00-02_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-03-10_10-42-41_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-03-08_09-00-03_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-03-06_09-00-03_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-03-03_08-28-34_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                                    <div class="item">
+                                        
+                                        <img class="img-fluid item_img lazy-load" data-src="/media/instagram_posts/2023-03-01_09-00-01_UTC.jpg" alt="Post Image" loading="lazy">
+                                        
+                                    </div>
+                                
+                            </div>
+                                                    </div>
+                    </div>
+                </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                        <div id="saved_sec" class="post">
+                            <div class="item">
+                                <img class="img-fluid item_img" src="https://i.ibb.co/6WvdZS9/account12.jpg' %}" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-fluid item_img" src="https://i.ibb.co/pJ8thst/account13.jpg' %}" alt="">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                        <div id="tagged" class="post">
+                            <div class="item">
+                                <img class="img-fluid item_img" src="https://i.ibb.co/Zhc5hHp/account4.jpg' %}" alt="">
+                            </div>
+                            <div class="item">
+                                <img class="img-fluid item_img" src="https://i.ibb.co/SPTNbJL/account5.jpg' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                  </div>
+            </div>
+        </div>
+
+
+        <!--Create model-->
+        <div class="modal fade" id="create_modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title w-100 fs-5 d-flex align-items-end justify-content-between"
+                            id="exampleModalLabel">
+                            <span class="title_create">Create new post</span>
+                            <button class="next_btn_post btn_link"></button>
+                        </h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <img class="up_load" src="/static/insta/images/upload.png" alt="upload">
+                        <p>Drag photos and videos here</p>
+                        <button class="btn btn-primary btn_upload">
+                            select from your computer
+                            <form id="upload-form">
+                                <input class="input_select" type="file" id="image-upload" name="image-upload">
+                            </form>
+                        </button>
+                        <div id="image-container" class="hide_img">
+                        </div>
+                        <div id="image_description" class="hide_img">
+                            <div class="img_p"></div>
+                            <div class="description">
+                                <div class="cart">
+                                    <div>
+                                        <div class="img">
+                                            <img src="/static/insta/images/profile_img.jpg">
+                                        </div>
+                                        <div class="info">
+                                            <p class="name">dentidelil</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <form>
+                                    <textarea type="text" id="emoji_create" placeholder="write your email"></textarea>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="post_published hide_img">
+                            <img src="{% static 'insta/images/uploaded_post.gif" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpqW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>    
+    <script src="/static/insta/owlcarousel/jquery.min.js"></script>
+    <script src="/static/insta/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/static/insta/js/carousel.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/emojionearea/3.4.2/emojionearea.min.js"></script>
+    <script src="/static/insta/js/main.js"></script>
+    <script src="/static/insta/js/jquery.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let page = 2;  // Start from page 2 since first 10 posts are loaded
+            let loading = false;
+            let postContainer = document.getElementById("posts_sec");
+        
+            function lazyLoadImages() {
+                document.querySelectorAll(".lazy-load").forEach(img => {
+                    if (img.getAttribute("data-src") && img.getBoundingClientRect().top < window.innerHeight) {
+                        img.src = img.getAttribute("data-src");
+                        img.removeAttribute("data-src");
+                    }
+                });
+            }
+        
+            function loadMorePosts() {
+                if (loading) return;
+                loading = true;
+        
+                fetch(window.location.href + "?page=" + page, {
+                    headers: { "X-Requested-With": "XMLHttpRequest" }  // Important for detecting AJAX requests
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.posts.length === 0) return;  // No more posts
+        
+                    data.posts.forEach(post => {
+                        let item = document.createElement("div");
+                        item.classList.add("item");
+        
+                        if (post.image) {
+                            let img = document.createElement("img");
+                            img.classList.add("img-fluid", "item_img", "lazy-load");
+                            img.setAttribute("data-src", post.image);
+                            item.appendChild(img);
+                        } else if (post.video) {
+                            let video = document.createElement("video");
+                            video.classList.add("img-fluid", "item_img");
+                            video.setAttribute("controls", "true");
+                            let source = document.createElement("source");
+                            source.setAttribute("src", post.video);
+                            source.setAttribute("type", "video/mp4");
+                            video.appendChild(source);
+                            item.appendChild(video);
+                        }
+        
+                        postContainer.appendChild(item);
+                    });
+        
+                    page++;
+                    loading = false;
+                    lazyLoadImages();  // Trigger lazy loading after adding new posts
+                })
+                .catch(() => loading = false);
+            }
+        
+            window.addEventListener("scroll", function () {
+                lazyLoadImages();
+        
+                if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 300) {
+                    loadMorePosts();
+                }
+            });
+        
+            lazyLoadImages();  // Ensure images load on initial page load
+        });
+        </script>
+        
+
+
+<link rel="stylesheet" href="/static/debug_toolbar/css/print.css" media="print">
+<link rel="stylesheet" href="/static/debug_toolbar/css/toolbar.css">
+
+
+<script type="module" src="/static/debug_toolbar/js/toolbar.js" async></script>
+
+<div id="djDebug" class="djdt-hidden" dir="ltr"
+     
+     data-store-id="f04f9a33c3c24e9e95b3ada5d991eebc"
+     data-render-panel-url="/__debug__/render_panel/"
+     
+     
+     
+     data-sidebar-url="/__debug__/history_sidebar/"
+     
+     data-default-show="true"
+       data-update-on-fetch="False"
+     data-theme="auto">
+  <div class="djdt-hidden" id="djDebugToolbar">
+    <ul id="djDebugPanelList">
+      <li><a id="djHideToolBarButton" href="#" title="Hide toolbar">Hide »</a></li>
+      <li>
+        <a id="djToggleThemeButton" href="#" title="Toggle Theme">
+          Toggle Theme <svg
+  aria-hidden="true"
+  class="djdt-hidden theme-auto"
+  fill="currentColor"
+  viewBox="0 0 32 32"
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M0 16q0 3.264 1.28 6.24t3.392 5.088 5.12 3.424 6.208 1.248q3.264 0 6.24-1.248t5.088-3.424 3.392-5.088 1.28-6.24-1.28-6.208-3.392-5.12-5.088-3.392-6.24-1.28q-3.264 0-6.208 1.28t-5.12 3.392-3.392 5.12-1.28 6.208zM4 16q0-3.264 1.6-6.016t4.384-4.352 6.016-1.632 6.016 1.632 4.384 4.352 1.6 6.016-1.6 6.048-4.384 4.352-6.016 1.6-6.016-1.6-4.384-4.352-1.6-6.048zM16 26.016q2.72 0 5.024-1.344t3.648-3.648 1.344-5.024-1.344-4.992-3.648-3.648-5.024-1.344v20z"
+  ></path>
+</svg>
+<svg
+  aria-hidden="true"
+  class="djdt-hidden theme-light"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V4C12.75 4.41421 12.4142 4.75 12 4.75C11.5858 4.75 11.25 4.41421 11.25 4V2C11.25 1.58579 11.5858 1.25 12 1.25ZM3.66865 3.71609C3.94815 3.41039 4.42255 3.38915 4.72825 3.66865L6.95026 5.70024C7.25596 5.97974 7.2772 6.45413 6.9977 6.75983C6.7182 7.06553 6.2438 7.08677 5.9381 6.80727L3.71609 4.77569C3.41039 4.49619 3.38915 4.02179 3.66865 3.71609ZM20.3314 3.71609C20.6109 4.02179 20.5896 4.49619 20.2839 4.77569L18.0619 6.80727C17.7562 7.08677 17.2818 7.06553 17.0023 6.75983C16.7228 6.45413 16.744 5.97974 17.0497 5.70024L19.2718 3.66865C19.5775 3.38915 20.0518 3.41039 20.3314 3.71609ZM12 7.75C9.65279 7.75 7.75 9.65279 7.75 12C7.75 14.3472 9.65279 16.25 12 16.25C14.3472 16.25 16.25 14.3472 16.25 12C16.25 9.65279 14.3472 7.75 12 7.75ZM6.25 12C6.25 8.82436 8.82436 6.25 12 6.25C15.1756 6.25 17.75 8.82436 17.75 12C17.75 15.1756 15.1756 17.75 12 17.75C8.82436 17.75 6.25 15.1756 6.25 12ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H4C4.41421 11.25 4.75 11.5858 4.75 12C4.75 12.4142 4.41421 12.75 4 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM19.25 12C19.25 11.5858 19.5858 11.25 20 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H20C19.5858 12.75 19.25 12.4142 19.25 12ZM17.0255 17.0252C17.3184 16.7323 17.7933 16.7323 18.0862 17.0252L20.3082 19.2475C20.6011 19.5404 20.601 20.0153 20.3081 20.3082C20.0152 20.6011 19.5403 20.601 19.2475 20.3081L17.0255 18.0858C16.7326 17.7929 16.7326 17.3181 17.0255 17.0252ZM6.97467 17.0253C7.26756 17.3182 7.26756 17.7931 6.97467 18.086L4.75244 20.3082C4.45955 20.6011 3.98468 20.6011 3.69178 20.3082C3.39889 20.0153 3.39889 19.5404 3.69178 19.2476L5.91401 17.0253C6.2069 16.7324 6.68177 16.7324 6.97467 17.0253ZM12 19.25C12.4142 19.25 12.75 19.5858 12.75 20V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V20C11.25 19.5858 11.5858 19.25 12 19.25Z"
+    fill="currentColor"
+  />
+</svg>
+<svg
+  aria-hidden="true"
+  class="djdt-hidden theme-dark"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+
+        </a>
+      </li>
+      
+        
+
+<li id="djdt-HistoryPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtHistoryPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="History" class="HistoryPanel">
+  
+  History
+  
+    
+      <br><small>/en-us/instagrid/</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-VersionsPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtVersionsPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Versions" class="VersionsPanel">
+  
+  Versions
+  
+    
+      <br><small>Django 5.1.5</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-TimerPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtTimerPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Time" class="TimerPanel">
+  
+  Time
+  
+    
+      <br><small>CPU: 20.79ms (21.21ms)</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-SettingsPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtSettingsPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Settings from mysite.settings.dev" class="SettingsPanel">
+  
+  Settings
+  
+    
+      
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-HeadersPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtHeadersPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Headers" class="HeadersPanel">
+  
+  Headers
+  
+    
+      
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-RequestPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtRequestPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Request" class="RequestPanel">
+  
+  Request
+  
+    
+      <br><small>serve</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-SQLPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtSQLPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="SQL queries from 1 connection" class="SQLPanel">
+  
+  SQL
+  
+    
+      <br><small>1 query in 0.64ms</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-StaticFilesPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtStaticFilesPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Static files (517 found, 65 used)" class="StaticFilesPanel">
+  
+  Static files
+  
+    
+      <br><small>65 files used</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-TemplatesPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtTemplatesPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Templates (1 rendered)" class="TemplatesPanel">
+  
+  Templates
+  
+    
+      <br><small>instagram_post_page.html</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-AlertsPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtAlertsPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Alerts" class="AlertsPanel">
+  
+  Alerts
+  
+    
+      <br><small>1 alert</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-CachePanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtCachePanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Cache calls from 1 backend" class="CachePanel">
+  
+  Cache
+  
+    
+      <br><small>0 calls in 0.00ms</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-SignalsPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtSignalsPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Signals" class="SignalsPanel">
+  
+  Signals
+  
+    
+      <br><small>172 receivers of 15 signals</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-RedirectsPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtRedirectsPanel" title="Enable for next and successive requests">
+  
+    <div class="djdt-contentless djdt-disabled">
+  
+  Intercept redirects
+  
+  
+    </div>
+  
+</li>
+
+      
+        
+
+<li id="djdt-ProfilingPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtProfilingPanel" title="Enable for next and successive requests">
+  
+    <div class="djdt-contentless djdt-disabled">
+  
+  Profiling
+  
+  
+    </div>
+  
+</li>
+
+      
+    </ul>
+  </div>
+  <div class="djdt-hidden" id="djDebugToolbarHandle">
+    <div title="Show toolbar" id="djShowToolBarButton">
+      <span id="djShowToolBarD">D</span><span id="djShowToolBarJ">J</span>DT
+    </div>
+  </div>
+
+  
+    
+
+
+  <div id="HistoryPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>History</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="VersionsPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Versions</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="TimerPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Time</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="SettingsPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Settings from mysite.settings.dev</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="HeadersPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Headers</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="RequestPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Request</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="SQLPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>SQL queries from 1 connection</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="StaticFilesPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Static files (517 found, 65 used)</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="TemplatesPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Templates (1 rendered)</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="AlertsPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Alerts</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="CachePanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Cache calls from 1 backend</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="SignalsPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Signals</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+
+  
+    
+
+
+
+  
+  <div id="djDebugWindow" class="djdt-panelContent djdt-hidden"></div>
+</div>
+
+
+<link rel="stylesheet" href="/static/debug_toolbar/css/print.css" media="print">
+<link rel="stylesheet" href="/static/debug_toolbar/css/toolbar.css">
+
+
+<script type="module" src="/static/debug_toolbar/js/toolbar.js" async></script>
+
+<div id="djDebug" class="djdt-hidden" dir="ltr"
+     
+     data-store-id="2d88160483fe4b4fb06f16aeac3303bc"
+     data-render-panel-url="/__debug__/render_panel/"
+     
+     
+     
+     data-sidebar-url="/__debug__/history_sidebar/"
+     
+     data-default-show="true"
+       data-update-on-fetch="False"
+     data-theme="auto">
+  <div class="djdt-hidden" id="djDebugToolbar">
+    <ul id="djDebugPanelList">
+      <li><a id="djHideToolBarButton" href="#" title="Hide toolbar">Hide »</a></li>
+      <li>
+        <a id="djToggleThemeButton" href="#" title="Toggle Theme">
+          Toggle Theme <svg
+  aria-hidden="true"
+  class="djdt-hidden theme-auto"
+  fill="currentColor"
+  viewBox="0 0 32 32"
+  version="1.1"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M0 16q0 3.264 1.28 6.24t3.392 5.088 5.12 3.424 6.208 1.248q3.264 0 6.24-1.248t5.088-3.424 3.392-5.088 1.28-6.24-1.28-6.208-3.392-5.12-5.088-3.392-6.24-1.28q-3.264 0-6.208 1.28t-5.12 3.392-3.392 5.12-1.28 6.208zM4 16q0-3.264 1.6-6.016t4.384-4.352 6.016-1.632 6.016 1.632 4.384 4.352 1.6 6.016-1.6 6.048-4.384 4.352-6.016 1.6-6.016-1.6-4.384-4.352-1.6-6.048zM16 26.016q2.72 0 5.024-1.344t3.648-3.648 1.344-5.024-1.344-4.992-3.648-3.648-5.024-1.344v20z"
+  ></path>
+</svg>
+<svg
+  aria-hidden="true"
+  class="djdt-hidden theme-light"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M12 1.25C12.4142 1.25 12.75 1.58579 12.75 2V4C12.75 4.41421 12.4142 4.75 12 4.75C11.5858 4.75 11.25 4.41421 11.25 4V2C11.25 1.58579 11.5858 1.25 12 1.25ZM3.66865 3.71609C3.94815 3.41039 4.42255 3.38915 4.72825 3.66865L6.95026 5.70024C7.25596 5.97974 7.2772 6.45413 6.9977 6.75983C6.7182 7.06553 6.2438 7.08677 5.9381 6.80727L3.71609 4.77569C3.41039 4.49619 3.38915 4.02179 3.66865 3.71609ZM20.3314 3.71609C20.6109 4.02179 20.5896 4.49619 20.2839 4.77569L18.0619 6.80727C17.7562 7.08677 17.2818 7.06553 17.0023 6.75983C16.7228 6.45413 16.744 5.97974 17.0497 5.70024L19.2718 3.66865C19.5775 3.38915 20.0518 3.41039 20.3314 3.71609ZM12 7.75C9.65279 7.75 7.75 9.65279 7.75 12C7.75 14.3472 9.65279 16.25 12 16.25C14.3472 16.25 16.25 14.3472 16.25 12C16.25 9.65279 14.3472 7.75 12 7.75ZM6.25 12C6.25 8.82436 8.82436 6.25 12 6.25C15.1756 6.25 17.75 8.82436 17.75 12C17.75 15.1756 15.1756 17.75 12 17.75C8.82436 17.75 6.25 15.1756 6.25 12ZM1.25 12C1.25 11.5858 1.58579 11.25 2 11.25H4C4.41421 11.25 4.75 11.5858 4.75 12C4.75 12.4142 4.41421 12.75 4 12.75H2C1.58579 12.75 1.25 12.4142 1.25 12ZM19.25 12C19.25 11.5858 19.5858 11.25 20 11.25H22C22.4142 11.25 22.75 11.5858 22.75 12C22.75 12.4142 22.4142 12.75 22 12.75H20C19.5858 12.75 19.25 12.4142 19.25 12ZM17.0255 17.0252C17.3184 16.7323 17.7933 16.7323 18.0862 17.0252L20.3082 19.2475C20.6011 19.5404 20.601 20.0153 20.3081 20.3082C20.0152 20.6011 19.5403 20.601 19.2475 20.3081L17.0255 18.0858C16.7326 17.7929 16.7326 17.3181 17.0255 17.0252ZM6.97467 17.0253C7.26756 17.3182 7.26756 17.7931 6.97467 18.086L4.75244 20.3082C4.45955 20.6011 3.98468 20.6011 3.69178 20.3082C3.39889 20.0153 3.39889 19.5404 3.69178 19.2476L5.91401 17.0253C6.2069 16.7324 6.68177 16.7324 6.97467 17.0253ZM12 19.25C12.4142 19.25 12.75 19.5858 12.75 20V22C12.75 22.4142 12.4142 22.75 12 22.75C11.5858 22.75 11.25 22.4142 11.25 22V20C11.25 19.5858 11.5858 19.25 12 19.25Z"
+    fill="currentColor"
+  />
+</svg>
+<svg
+  aria-hidden="true"
+  class="djdt-hidden theme-dark"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M3.32031 11.6835C3.32031 16.6541 7.34975 20.6835 12.3203 20.6835C16.1075 20.6835 19.3483 18.3443 20.6768 15.032C19.6402 15.4486 18.5059 15.6834 17.3203 15.6834C12.3497 15.6834 8.32031 11.654 8.32031 6.68342C8.32031 5.50338 8.55165 4.36259 8.96453 3.32996C5.65605 4.66028 3.32031 7.89912 3.32031 11.6835Z"
+    stroke="currentColor"
+    stroke-width="2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+
+        </a>
+      </li>
+      
+        
+
+<li id="djdt-HistoryPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtHistoryPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="History" class="HistoryPanel">
+  
+  History
+  
+    
+      <br><small>/admin/pages/7/edit/preview/</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-VersionsPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtVersionsPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Versions" class="VersionsPanel">
+  
+  Versions
+  
+    
+      <br><small>Django 5.1.5</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-TimerPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtTimerPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Time" class="TimerPanel">
+  
+  Time
+  
+    
+      <br><small>CPU: 61.26ms (62.73ms)</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-SettingsPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtSettingsPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Settings from mysite.settings.dev" class="SettingsPanel">
+  
+  Settings
+  
+    
+      
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-HeadersPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtHeadersPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Headers" class="HeadersPanel">
+  
+  Headers
+  
+    
+      
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-RequestPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtRequestPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Request" class="RequestPanel">
+  
+  Request
+  
+    
+      <br><small>PreviewOnEdit</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-SQLPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtSQLPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="SQL queries from 1 connection" class="SQLPanel">
+  
+  SQL
+  
+    
+      <br><small>12 queries in 2.99ms</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-StaticFilesPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtStaticFilesPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Static files (517 found, 3 used)" class="StaticFilesPanel">
+  
+  Static files
+  
+    
+      <br><small>3 files used</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-TemplatesPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtTemplatesPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Templates (1 rendered)" class="TemplatesPanel">
+  
+  Templates
+  
+    
+      <br><small>instagram_post_page.html</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-AlertsPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtAlertsPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Alerts" class="AlertsPanel">
+  
+  Alerts
+  
+    
+      <br><small>1 alert</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-CachePanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtCachePanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Cache calls from 1 backend" class="CachePanel">
+  
+  Cache
+  
+    
+      <br><small>1 call in 0.10ms</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-SignalsPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtSignalsPanel" checked title="Disable for next and successive requests">
+  
+    <a href="#" title="Signals" class="SignalsPanel">
+  
+  Signals
+  
+    
+      <br><small>172 receivers of 15 signals</small>
+    
+  
+  
+    </a>
+  
+</li>
+
+      
+        
+
+<li id="djdt-RedirectsPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtRedirectsPanel" title="Enable for next and successive requests">
+  
+    <div class="djdt-contentless djdt-disabled">
+  
+  Intercept redirects
+  
+  
+    </div>
+  
+</li>
+
+      
+        
+
+<li id="djdt-ProfilingPanel" class="djDebugPanelButton">
+  <input type="checkbox" data-cookie="djdtProfilingPanel" title="Enable for next and successive requests">
+  
+    <div class="djdt-contentless djdt-disabled">
+  
+  Profiling
+  
+  
+    </div>
+  
+</li>
+
+      
+    </ul>
+  </div>
+  <div class="djdt-hidden" id="djDebugToolbarHandle">
+    <div title="Show toolbar" id="djShowToolBarButton">
+      <span id="djShowToolBarD">D</span><span id="djShowToolBarJ">J</span>DT
+    </div>
+  </div>
+
+  
+    
+
+
+  <div id="HistoryPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>History</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="VersionsPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Versions</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="TimerPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Time</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="SettingsPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Settings from mysite.settings.dev</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="HeadersPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Headers</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="RequestPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Request</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="SQLPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>SQL queries from 1 connection</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="StaticFilesPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Static files (517 found, 3 used)</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="TemplatesPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Templates (1 rendered)</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="AlertsPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Alerts</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="CachePanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Cache calls from 1 backend</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+  <div id="SignalsPanel" class="djdt-panelContent djdt-hidden">
+    <div class="djDebugPanelTitle">
+      <button type="button" class="djDebugClose">×</button>
+      <h3>Signals</h3>
+    </div>
+    <div class="djDebugPanelContent">
+      
+        <div class="djdt-loader"></div>
+        <div class="djdt-scroll"></div>
+      
+    </div>
+  </div>
+
+
+  
+    
+
+
+
+  
+    
+
+
+
+  
+  <div id="djDebugWindow" class="djdt-panelContent djdt-hidden"></div>
+</div>
+</body>
+
+</html>

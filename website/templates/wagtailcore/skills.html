@@ -1,0 +1,108 @@
+<style
+>body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.circular-skills-container {
+  display: flex;
+  gap: 20px;
+}
+
+.circular-skill {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.circular-skill svg {
+  transform: rotate(-90deg);
+}
+
+.circle-bg,
+.circle-fg {
+  fill: none;
+  stroke-width: 10;
+  cx: 60;
+  cy: 60;
+  r: 50;
+}
+
+.circle-bg {
+  stroke: #ddd;
+}
+
+.circle-fg {
+  stroke: #66cc99;
+  stroke-linecap: round;
+  /* Circumference of circle with r=50 is ~314 */
+  stroke-dasharray: 314;
+  stroke-dashoffset: 314;
+}
+
+.skill-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 0.9em;
+  color: #333;
+}
+</style>
+
+  <div class="circular-skills-container">
+    <div class="circular-skill" data-skill="90">
+      <svg width="120" height="120">
+        <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+        <circle class="circle-fg" cx="60" cy="60" r="50"></circle>
+      </svg>
+      <div class="skill-logo">Logo 1</div>
+    </div>
+    <div class="circular-skill" data-skill="80">
+      <svg width="120" height="120">
+        <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+        <circle class="circle-fg" cx="60" cy="60" r="50"></circle>
+      </svg>
+      <div class="skill-logo">Logo 2</div>
+    </div>
+    <div class="circular-skill" data-skill="70">
+      <svg width="120" height="120">
+        <circle class="circle-bg" cx="60" cy="60" r="50"></circle>
+        <circle class="circle-fg" cx="60" cy="60" r="50"></circle>
+      </svg>
+      <div class="skill-logo">Logo 3</div>
+    </div>
+  </div>
+
+  <!-- GSAP Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+  <script>
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const skills = document.querySelectorAll('.circular-skill');
+    
+    skills.forEach(skill => {
+      const targetPercent = parseFloat(skill.getAttribute('data-skill'));
+      const circleFg = skill.querySelector('.circle-fg');
+      const radius = circleFg.r.baseVal.value; // 50
+      const circumference = 2 * Math.PI * radius; // approx 314
+  
+      // Ensure the dasharray is set correctly
+      circleFg.style.strokeDasharray = `${circumference}`;
+      circleFg.style.strokeDashoffset = circumference;
+  
+      // Calculate the offset based on the target percentage
+      const offset = circumference * (1 - targetPercent / 100);
+  
+      // Animate the stroke-dashoffset with GSAP
+      gsap.to(circleFg, { duration: 1.5, strokeDashoffset: offset, ease: "power2.out" });
+    });
+  });
+  </script>

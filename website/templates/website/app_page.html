@@ -1,0 +1,35 @@
+{% extends "website/apps_index_page.html" %}
+
+{% block content %}
+<div class="app-page-detail">
+    <h1>{{ page.title }}</h1>
+
+    {% if page.mockup_design %}
+        <div class="mockup">
+            <img src="{{ page.mockup_design.url }}" alt="{{ page.mockup_design.title }}" class="img--responsive">
+        </div>
+    {% endif %}
+
+    {% if page.description %}
+        <p class="app-description">
+            {{ page.description|linebreaks }}
+        </p>
+    {% endif %}
+
+    {% if page.tech_stack.all %}
+        <div class="tech-stack">
+            <h3>Tech Stack</h3>
+            <ul>
+                {% for tech in page.tech_stack.all %}
+                    <li>
+                        {% if tech.logo %}
+                            <img src="{{ tech.logo.file.url }}" alt="{{ tech.name }}" style="max-width: 35px;">
+                        {% endif %}
+                        {{ tech.name }} - {{ tech.description }}
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}

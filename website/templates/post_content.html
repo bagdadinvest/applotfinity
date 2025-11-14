@@ -1,0 +1,12 @@
+{% load coderedcms_tags i18n static wagtailcore_tags wagtailimages_tags wagtailsettings_tags wagtailuserbar %}
+<div>
+    <h2>{{ post.caption }}</h2>
+    {% if post.image %}
+        <img src="{{ post.image.url }}" alt="{{ post.caption }}">
+    {% elif post.video %}
+        <video id="video-{{ post.id }}" class="video-js vjs-default-skin" controls preload="auto" data-setup="{}">
+            <source src="{{ post.video.url }}" type="video/mp4">
+        </video>
+    {% endif %}
+    <p>{{ post.json_metadata }}</p>
+</div>
